@@ -3,9 +3,32 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{1A7A723A-6A2F-4F82-8576-826D56AE375A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{498415A6-8F6B-469F-A8D4-A040D2BE8CC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{4FDBF983-F8FC-47C5-AD2D-82D9EF447BF6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{EA740215-A167-46E6-8A57-750D8F66C0BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.ToolStockSc.Serialization", "Serialization\Sam.ToolStockSc.Serialization\Sam.ToolStockSc.Serialization.csproj", "{58287477-656B-445A-8E7C-44AB2AB225F7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58287477-656B-445A-8E7C-44AB2AB225F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58287477-656B-445A-8E7C-44AB2AB225F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58287477-656B-445A-8E7C-44AB2AB225F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58287477-656B-445A-8E7C-44AB2AB225F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58287477-656B-445A-8E7C-44AB2AB225F7} = {EA740215-A167-46E6-8A57-750D8F66C0BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {088D6877-EF07-41B9-8014-0EA20789253A}
