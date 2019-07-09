@@ -1,13 +1,16 @@
 ﻿---
 ID: "61d0ad2a-fa88-4029-be73-2a031620718a"
-Parent: "688212a9-e35f-46a1-b3e4-0559881709d3"
+Parent: "37b3672f-8c06-48fc-9f29-73f6b5221516"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Project/ToolStockSc/Jumbotron
+Path: /sitecore/layout/Placeholder Settings/Feature/Jumbotron/Jumbotron
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: Jumbotron
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx

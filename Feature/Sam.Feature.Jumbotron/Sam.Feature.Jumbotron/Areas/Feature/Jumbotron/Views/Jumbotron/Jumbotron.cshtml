@@ -4,13 +4,14 @@
     <div class="row justify-content-end">
         <div class="col-4"></div>
         <div class="col-4">
-            <div class="dropdown">
+
+            @*<div class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose a language</a>
                 <div class="dropdown-menu">
                     @Html.ActionLink("English", "ChangeLang", "Home", new { Lang = "en-US", ReturnUrl = Url.Encode(Request.RawUrl) }, new { @class = "dropdown-item" })
                     @Html.ActionLink("Русский", "ChangeLang", "Home", new { Lang = "ru-RU", ReturnUrl = Url.Encode(Request.RawUrl) }, new { @class = "dropdown-item" })
                 </div>
-            </div>
+            </div>*@
         </div>
     </div>
     <h1 class="text-center">@Html.Sitecore().Field("Greeting text")</h1>
