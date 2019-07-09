@@ -1,0 +1,22 @@
+﻿---
+ID: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Parent: "fe7c75f0-1fa3-470b-86a0-437a92da6839"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/ToolStockSc/Unauthorized Layout
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{77AA0690-F226-4D59-8885-BDDC070B0CE7}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{F97A924A-9D97-49C3-9862-872E1438DF36}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190709T065540Z

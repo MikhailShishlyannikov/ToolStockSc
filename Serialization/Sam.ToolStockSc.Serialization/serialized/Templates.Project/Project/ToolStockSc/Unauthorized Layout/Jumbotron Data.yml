@@ -1,0 +1,14 @@
+﻿---
+ID: "43065c72-5bd1-42bd-b338-1cff1704fe2a"
+Parent: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Unauthorized Layout/Jumbotron Data
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190709T070103Z

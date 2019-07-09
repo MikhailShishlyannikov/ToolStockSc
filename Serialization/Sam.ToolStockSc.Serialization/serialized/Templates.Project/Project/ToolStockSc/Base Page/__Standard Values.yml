@@ -1,0 +1,21 @@
+﻿---
+ID: "8be4e410-1efa-41a6-bc65-23879b5ffd9c"
+Parent: "77aa0690-f226-4d59-8885-bddc070b0ce7"
+Template: "77aa0690-f226-4d59-8885-bddc070b0ce7"
+Path: /sitecore/templates/Project/ToolStockSc/Base Page/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190709T065123Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: $name

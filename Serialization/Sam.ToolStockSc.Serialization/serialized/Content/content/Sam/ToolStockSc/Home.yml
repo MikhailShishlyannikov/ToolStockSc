@@ -1,0 +1,50 @@
+﻿---
+ID: "4f1336b2-3692-41c2-9c32-398f59d780ed"
+Parent: "ec7d4a22-a98f-468c-b44c-b047005e5b04"
+Template: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Path: /sitecore/content/Sam/ToolStockSc/Home
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Network/16x16/home.png
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{A2E555BC-F0B7-4E59-9648-DA08CACF3606}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{F1417A5E-28AD-4E03-86A1-6A1B8B895F34}"
+              s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+              s:ph="Jumbotron" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190709T095544Z
+    - ID: "bd282d6e-e47c-496d-9aa1-64b6d5282ce1"
+      Hint: Authorization Request
+      Value: Please log in or register
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Home
+    - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
+      Hint: Greeting text
+      Value: Entry
