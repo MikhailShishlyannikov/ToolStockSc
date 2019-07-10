@@ -1,0 +1,14 @@
+﻿---
+ID: "44fe0300-c103-420b-8ab5-46c5fe3b3298"
+Parent: "1938444c-01f1-46aa-ae08-023fb10d5a42"
+Template: "5dd41240-fd93-4b4c-8d1f-daff51ed9007"
+Path: /sitecore/content/Sam/ToolStockSc/Options/Button Style
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190710T104350Z

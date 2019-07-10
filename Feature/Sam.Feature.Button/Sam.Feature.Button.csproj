@@ -193,12 +193,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Feature\Button\Views\web.config" />
+    <Content Include="Areas\Feature\Button\Views\Button\Button.cshtml" />
+    <Content Include="App_Config\Include\zzz.Sam.Feature.Button\zzz.Sam.Feature.Button.ServicesConfiguration.config" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Feature\Button\ButtonAreaRegistration.cs" />
+    <Compile Include="Areas\Feature\Button\Configurations\ButtonDependencyConfigurator.cs" />
     <Compile Include="Areas\Feature\Button\Controllers\ButtonController.cs" />
+    <Compile Include="Areas\Feature\Button\Models\Rendering Parameters\ButtonRP.cs" />
+    <Compile Include="Areas\Feature\Button\Models\ScModels\ButtonScModel.cs" />
+    <Compile Include="Areas\Feature\Button\Models\ScModels\Option.cs" />
+    <Compile Include="Areas\Feature\Button\Models\ViewModels\ButtonViewModel.cs" />
+    <Compile Include="Areas\Feature\Button\Templates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -210,10 +219,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="App_Config\Include\" />
-    <Folder Include="Areas\Feature\Button\Models\" />
-    <Folder Include="Areas\Feature\Button\Views\Button\" />
+    <ProjectReference Include="..\..\Foundation\Sam.Foundation.GlassMapper\Sam.Foundation.GlassMapper.csproj">
+      <Project>{75f5319a-64da-448c-b1ae-84f3672dd4f8}</Project>
+      <Name>Sam.Foundation.GlassMapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

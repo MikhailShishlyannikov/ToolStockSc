@@ -31,7 +31,22 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{B7822467-83BC-44BB-A335-D45CB0B547AA}"
+              p:before="*"
+              s:ds="{CE16F01F-BD5F-4824-A4AC-03C18DCF6D47}"
+              s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{C2077708-925E-449F-81EC-34B1EBF5C672}"
+              p:after="r[@uid='{B7822467-83BC-44BB-A335-D45CB0B547AA}']"
+              s:ds="{A7CE9B40-DD08-4ADD-8DC2-F0C0D48D00B1}"
+              s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
               uid="{F1417A5E-28AD-4E03-86A1-6A1B8B895F34}"
+              p:after="*[1=2]"
               s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
               s:ph="Jumbotron" />
           </d>
