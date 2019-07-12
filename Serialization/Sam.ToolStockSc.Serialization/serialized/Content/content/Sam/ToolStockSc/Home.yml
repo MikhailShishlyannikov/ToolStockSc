@@ -8,6 +8,9 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Network/16x16/home.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -31,14 +34,19 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B7822467-83BC-44BB-A335-D45CB0B547AA}"
+              uid="{3AE5A28D-9F72-4FEA-A87F-BD45D7B1F324}"
               p:before="*"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
+              uid="{B7822467-83BC-44BB-A335-D45CB0B547AA}"
+              p:after="r[@uid='{3AE5A28D-9F72-4FEA-A87F-BD45D7B1F324}']"
               s:ds="{CE16F01F-BD5F-4824-A4AC-03C18DCF6D47}"
               s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
               s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
               s:ph="/Jumbotron/Jumbotron Content" />
             <r
-              uid="{C2077708-925E-449F-81EC-34B1EBF5C672}"
+              uid="{141FA30A-279D-44E2-9737-F5C27909CBAF}"
               p:after="r[@uid='{B7822467-83BC-44BB-A335-D45CB0B547AA}']"
               s:ds="{A7CE9B40-DD08-4ADD-8DC2-F0C0D48D00B1}"
               s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
@@ -63,3 +71,54 @@ Languages:
     - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
       Hint: Greeting text
       Value: Entry
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{69830F66-E14E-41F7-B869-E752438860F7}"
+              p:before="*"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
+              uid="{AAA35281-DF6A-439B-BAE9-6CCCE74F3EEC}"
+              p:after="r[@uid='{69830F66-E14E-41F7-B869-E752438860F7}']"
+              s:ds="{CE16F01F-BD5F-4824-A4AC-03C18DCF6D47}"
+              s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{71E8842B-742C-4715-B0AB-CC1BB78E2611}"
+              p:after="r[@uid='{AAA35281-DF6A-439B-BAE9-6CCCE74F3EEC}']"
+              s:ds="{A7CE9B40-DD08-4ADD-8DC2-F0C0D48D00B1}"
+              s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{340A5E28-E42E-4437-9021-8667DB462B3B}"
+              p:after="*[1=2]"
+              s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+              s:ph="Jumbotron" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T140154Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "bd282d6e-e47c-496d-9aa1-64b6d5282ce1"
+      Hint: Authorization Request
+      Value: Пожалуйста, войдите или зарегестрируйтесь
+    - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
+      Hint: Greeting text
+      Value: Вход

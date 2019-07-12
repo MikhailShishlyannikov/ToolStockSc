@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Models.ViewModels.LanguageLinkViewModel>
+
+<div class="dropdown col-4">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose lang</a>
+    <div class="dropdown-menu">
+        @foreach(var link in Model)
+        {
+            <a class="dropdown-item" href=@link.Link>@link.CountryName</a>
+        }
+    </div>
+</div>

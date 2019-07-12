@@ -2,7 +2,7 @@
 ID: "a7ce9b40-dd08-4add-8dc2-f0c0d48d00b1"
 Parent: "5373465a-0614-4bd0-97b6-9108e0574c38"
 Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
-Path: /sitecore/content/Sam/ToolStockSc/Page Content/Register Button
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Register Button
 DB: master
 Languages:
 - Language: en
@@ -16,6 +16,21 @@ Languages:
       Hint: Link
       Value: |
         <link linktype="internal" text="Register" querystring="" target="" id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T141400Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Зарегистрироваться" querystring="" target="" id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

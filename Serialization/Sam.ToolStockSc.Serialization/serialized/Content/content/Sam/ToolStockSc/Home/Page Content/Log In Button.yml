@@ -1,0 +1,41 @@
+﻿---
+ID: "ce16f01f-bd5f-4824-a4ac-03c18dcf6d47"
+Parent: "5373465a-0614-4bd0-97b6-9108e0574c38"
+Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Log In Button
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190710T103528Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Log In" querystring="" target="" id="{D1392778-9DB9-45A4-B772-687B51160512}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T141111Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Войти" querystring="" target="" id="{D1392778-9DB9-45A4-B772-687B51160512}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

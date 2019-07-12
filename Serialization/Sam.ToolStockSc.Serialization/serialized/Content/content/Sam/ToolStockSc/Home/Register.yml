@@ -42,3 +42,37 @@ Languages:
     - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
       Hint: Greeting text
       Value: Register
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B6A1769B-904E-4C37-B123-4CE8209E2673}"
+              p:before="*"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
+              uid="{F2CDD71C-47CB-4B4C-A246-F17EC966D365}"
+              p:after="*[1=2]"
+              s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+              s:ph="Jumbotron" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T141747Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
+      Hint: Greeting text
+      Value: Регистрация
