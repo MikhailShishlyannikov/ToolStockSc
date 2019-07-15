@@ -1,9 +1,13 @@
 ﻿---
 ID: "ce16f01f-bd5f-4824-a4ac-03c18dcf6d47"
-Parent: "5373465a-0614-4bd0-97b6-9108e0574c38"
+Parent: "15eb6064-327f-4e82-9ace-a973ef9f23ee"
 Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
-Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Log In Button
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Buttons/Log In Button
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
 Languages:
 - Language: en
   Versions:

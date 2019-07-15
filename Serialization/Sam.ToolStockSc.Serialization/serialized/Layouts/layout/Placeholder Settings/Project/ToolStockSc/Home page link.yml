@@ -8,6 +8,12 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: Home page link
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {7A35F150-B16A-407A-9998-048DC1F2F7BD}
+    {C3E0394B-FAD9-4960-89F9-21250325FFB0}
 Languages:
 - Language: en
   Versions:
