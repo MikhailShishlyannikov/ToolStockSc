@@ -194,13 +194,11 @@
   <ItemGroup>
     <Content Include="Areas\Feature\LanguageSwitcher\Views\web.config" />
     <Content Include="Areas\Feature\LanguageSwitcher\Views\LanguageSwitcher\LanguageSwitcher.cshtml" />
-    <Content Include="App_Config\Include\zzz.Sam.Feature.LanguageSwircher\zzz.Sam.Feature.LanguageSwitcher.ServicesConfiguration.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
-    <Compile Include="Areas\Feature\LanguageSwitcher\Configurations\LanguageSwitcherDependencyConfigurator.cs" />
     <Compile Include="Areas\Feature\LanguageSwitcher\Controllers\LanguageSwitcherController.cs" />
     <Compile Include="Areas\Feature\LanguageSwitcher\LanguageSwitcherAreaRegistration.cs" />
     <Compile Include="Areas\Feature\LanguageSwitcher\Logic\Interfaces\ILanguageSwitcherService.cs" />
@@ -219,6 +217,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Config\Include\" />
     <Folder Include="Areas\Feature\LanguageSwitcher\Models\ScModels\" />
   </ItemGroup>
   <ItemGroup>
