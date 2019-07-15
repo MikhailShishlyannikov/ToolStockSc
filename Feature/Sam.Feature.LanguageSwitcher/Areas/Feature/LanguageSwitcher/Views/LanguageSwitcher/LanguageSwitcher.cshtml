@@ -1,9 +1,11 @@
-﻿@model IEnumerable<Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Models.ViewModels.LanguageLinkViewModel>
+﻿@using Sitecore.Globalization
+
+@model IEnumerable<Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Models.ViewModels.LanguageLinkViewModel>
 
 <div class="dropdown col-4">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose lang</a>
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">@Translate.Text("LanguageSwitcher.ChooseLanguageRequest")</a>
     <div class="dropdown-menu">
-        @foreach(var link in Model)
+        @foreach (var link in Model)
         {
             <a class="dropdown-item" href=@link.Link>@link.CountryName</a>
         }

@@ -1,0 +1,18 @@
+﻿---
+ID: "fa467ac2-53f3-4439-ad89-d2ca6518a823"
+Parent: "c59b34f1-f114-4f0d-a36d-ceaa7bce4439"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Labels
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: WordProcessing/32x32/thesaurus_orange.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190712T135121Z
