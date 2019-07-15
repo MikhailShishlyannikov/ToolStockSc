@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.Foundation.LinkManager"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.Foundation.DependencyInjection", "Foundation\Sam.Foundation.DependencyInjection\Sam.Foundation.DependencyInjection.csproj", "{29A9A38E-C973-4A26-BAEB-062B46901C14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sam.Feature.Link", "Feature\Sam.Feature.Link\Sam.Feature.Link.csproj", "{C2B3F1FD-6447-4875-ADA7-247375B88355}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{29A9A38E-C973-4A26-BAEB-062B46901C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A9A38E-C973-4A26-BAEB-062B46901C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29A9A38E-C973-4A26-BAEB-062B46901C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B3F1FD-6447-4875-ADA7-247375B88355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B3F1FD-6447-4875-ADA7-247375B88355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B3F1FD-6447-4875-ADA7-247375B88355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B3F1FD-6447-4875-ADA7-247375B88355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{2A08AC51-49D2-47A1-8BCA-CD169D7AC3AA} = {1A7A723A-6A2F-4F82-8576-826D56AE375A}
 		{33E12D89-B625-4698-B51A-C1B10708EAC5} = {498415A6-8F6B-469F-A8D4-A040D2BE8CC6}
 		{29A9A38E-C973-4A26-BAEB-062B46901C14} = {498415A6-8F6B-469F-A8D4-A040D2BE8CC6}
+		{C2B3F1FD-6447-4875-ADA7-247375B88355} = {1A7A723A-6A2F-4F82-8576-826D56AE375A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {088D6877-EF07-41B9-8014-0EA20789253A}
