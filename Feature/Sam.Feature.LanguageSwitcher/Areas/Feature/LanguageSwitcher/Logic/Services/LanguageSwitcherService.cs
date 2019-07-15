@@ -2,6 +2,7 @@
 using Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Models.ViewModels;
 using Sam.Foundation.DependencyInjection;
 using Sitecore.Data;
+using Sitecore.Globalization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,32 +18,33 @@ namespace Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Logic.Serv
 
             var scLangs = master.GetLanguages();
 
-            var langs = new List<LanguageLinkViewModel>();
+            var languageViewModels = scLangs.Select(x => Create(x, currentUrl)).OrderBy(x => x.CountryName).ToList();
 
-            foreach (var scLang in scLangs)
+            return languageViewModels;
+        }
+
+        private LanguageLinkViewModel Create(Language language, string url)
+        {
+            var languageViewModel = new LanguageLinkViewModel
             {
-                var lang = new LanguageLinkViewModel
-                {
-                    CountryName = scLang.CultureInfo.DisplayName
-                };
+                CountryName = language.CultureInfo.DisplayName,
 
-                var a = currentUrl.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            };
 
-                if (a.Count == 0 || a[0].Length != 2)
-                {
-                    a.Insert(0, scLang.Name);
-                }
-                else
-                {
-                    a[0] = scLang.Name;
-                }
+            var splitUrl = url.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
-                lang.Link = "/" + String.Join("/", a);
-
-                langs.Add(lang);
+            if (splitUrl.Count == 0 || splitUrl[0].Length != 2)
+            {
+                splitUrl.Insert(0, language.Name);
+            }
+            else
+            {
+                splitUrl[0] = language.Name;
             }
 
-            return langs;
+            languageViewModel.Link = "/" + String.Join("/", splitUrl);
+
+            return languageViewModel;
         }
     }
 }
