@@ -5,6 +5,9 @@ Template: "0a2847e6-9885-450b-b61e-f9e6528480ef"
 Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Labels/Translations
 DB: master
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/edit_domain.png
 - ID: "61cf7151-0cbd-4db4-9738-d753a55a6e65"
   Hint: __Enforce version presence
   Type: Checkbox

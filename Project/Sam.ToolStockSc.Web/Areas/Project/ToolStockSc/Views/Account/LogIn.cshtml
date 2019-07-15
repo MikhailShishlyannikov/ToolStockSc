@@ -1,0 +1,33 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.LoginViewModel
+@using Sitecore.Globalization
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, @Translate.Text("Account.ErrorOfLogIn"), new { @class = "alert alert-danger" })
+
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Email, @Translate.Text("Account.Email"), new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = @Translate.Text("Account.Email") })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Email, @Translate.Text("Account.Password"), new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = @Translate.Text("Account.Password") })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-5">
+            <button type="submit" class="btn btn-primary">@Translate.Text("Account.LogIn")</button>
+        </div>
+        <div class="col-sm-7 align-middle text-right">
+            @Html.Sitecore().Placeholder("Home page link")
+            @*@Html.ActionLink(@Resources.Resource.BackToMainPage, "Index", "Home", null, new { @class = "align-middle" })*@
+        </div>
+    </div>
+}

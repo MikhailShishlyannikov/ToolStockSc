@@ -213,6 +213,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Areas\Project\ToolStockSc\Views\web.config" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Account\LogIn.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\UnauthorizedLayout.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
@@ -257,6 +258,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogInViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\ToolStockScAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -269,7 +271,6 @@
   <ItemGroup>
     <Folder Include="Areas\Project\ToolStockSc\Assets\" />
     <Folder Include="Areas\Project\ToolStockSc\Controllers\" />
-    <Folder Include="Areas\Project\ToolStockSc\Models\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
