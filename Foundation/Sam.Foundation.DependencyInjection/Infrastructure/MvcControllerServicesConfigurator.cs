@@ -11,9 +11,9 @@ namespace Sam.Foundation.DependencyInjection.Infrastructure
             serviceCollection.AddClassesWithServiceAttribute("*.Feature.*");
 
             serviceCollection.AddClassesWithServiceAttribute("*.Foundation.*");
-            //serviceCollection.AddMvcControllers("*.MySite.*");
 
-            //serviceCollection.AddClassesWithServiceAttribute("*.MySite.*");
+            serviceCollection.AddMvcControllers("*.ToolStockSc.*");
+            serviceCollection.AddClassesWithServiceAttribute("*.ToolStockSc.*");
         }
     }
 }

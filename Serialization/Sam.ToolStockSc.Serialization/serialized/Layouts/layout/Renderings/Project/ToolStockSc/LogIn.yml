@@ -1,13 +1,25 @@
 ﻿---
-ID: "f74b0f07-ab81-4d05-aeb4-49d120cf027a"
+ID: "34f971ea-cf7c-4f9a-b4c5-017ef57959f4"
 Parent: "25bafe09-a044-4232-8627-ab6a854f1bdb"
-Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
-Path: /sitecore/layout/Renderings/Project/ToolStockSc/LogIn
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Project/ToolStockSc/Login
 DB: master
 SharedFields:
-- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
-  Hint: Path
-  Value: /Areas/Project/ToolStockSc/Views/Account/LogIn.cshtml
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{EE453943-32EE-4F2E-9A67-994A9845E7C6}"
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
+  Hint: Datasource Template
+  Value: /sitecore/templates/Project/ToolStockSc/Forms/Log In
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: /sitecore/content/Sam/ToolStockSc/Home/Log In/Page Content
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Login
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Account
 Languages:
 - Language: en
   Versions:
@@ -15,7 +27,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190715T105143Z
+      Value: 20190716T082931Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
