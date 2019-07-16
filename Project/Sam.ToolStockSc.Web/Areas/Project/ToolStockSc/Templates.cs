@@ -15,5 +15,15 @@
                 public const string PasswordField_FieldName = "Password field";
             }
         }
+
+        public struct RegisterForm
+        {
+            public const string Id = "{E0D15A08-A5FF-4C8C-AD3A-B52BCC319C84}";
+        }
+
+        public struct Department
+        {
+            public const string Id = "{8067ED30-106F-4D92-895C-098924DC1646}";
+        }
     }
 }

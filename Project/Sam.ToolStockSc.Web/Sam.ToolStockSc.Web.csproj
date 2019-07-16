@@ -230,6 +230,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\web.config" />
     <Content Include="Areas\Project\ToolStockSc\Views\Account\LogIn.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\UnauthorizedLayout.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Account\Register.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -274,8 +275,12 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogInViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\RegisterViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\SitecoreConstants.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Templates.cs" />
     <Compile Include="Areas\Project\ToolStockSc\ToolStockScAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">

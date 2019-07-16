@@ -1,0 +1,99 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.RegisterViewModel
+@using Sitecore.Globalization
+
+@{Html.EnableClientValidation();}
+@{Html.EnableUnobtrusiveJavaScript();}
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Name, Model.NameField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = Model.NameField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Name</b></spam> @: @Html.Glass().Editable(m => m.NameField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Patronymic, Model.PatronymicField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Patronymic, new { @class = "form-control", placeholder = Model.PatronymicField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Patronymic</b></spam> @: @Html.Glass().Editable(m => m.PatronymicField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Surname, Model.SurnameField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Surname, new { @class = "form-control", placeholder = Model.SurnameField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Surname</b></spam> @: @Html.Glass().Editable(m => m.SurnameField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Email, Model.EmailField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = Model.EmailField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Email</b></spam> @: @Html.Glass().Editable(m => m.EmailField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Phone, Model.PhoneField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "+375(__) ___ - __ - __", id = "phone" })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Phone</b></spam> @: @Html.Glass().Editable(m => m.PhoneField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.Password, Model.PasswordField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = Model.PasswordField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>Password</b></spam> @: @Html.Glass().Editable(m => m.PasswordField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.ConfirmPassword, Model.ConfirmPasswordField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = Model.ConfirmPasswordField })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>ConfirmPassword</b></spam> @: @Html.Glass().Editable(m => m.ConfirmPasswordField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        @Html.LabelFor(m => m.DepartmentId, Model.DepartmentField, new { @class = "col-sm-3 col-form-label" })
+        <div class="col-sm-9">
+            @Html.DropDownListFor(m => m.DepartmentId, new SelectList(Model.Departments, "Id", "Name", Model.DepartmentId), new { @class = "form-control" })
+            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+            {
+                <spam>Editable field <b>ConfirmPassword</b></spam> @: @Html.Glass().Editable(m => m.ConfirmPasswordField)
+            }
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-5">
+            <button type="submit" class="btn btn-primary">@Translate.Text("Account.Register")</button>
+        </div>
+        <div class="col-sm-7 align-middle text-right">
+            @Html.Sitecore().Placeholder("Home page link")
+        </div>
+    </div>
+}

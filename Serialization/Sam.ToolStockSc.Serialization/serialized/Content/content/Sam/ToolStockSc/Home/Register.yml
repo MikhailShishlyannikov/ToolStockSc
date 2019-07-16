@@ -28,7 +28,25 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
+              uid="{4ADA1444-DCB7-4419-B5C9-7EE95ED1D6A9}"
+              p:before="*"
+              s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
+              s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
+              s:ph="/Jumbotron/Jumbotron Content/Home page link" />
+            <r
+              uid="{DDB01672-23E4-4DED-9FC5-29213AB6F75D}"
+              p:after="r[@uid='{4ADA1444-DCB7-4419-B5C9-7EE95ED1D6A9}']"
+              s:ds="{AAD0EF79-94A9-4505-AD91-21B3C48FA9FB}"
+              s:id="{1842731A-C519-45BD-858F-4092F3F8AE90}"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{461108E9-668B-4301-A775-B9FF5EC38225}"
+              p:after="r[@uid='{DDB01672-23E4-4DED-9FC5-29213AB6F75D}']"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
               uid="{B09F5543-E1DD-4514-9AAD-4ADE1A03DB99}"
+              p:after="*[1=2]"
               s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
               s:ph="Jumbotron" />
           </d>
@@ -55,8 +73,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B6A1769B-904E-4C37-B123-4CE8209E2673}"
+              uid="{009B6495-4BC6-4308-BFF5-7DE2C828FA2B}"
               p:before="*"
+              s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
+              s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
+              s:ph="/Jumbotron/Jumbotron Content/Home page link" />
+            <r
+              uid="{4CD9E92C-5878-4012-993D-A7BDE11DCE5D}"
+              p:after="r[@uid='{009B6495-4BC6-4308-BFF5-7DE2C828FA2B}']"
+              s:ds="{AAD0EF79-94A9-4505-AD91-21B3C48FA9FB}"
+              s:id="{1842731A-C519-45BD-858F-4092F3F8AE90}"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{12BC76B3-2BD1-4CEE-A407-8B415F15F44C}"
+              p:after="r[@uid='{4CD9E92C-5878-4012-993D-A7BDE11DCE5D}']"
               s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
               s:ph="/Jumbotron/Language Switcher" />
             <r
