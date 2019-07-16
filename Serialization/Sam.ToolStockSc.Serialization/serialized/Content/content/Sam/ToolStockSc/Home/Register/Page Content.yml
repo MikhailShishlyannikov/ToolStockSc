@@ -1,13 +1,13 @@
 ﻿---
-ID: "c59b34f1-f114-4f0d-a36d-ceaa7bce4439"
-Parent: "ec7d4a22-a98f-468c-b44c-b047005e5b04"
+ID: "f429d110-cf42-4803-b766-480999c5a111"
+Parent: "a92d5d42-1138-4fe6-a509-95c639db0d32"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content
+Path: /sitecore/content/Sam/ToolStockSc/Home/Register/Page Content
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Network/32x32/earth2.png
+  Value: applications/32x32/folder2_green.png
 Languages:
 - Language: en
   Versions:
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190711T143545Z
+      Value: 20190716T121144Z

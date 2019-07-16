@@ -1,0 +1,18 @@
+﻿---
+ID: "a66600f8-ac18-45e5-b85c-4c5bf507e725"
+Parent: "8067ed30-106f-4d92-895c-098924dc1646"
+Template: "8067ed30-106f-4d92-895c-098924dc1646"
+Path: /sitecore/templates/Project/ToolStockSc/Models/Department/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T115135Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
