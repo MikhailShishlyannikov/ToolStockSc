@@ -1,0 +1,16 @@
+﻿---
+Username: |
+  extranet\Anonymous
+Email: 
+Comment: 
+Created: "2018-11-01T09:56:12.0000000Z"
+IsApproved: True
+Properties:
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False

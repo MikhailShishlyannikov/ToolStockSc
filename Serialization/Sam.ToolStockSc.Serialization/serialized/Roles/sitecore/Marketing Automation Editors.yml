@@ -1,0 +1,12 @@
+﻿---
+Role: |
+  sitecore\Marketing Automation Editors
+MemberOf:
+  Role: |
+    sitecore\Analytics Maintaining
+  Role: |
+    sitecore\Analytics Content Profiling
+  Role: |
+    sitecore\List Manager Editors
+  Role: |
+    sitecore\Author

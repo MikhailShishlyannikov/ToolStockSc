@@ -1,0 +1,151 @@
+﻿---
+Username: |
+  sitecore\Admin
+Email: 
+Comment: Sitecore Administrator
+Created: "2018-11-01T09:56:50.0000000Z"
+IsApproved: True
+Properties:
+- Key: |
+    /sitecore\\admin/Shell/ShowDatabaseName
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Content Editor/Sections/Collapsed
+  Value: "?Security=1&QuickInfo=0&Layout=0&Advanced=0&Appearance=0&Help=0&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=0&Insert Options=0&Item Buckets=0&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/History/Add.From.Template
+  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/History/IDE.New.File.Wizard
+  Value: /Views/Shared
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/History/IDE.New.File.Wizard.CreateCodebehind
+  Value: false
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/History/Template
+  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/IncrementalPublish
+  Value: false
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/Languages
+  Value: en|ru
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/PublishChildren
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/PublishRelatedItems
+  Value: false
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/Republish
+  Value: false
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/SmartPublish
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Publish/Targets
+  Value: "{8E080626-DDC3-4EF4-A1D1-F0BE4A200254}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/RecentIcons
+  Value: applications/16x16/edit.png|network/32x32/earth2.png|applications/32x32/folder2_green.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|people/32x32/keyboard_key.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png|applications/32x32/folder2_red.png|applications/32x32/add.png|network/16x16/home.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/Ribbon/My Strip
+  Value: "{D33A0641-9F1C-4984-8342-0655C3D0F123}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/SelectRendering/IsOpenPropertiesChecked
+  Value: false
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/SelectRendering/Selected
+  Value: "{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/UserOptions.ContentEditor.ShowSystemFields
+  Value: true
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admin/VSplitters/AccessViewerLeft
+  Value: 840px,378px
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
+    /sitecore\admins/RecentUserList
+  Value: |
+    default\Anonymous|extranet\Everyone|default\Everyone|extranet\User
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: FullName
+  Value: Administrator
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: IsAdministrator
+  Value: True
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{AE4C4969-5B7E-4B4E-9042-B2D8701CE214}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: "SpeakComponentStatus--{DCA54420-EE0F-49B3-8E9F-CA32707705C7}"
+  Value: |
+    {"menuStatus":[{"id":"{CF16C899-978B-4039-B29E-56EC5A5FACD1}"}]}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: "SpeakComponentStatus-8FB5606FA0F0410A991EB66E2D099852-LanguageListControl"
+  Value: |
+    {"ViewMode":"TileList","SelectedValue":"-","CheckedValues":[],"Sorting":""}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: WallpaperBackground
+  Value: #07337C
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: WallpaperPosition
+  Value: Cover
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhash
+  Value: f5b1f084e59feff924d8831133d75027
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: 248e201963d96c46e7c515404679c28b
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True

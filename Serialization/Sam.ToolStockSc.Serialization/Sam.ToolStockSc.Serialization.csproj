@@ -81,6 +81,12 @@
     <Reference Include="Unicorn, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Unicorn.Core.4.1.0\lib\net452\Unicorn.dll</HintPath>
     </Reference>
+    <Reference Include="Unicorn.Roles, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unicorn.Roles.Core.4.1.0\lib\net452\Unicorn.Roles.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicorn.Users, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Unicorn.Users.Core.4.1.0\lib\net452\Unicorn.Users.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -105,6 +111,14 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
     <Content Include="App_Config\Include\zzz.ToolStockSc\ToolStockSc.Serialization.config" />
     <Content Include="App_Config\Include\z.unicornhotfix.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Roles.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Roles.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Users.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.Users.config.example" />
+    <Content Include="App_Config\Include\zzz.ToolStockSc\ToolStockSc.Serialization.Roles.config" />
+    <Content Include="App_Config\Include\zzz.ToolStockSc\ToolStockSc.Serialization.Users.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
