@@ -19,7 +19,7 @@ Languages:
     - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Register" querystring="" target="" id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" />
+        <link id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" querystring="" text="Register" url="/Sam/ToolStockSc/Home/Register" linktype="internal" target="" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -34,7 +34,7 @@ Languages:
     - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Зарегистрироваться" querystring="" target="" id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" />
+        <link id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" querystring="" text="Зарегистрироваться" url="/Sam/ToolStockSc/Home/Register" linktype="internal" target="" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

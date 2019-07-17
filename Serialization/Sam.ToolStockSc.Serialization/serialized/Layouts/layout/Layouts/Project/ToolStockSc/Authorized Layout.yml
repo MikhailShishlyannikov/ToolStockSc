@@ -1,5 +1,5 @@
 ﻿---
-ID: "2555cbf7-b0a9-4382-a5bb-04b8a13dea89"
+ID: "c1df8c65-282f-468e-bd74-9a78d648eb3d"
 Parent: "ae07f33c-ddf9-41fe-b636-dd39ed65b2c1"
 Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
 Path: /sitecore/layout/Layouts/Project/ToolStockSc/Authorized Layout
@@ -15,4 +15,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190717T100617Z
+      Value: 20190717T125214Z

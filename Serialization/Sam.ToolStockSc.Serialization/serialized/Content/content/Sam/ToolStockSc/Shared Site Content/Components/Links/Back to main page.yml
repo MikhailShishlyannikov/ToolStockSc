@@ -19,7 +19,7 @@ Languages:
     - ID: "eaeb0e67-4181-4145-8fa5-9d6a0610d85d"
       Hint: Link
       Value: |
-        <link linktype="internal" text="Back to main page" querystring="" target="" id="{4F1336B2-3692-41C2-9C32-398F59D780ED}" />
+        <link id="{4F1336B2-3692-41C2-9C32-398F59D780ED}" querystring="" text="Back to main page" url="/Sam/ToolStockSc/Home" linktype="internal" target="" />
 - Language: ru
   Versions:
   - Version: 1
@@ -34,4 +34,4 @@ Languages:
     - ID: "eaeb0e67-4181-4145-8fa5-9d6a0610d85d"
       Hint: Link
       Value: |
-        <link text="Назад на главную страницу" anchor="" linktype="internal" class="" title=""  querystring="" id="{4F1336B2-3692-41C2-9C32-398F59D780ED}" />
+        <link id="{4F1336B2-3692-41C2-9C32-398F59D780ED}" querystring="" text="Назад на главную страницу" anchor="" url="/Sam/ToolStockSc/Home" title="" class="" linktype="internal" />

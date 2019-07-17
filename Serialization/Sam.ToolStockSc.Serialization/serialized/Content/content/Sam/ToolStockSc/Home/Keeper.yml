@@ -5,6 +5,10 @@ Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper
 DB: master
 SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    au|default\Anonymous|pe|-item:create|-item:write|-item:delete|-item:read|-item:rename|pd|-item:create|-item:delete|-item:rename|-item:write|-item:read|ar|extranet\Everyone|pe|-item:create|-item:write|-item:delete|-item:rename|-item:read|pd|-item:create|-item:delete|-item:rename|-item:write|-item:read|
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout
@@ -12,7 +16,7 @@ SharedFields:
     <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
       <d
         id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
-        l="{2555CBF7-B0A9-4382-A5BB-04B8A13DEA89}" />
+        l="{C1DF8C65-282F-468E-BD74-9A78D648EB3D}" />
     </r>
 Languages:
 - Language: en
