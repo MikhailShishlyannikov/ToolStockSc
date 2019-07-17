@@ -1,0 +1,22 @@
+﻿---
+ID: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Parent: "fe7c75f0-1fa3-470b-86a0-437a92da6839"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/ToolStockSc/Authorized Layout
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{77AA0690-F226-4D59-8885-BDDC070B0CE7}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{E9822C05-A1CF-4E3D-AE07-C014FA2566BE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T092509Z

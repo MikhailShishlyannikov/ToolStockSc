@@ -1,0 +1,14 @@
+﻿---
+ID: "e9822c05-a1cf-4e3d-ae07-c014fa2566be"
+Parent: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Path: /sitecore/templates/Project/ToolStockSc/Authorized Layout/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T092523Z

@@ -18,7 +18,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
+  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -33,7 +33,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
+  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
