@@ -4,6 +4,11 @@ Parent: "2b4d6d09-5059-4082-85a0-db6c09903b43"
 Template: "8067ed30-106f-4d92-895c-098924dc1646"
 Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Departments/The workshop N3
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
