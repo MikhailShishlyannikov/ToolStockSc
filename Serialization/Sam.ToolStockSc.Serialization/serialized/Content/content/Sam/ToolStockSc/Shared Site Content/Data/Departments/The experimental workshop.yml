@@ -20,3 +20,17 @@ Languages:
     - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
       Hint: Name
       Value: The experimental workshop
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T065755Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: Экспериментальный цех
