@@ -1,7 +1,7 @@
 ﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.LoginViewModel
 @using Sitecore.Globalization
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true, @Translate.Text("Account.ErrorOfLogIn"), new { @class = "alert alert-danger" })

@@ -1,20 +1,23 @@
 ﻿using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Foundation.GlassMapper.Controllers;
+using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
-using Sitecore.Data;
 using System.Linq;
 using System.Web.Mvc;
+using Sitecore.Security.Accounts;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 {
     public class AccountController : BaseController
     {
         private readonly SitecoreService _sitecoreService = new SitecoreService(SitecoreConstants.MasterDatabase.Master);
+        private readonly IAccountService _accountService;
 
-        public AccountController(IMvcContext mvcContext) : base(mvcContext)
+        public AccountController(IMvcContext mvcContext, IAccountService accountService) : base(mvcContext)
         {
+            _accountService = accountService;
         }
 
         // GET: Project/Account
@@ -28,6 +31,27 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             vm.PasswordField = scModel.PasswordField;
 
             return View("~/Areas/Project/ToolStockSc/Views/Account/Login.cshtml", vm);
+        }
+
+        [HttpPost]
+        public ActionResult Login(LoginViewModel model)
+        {
+            //if (ModelState.IsValid)
+            //{
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                var login = _accountService.Login(model);
+
+                if (login)
+                {
+                    var user = Sitecore.Security.Accounts.User.FromName($"{model.Email}", true);
+                    if (user.IsInRole(@"extranet\Keeper")) return Redirect("/keeper");
+                    if (user.IsInRole(@"extranet\User")) return Redirect("/user");
+                }
+            }
+
+            //}
+            return Redirect("/Home");
         }
 
         public ActionResult Register()

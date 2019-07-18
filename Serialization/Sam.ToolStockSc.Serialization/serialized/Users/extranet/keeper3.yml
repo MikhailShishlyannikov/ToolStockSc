@@ -1,15 +1,11 @@
 ﻿---
 Username: |
-  extranet\keeper
-Email: keeper@gmail.com
+  extranet\keeper3
+Email: keeper3@gmail.com
 Comment: 
-Created: "2019-07-17T13:50:16.0000000Z"
+Created: "2019-07-17T14:38:47.0000000Z"
 IsApproved: True
 Properties:
-- Key: FullName
-  Value: keeper
-  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-  IsCustom: False
 - Key: IsAdministrator
   Value: False
   ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -23,11 +19,11 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: digestcredentialhash
-  Value: a020a6011da804a48e9218579f572284
+  Value: 7859326e7c355df45e1c9ddc6b80aece
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: 25c343e995216fac168caeb8ee5ab308
+  Value: 359c0dc322e58eb93e35cad5f2d3a4f2
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:
