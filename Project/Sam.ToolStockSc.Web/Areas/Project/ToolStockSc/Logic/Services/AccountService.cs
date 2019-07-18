@@ -2,6 +2,7 @@
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Security.Accounts;
+using Sitecore.SecurityModel;
 using System;
 using System.Web.Security;
 
@@ -34,14 +35,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             return false;
         }
 
-        public static User GetUser(string domainName, string userName, string password)
-        {
-            if (!System.Web.Security.Membership.ValidateUser(domainName + @"\" + userName, password))
-                return null;
-            if (User.Exists(domainName + @"\" + userName))
-                return User.FromName(domainName + @"\" + userName, true);
-            return null;
-        }
+        //public static User GetUser(string domainName, string userName, string password)
+        //{
+        //    if (!System.Web.Security.Membership.ValidateUser(domainName + @"\" + userName, password))
+        //        return null;
+        //    if (User.Exists(domainName + @"\" + userName))
+        //        return User.FromName(domainName + @"\" + userName, true);
+        //    return null;
+        //}
 
         /// <summary>
         ///  Creates a new user and edits the profile custom fields
@@ -64,15 +65,21 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
                     user.Profile.FullName = string.Format("{0} {1}", vm.Name, vm.Surname);
 
-                    // Assigning the user profile template
-                    user.Profile.ProfileItemId = "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}";
-                    user.Profile.Save();
+                    
+                    using(new SecurityDisabler())
+                    {
+                        // Assigning the user profile template
+                        user.Profile.ProfileItemId = "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}";
+                        user.Profile.Save();
 
-                    // Have modified the user template to also contain telephone number and patronomyc.
-                    user.Profile.SetCustomProperty("Patronymic", vm.Patronymic);
-                    user.Profile.SetCustomProperty("Surname", vm.Surname);
-                    user.Profile.SetCustomProperty("Phone", vm.Phone);
-                    user.Profile.SetCustomProperty("UserName", vm.Name);
+                        // Have modified the user template to also contain telephone number and patronomyc.
+                        user.Profile.SetCustomProperty("Patronymic", vm.Patronymic);
+                        user.Profile.SetCustomProperty("Surname", vm.Surname);
+                        user.Profile.SetCustomProperty("Phone", vm.Phone);
+                        user.Profile.SetCustomProperty("UserName", vm.Name);
+                        user.Profile.SetCustomProperty("Department", vm.DepartmentId.ToString());
+
+                    }
 
                     user.Profile.Save();
                 }

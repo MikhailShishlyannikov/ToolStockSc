@@ -8,7 +8,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    ar|extranet\Keeper|pe|-item:create|-item:write|-item:delete|-item:rename|-item:read|ar|extranet\User|pe|+item:rename|+item:write|+item:read|+item:delete|+item:create|ar|extranet\Anonymous|pe|-item:create|-item:write|-item:delete|-item:read|-item:rename|
+    ar|extranet\Keeper|pe|-item:create|-item:write|-item:delete|-item:read|-item:rename|pd|-item:create|-item:write|-item:delete|-item:read|-item:rename|ar|extranet\User|pe|+item:rename|+item:write|+item:read|+item:delete|+item:create|pd|+item:rename|+item:write|+item:read|+item:delete|+item:create|ar|extranet\Anonymous|pe|-item:create|-item:write|-item:delete|-item:rename|-item:read|pd|-item:create|-item:delete|-item:read|-item:write|-item:rename|
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Type: layout

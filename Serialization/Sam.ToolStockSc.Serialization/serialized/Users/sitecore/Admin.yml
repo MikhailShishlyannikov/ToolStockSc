@@ -68,7 +68,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: true
+  Value: false
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -139,7 +139,7 @@ Properties:
 - Key: |
     /sitecore\admins/RecentUserList
   Value: |
-    default\Anonymous|extranet\Keeper|extranet\Everyone|default\Everyone|extranet\User
+    extranet\Anonymous|extranet\Everyone|default\Anonymous|extranet\Keeper|extranet\User|default\Everyone
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: FullName
