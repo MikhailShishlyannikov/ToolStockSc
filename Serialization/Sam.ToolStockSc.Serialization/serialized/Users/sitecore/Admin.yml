@@ -22,13 +22,18 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
+    /sitecore\admin/Content Editor/Field Size/DEC8D2D5E3CF48B6A6538E69E2716641
+  Value: 292
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
   Value: "?Security=0&QuickInfo=0&Layout=1&Advanced=1&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=1&Jumbotron Data=1&Indexing=1&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
+  Value: "{D16AF0D8-5B64-458E-BCC9-22470DC4B182}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -43,7 +48,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
+  Value: "{D16AF0D8-5B64-458E-BCC9-22470DC4B182}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -63,7 +68,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: false
+  Value: true
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -93,7 +98,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: applications/16x16/edit.png|network/32x32/earth2.png|applications/32x32/folder2_green.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|people/32x32/keyboard_key.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png|applications/32x32/folder2_red.png|applications/32x32/add.png|network/16x16/home.png
+  Value: people/32x32/user1.png|applications/16x16/edit.png|network/32x32/earth2.png|applications/32x32/folder2_green.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|people/32x32/keyboard_key.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png|applications/32x32/folder2_red.png|applications/32x32/add.png|network/16x16/home.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -134,7 +139,7 @@ Properties:
 - Key: |
     /sitecore\admins/RecentUserList
   Value: |
-    extranet\Keeper|default\Anonymous|extranet\Everyone|default\Everyone|extranet\User
+    default\Anonymous|extranet\Keeper|extranet\Everyone|default\Everyone|extranet\User
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: FullName

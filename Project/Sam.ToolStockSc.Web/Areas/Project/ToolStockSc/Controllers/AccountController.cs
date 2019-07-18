@@ -75,5 +75,20 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
             return View("~/Areas/Project/ToolStockSc/Views/Account/Register.cshtml", vm);
         }
+
+        [HttpPost]
+        public ActionResult Register(RegisterViewModel vm)
+        {
+            _accountService.AddUser(vm);
+            return Redirect("/user");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult LogOff()
+        {
+            Sitecore.Security.Authentication.AuthenticationManager.Logout();
+            return Redirect("/Home");
+        }
     }
 }
