@@ -36,22 +36,21 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         [HttpPost]
         public ActionResult Login(LoginViewModel model)
         {
-            //if (ModelState.IsValid)
-            //{
-            using (new Sitecore.SecurityModel.SecurityDisabler())
+            if (ModelState.IsValid)
             {
-                var login = _accountService.Login(model);
-
-                if (login)
+                using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    var user = Sitecore.Security.Accounts.User.FromName($"{model.Email}", true);
-                    if (user.IsInRole(@"extranet\Keeper")) return Redirect("/keeper");
-                    if (user.IsInRole(@"extranet\User")) return Redirect("/user");
+                    var login = _accountService.Login(model);
+
+                    if (login)
+                    {
+                        var user = Sitecore.Security.Accounts.User.FromName($"{model.Email}", true);
+                        if (user.IsInRole(@"extranet\Keeper")) return Redirect("/keeper");
+                        if (user.IsInRole(@"extranet\User")) return Redirect("/user");
+                    }
                 }
             }
-
-            //}
-            return Redirect("/Home");
+            return Redirect("/Log-In");
         }
 
         public ActionResult Register()

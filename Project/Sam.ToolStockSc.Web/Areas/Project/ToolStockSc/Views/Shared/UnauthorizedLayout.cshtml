@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="~/Content/Site.css" />
 </head>
 <body>
+    @*@{Html.EnableClientValidation();}
+    @{Html.EnableUnobtrusiveJavaScript();}*@
+    @{HtmlHelper.ClientValidationEnabled = true;}
+    @{HtmlHelper.UnobtrusiveJavaScriptEnabled = true;}
     <div class="container h-100">
         <div class="row align-items-center h-100">
             <div class="col-6 mx-auto">

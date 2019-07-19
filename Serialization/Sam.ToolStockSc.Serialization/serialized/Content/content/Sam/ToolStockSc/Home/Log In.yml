@@ -33,14 +33,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B9209A55-ACE5-4A6F-9F18-C8DB085C12BD}"
+              uid="{A7D4BF56-BAE1-4FD9-9071-3675A7BB6D44}"
               p:before="*"
-              s:ds="{6408B52F-9323-4DE3-A0C4-F25DA5B5F352}"
+              s:ds="{DB2FB295-3AF4-465F-9555-0F8327FAD570}"
               s:id="{34F971EA-CF7C-4F9A-B4C5-017EF57959F4}"
               s:ph="/Jumbotron/Jumbotron Content" />
             <r
               uid="{20480724-DD89-4939-82DD-7A252BBC0C3E}"
-              p:after="r[@uid='{B9209A55-ACE5-4A6F-9F18-C8DB085C12BD}']"
+              p:after="r[@uid='{A7D4BF56-BAE1-4FD9-9071-3675A7BB6D44}']"
               s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
               s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
               s:ph="/Jumbotron/Jumbotron Content/Home page link" />
@@ -78,14 +78,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{21623332-F2B0-4BAD-A732-42191393D758}"
+              uid="{7A16808F-939E-4365-B65E-B3BAF240AE71}"
               p:before="*"
-              s:ds="{6408B52F-9323-4DE3-A0C4-F25DA5B5F352}"
+              s:ds="{DB2FB295-3AF4-465F-9555-0F8327FAD570}"
               s:id="{34F971EA-CF7C-4F9A-B4C5-017EF57959F4}"
               s:ph="/Jumbotron/Jumbotron Content" />
             <r
               uid="{6DA40306-4B35-4E5D-A3C9-AE96FE925434}"
-              p:after="r[@uid='{21623332-F2B0-4BAD-A732-42191393D758}']"
+              p:after="r[@uid='{7A16808F-939E-4365-B65E-B3BAF240AE71}']"
               s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
               s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
               s:ph="/Jumbotron/Jumbotron Content/Home page link" />

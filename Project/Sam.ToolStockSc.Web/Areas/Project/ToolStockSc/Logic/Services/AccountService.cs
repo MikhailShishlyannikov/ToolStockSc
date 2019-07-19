@@ -35,15 +35,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             return false;
         }
 
-        //public static User GetUser(string domainName, string userName, string password)
-        //{
-        //    if (!System.Web.Security.Membership.ValidateUser(domainName + @"\" + userName, password))
-        //        return null;
-        //    if (User.Exists(domainName + @"\" + userName))
-        //        return User.FromName(domainName + @"\" + userName, true);
-        //    return null;
-        //}
-
         /// <summary>
         ///  Creates a new user and edits the profile custom fields
         ///  </summary>
@@ -82,6 +73,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                     }
 
                     user.Profile.Save();
+
+                    Login(new LoginViewModel { Email = vm.Email, Password = vm.Password });
                 }
             }
             catch (Exception ex)

@@ -1,9 +1,14 @@
 ﻿---
-ID: "6408b52f-9323-4de3-a0c4-f25da5b5f352"
+ID: "db2fb295-3af4-465f-9555-0f8327fad570"
 Parent: "147f6903-0878-408c-83d8-71fbc43ad38f"
 Template: "ee453943-32ee-4f2e-9a67-994a9845e7c6"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Log In/Page Content/Login
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
@@ -11,14 +16,10 @@ Languages:
     Fields:
     - ID: "1ef0132c-a34a-4688-972e-a0bbfd7e37d9"
       Hint: EmailField
-      Value: Email
+      Value: "E-mail"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190716T083234Z
-    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-      Hint: __Created by
-      Value: |
-        sitecore\Admin
+      Value: 20190719T094255Z
     - ID: "d3c6f403-13d6-462a-aabe-9f50a62b04be"
       Hint: PasswordField
       Value: Password
@@ -31,7 +32,7 @@ Languages:
       Value: "E-mail"
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190716T113237Z
+      Value: 20190719T095515Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

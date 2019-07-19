@@ -1,0 +1,35 @@
+﻿---
+Username: |
+  extranet\user@gmail.com
+Email: user@gmail.com
+Comment: 
+Created: "2019-07-19T10:40:13.0000000Z"
+IsApproved: True
+Properties:
+- Key: FullName
+  Value: Name User
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: IsAdministrator
+  Value: False
+  ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: Portrait
+  Value: office/16x16/default_user.png
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: ProfileItemId
+  Value: "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}"
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: False
+- Key: digestcredentialhash
+  Value: 15be92ac7ee97a37b9427cd90f5cb866
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: digestcredentialhashwithoutdomain
+  Value: 8a807af58534688b9f19f4723eb61eb0
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+Roles:
+  MemberOf: |
+    extranet\User

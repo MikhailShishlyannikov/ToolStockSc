@@ -1,6 +1,7 @@
 ﻿using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
 {
@@ -8,24 +9,38 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
     {
         public Guid Id { get; set; }
 
+        [Required]
+        [StringLength(60)]
         public string Name { get; set; }
         public string NameField { get; set; }
 
+        [StringLength(70)]
         public string Patronymic { get; set; }
         public string PatronymicField { get; set; }
 
+        [Required]
+        [StringLength(80)]
         public string Surname { get; set; }
         public string SurnameField { get; set; }
 
+        [Phone]
         public string Phone { get; set; }
         public string PhoneField { get; set; }
 
+        [Required]
+        [EmailAddress]
         public string Email { get; set; }
         public string EmailField { get; set; }
 
+        [Required]
+        [DataType(DataType.Password)]
+        [StringLength(int.MaxValue, MinimumLength = 6)]
         public string Password { get; set; }
         public string PasswordField { get; set; }
 
+        [Required]
+        [DataType(DataType.Password)]
+        [Compare("Password")]
         public string ConfirmPassword { get; set; }
         public string ConfirmPasswordField { get; set; }
 

@@ -15,6 +15,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
 
         [Required]
         [DataType(DataType.Password)]
+        [StringLength(int.MaxValue, MinimumLength = 6)]
         public string Password { get; set; }
 
         public string PasswordField { get; set; }
