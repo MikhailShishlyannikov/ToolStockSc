@@ -1,17 +1,14 @@
 ﻿---
-ID: "5dd41240-fd93-4b4c-8d1f-daff51ed9007"
-Parent: "074211a7-a197-468c-b108-6121a3ccf595"
+ID: "700a3007-ca17-4f3f-a40a-1738661a2457"
+Parent: "f1f77176-c2c3-4368-81bd-54f39f8b5a5a"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/Button/Option List
+Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Link Data Source
 DB: master
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
   Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{C1EC9D70-AA2E-42C8-A37C-A470B008EC48}"
 Languages:
 - Language: en
   Versions:
@@ -19,4 +16,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T070308Z
+      Value: 20190719T123155Z

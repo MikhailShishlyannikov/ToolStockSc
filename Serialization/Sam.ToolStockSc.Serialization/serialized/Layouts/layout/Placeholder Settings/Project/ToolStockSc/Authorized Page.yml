@@ -1,8 +1,8 @@
 ﻿---
-ID: "c1ec9d70-aa2e-42c8-a37c-a470b008ec48"
-Parent: "5dd41240-fd93-4b4c-8d1f-daff51ed9007"
-Template: "5dd41240-fd93-4b4c-8d1f-daff51ed9007"
-Path: /sitecore/templates/Feature/Button/Option List/__Standard Values
+ID: "6e4c905b-4d2b-4316-9e44-3df54bc3167d"
+Parent: "688212a9-e35f-46a1-b3e4-0559881709d3"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Project/ToolStockSc/Authorized Page
 DB: master
 Languages:
 - Language: en
@@ -11,7 +11,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T070313Z
+      Value: 20190719T111401Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

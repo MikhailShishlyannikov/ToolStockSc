@@ -1,0 +1,40 @@
+﻿---
+ID: "38e7d445-6406-4aac-9032-19318898039b"
+Parent: "c18f4912-d3ba-4d6c-b62e-246222b5d34d"
+Template: "659b6357-8373-4032-8090-396de692bd03"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Tools Section
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190719T124600Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
+      Hint: SectionName
+      Value: Menu
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190722T070002Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
+      Hint: SectionName
+      Value: Меню

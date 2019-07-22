@@ -1,8 +1,8 @@
 ﻿---
-ID: "c42ba6f6-aa6b-44e7-a6b8-d74ba0f9b5e1"
-Parent: "a53a7436-0599-4052-983d-eaf29b0733b6"
+ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
+Parent: "22e290f3-bb10-4599-a9dc-7d33f4b55f29"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Button/Option/Fields/Class
+Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Section/Fields/Name
 DB: master
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
@@ -18,7 +18,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190710T070241Z
+      Value: 20190719T122922Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

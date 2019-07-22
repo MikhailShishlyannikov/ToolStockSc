@@ -4,6 +4,10 @@ Parent: "1938444c-01f1-46aa-ae08-023fb10d5a42"
 Template: "5dd41240-fd93-4b4c-8d1f-daff51ed9007"
 Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Button Style
 DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: people/32x32/keyboard_key.png
 Languages:
 - Language: en
   Versions:

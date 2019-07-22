@@ -1,0 +1,18 @@
+﻿---
+ID: "fef2833b-6845-4afd-803c-3317ed1e18bd"
+Parent: "c18f4912-d3ba-4d6c-b62e-246222b5d34d"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Menu Links
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190719T125801Z

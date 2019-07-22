@@ -1,0 +1,22 @@
+﻿---
+ID: "2e513d92-2dd0-4e63-9b58-7e7b5ccc4e6d"
+Parent: "65701ce7-6ffc-4a76-88f0-05834afd7e9d"
+Template: "d16af0d8-5b64-458e-bcc9-22470dc4b182"
+Path: /sitecore/system/Settings/Security/Profiles/CustomProfile
+DB: core
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190718T100507Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

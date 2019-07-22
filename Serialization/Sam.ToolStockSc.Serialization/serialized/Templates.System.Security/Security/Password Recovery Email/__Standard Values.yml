@@ -1,0 +1,18 @@
+﻿---
+ID: "e943b1f4-132d-41de-b615-a51d267e86d6"
+Parent: "f215d39d-f9c7-40b5-a8ef-a9c9a311c1f9"
+Template: "f215d39d-f9c7-40b5-a8ef-a9c9a311c1f9"
+Path: /sitecore/templates/System/Security/Password Recovery Email/__Standard Values
+DB: core
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140706T210509Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

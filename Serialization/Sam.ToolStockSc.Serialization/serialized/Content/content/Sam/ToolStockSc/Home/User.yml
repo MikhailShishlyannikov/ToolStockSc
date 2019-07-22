@@ -23,9 +23,67 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{B74AB8DE-2456-44F8-907D-75BE3951294A}"
+              p:before="*"
+              s:id="{3B022E2D-7BB9-4D7E-967E-7ABBF7E2FE7C}"
+              s:ph="Left menu" />
+            <r
+              uid="{801C83B8-BB4E-4CDF-8902-29AAEFCB48B4}"
+              p:after="*[1=2]"
+              s:ds="{0906137C-92E7-4538-9F9C-197060A17A78}"
+              s:id="{605491F2-0CD7-4806-8126-103BF46C9C8F}"
+              s:par=""
+              s:ph="Menu content" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190718T081037Z
     - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
       Hint: Title
       Value: User
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{1B823608-0918-4065-81B3-2D90C84BA175}"
+              p:before="*"
+              s:id="{3B022E2D-7BB9-4D7E-967E-7ABBF7E2FE7C}"
+              s:ph="Left menu" />
+            <r
+              uid="{09D2755D-EE72-4B3D-B541-15A8BBBE2285}"
+              p:after="*[1=2]"
+              s:ds="{0906137C-92E7-4538-9F9C-197060A17A78}"
+              s:id="{605491F2-0CD7-4806-8126-103BF46C9C8F}"
+              s:par=""
+              s:ph="Menu content" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190719T122039Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Пользователь

@@ -25,5 +25,10 @@
         {
             public const string Id = "{8067ED30-106F-4D92-895C-098924DC1646}";
         }
+
+        public struct MenuSection
+        {
+            public const string Id = "{659B6357-8373-4032-8090-396DE692BD03}";
+        }
     }
 }

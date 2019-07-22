@@ -2,7 +2,7 @@
 ID: "a53a7436-0599-4052-983d-eaf29b0733b6"
 Parent: "842bfe53-5540-44ff-bdea-cb8f69e98b8a"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/Button/Option/Fields
+Path: /sitecore/templates/Feature/Button/Button Option/Fields
 DB: master
 Languages:
 - Language: en

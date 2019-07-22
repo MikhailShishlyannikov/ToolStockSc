@@ -1,0 +1,35 @@
+﻿---
+ID: "0906137c-92e7-4538-9f9c-197060a17a78"
+Parent: "c18f4912-d3ba-4d6c-b62e-246222b5d34d"
+Template: "659b6357-8373-4032-8090-396de692bd03"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Borrowed Tools
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190719T141830Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
+      Hint: SectionName
+      Value: menu
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190722T065654Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
+      Hint: SectionName
+      Value: меню
