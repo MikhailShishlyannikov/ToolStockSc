@@ -30,5 +30,10 @@
         {
             public const string Id = "{659B6357-8373-4032-8090-396DE692BD03}";
         }
+
+        public struct LogoLink
+        {
+            public const string Id = "{57266A47-583F-4876-AF06-6E116F4FC069}";
+        }
     }
 }

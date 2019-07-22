@@ -1,0 +1,14 @@
+﻿---
+ID: "bef09280-5a8f-4cbf-a942-4a6281534615"
+Parent: "57266a47-583f-4876-af06-6e116f4fc069"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Header/Logo link/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190722T093741Z
