@@ -1,0 +1,14 @@
+﻿---
+ID: "c033f6c5-8939-41b8-907c-7f37423741a1"
+Parent: "b38f6e41-496d-4920-8e57-9484f19685ef"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Link Rendering Parameter/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190722T133753Z

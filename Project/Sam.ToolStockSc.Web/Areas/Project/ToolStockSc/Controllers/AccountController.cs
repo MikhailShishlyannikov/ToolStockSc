@@ -89,5 +89,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             Sitecore.Security.Authentication.AuthenticationManager.Logout();
             return Redirect("/Home");
         }
+
+        public ActionResult NavBar()
+        {
+            var user = Sitecore.Security.Accounts.User.Current;
+            return View("~/Areas/Project/ToolStockSc/Views/Account/NavBar.cshtml", user);
+        }
     }
 }

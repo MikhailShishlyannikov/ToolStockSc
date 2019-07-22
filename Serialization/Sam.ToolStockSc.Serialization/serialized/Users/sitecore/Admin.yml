@@ -103,7 +103,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: true
+  Value: false
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -133,7 +133,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: people/32x32/keyboard_key.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|applications/16x16/edit.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png|applications/32x32/folder2_red.png|applications/32x32/add.png
+  Value: office/32x32/information.png|database/32x32/cancel.png|people/32x32/keyboard_key.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|applications/16x16/edit.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -158,7 +158,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/SelectRendering/Selected
-  Value: "{B73E617D-000D-4B8F-A153-9AE2BE5AC587}"
+  Value: "{96CA6D58-BA47-4685-8C97-B7EE8DE593D7}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
