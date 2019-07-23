@@ -22,7 +22,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             vm.Email = string.Format(@"{0}\{1}", "extranet", vm.Email);
             try
             {
-                if (Sitecore.Security.Authentication.AuthenticationManager.Login(vm.Email, vm.Password))
+                if (Sitecore.Security.Authentication.AuthenticationManager.Login(vm.Email, vm.Password, true))
                 {
                     return true;
                 }
