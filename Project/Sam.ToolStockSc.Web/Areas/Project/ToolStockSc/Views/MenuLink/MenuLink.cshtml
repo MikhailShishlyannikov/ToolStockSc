@@ -1,0 +1,24 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.MenuLinkViewModel
+@using Glass.Mapper.Sc.Web.Mvc
+
+    <li>
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            if (Model.Icons != null && Model.Link != null)
+            {
+                <a href=@Model.Link.Url>@foreach (var icon in Model.Icons){@Html.Raw(icon)}</a>@Html.Glass().Editable(m => m.Link)
+            }
+            else
+            {
+                @Html.Glass().Editable(m => m.Link)
+            }
+
+        }
+        else
+        {
+            <a href=@Model.Link.Url>
+                @foreach (var icon in Model.Icons)
+                {@Html.Raw(icon)} @Model.Link.Text
+            </a>
+        }
+    </li>

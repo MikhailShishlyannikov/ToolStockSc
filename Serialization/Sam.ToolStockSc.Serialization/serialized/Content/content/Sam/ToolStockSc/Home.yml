@@ -38,14 +38,14 @@ Languages:
               p:before="*"
               s:ds="{CE16F01F-BD5F-4824-A4AC-03C18DCF6D47}"
               s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
-              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:par="Style=%7bD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7d"
               s:ph="/Jumbotron/Jumbotron Content" />
             <r
               uid="{A8C50BD3-8E45-433B-BB9F-5AA5F06457CF}"
               p:after="r[@uid='{B41B2837-53CB-4A25-BDB6-C028AEA150A4}']"
               s:ds="{A7CE9B40-DD08-4ADD-8DC2-F0C0D48D00B1}"
               s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
-              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:par="Style=%7bD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7d"
               s:ph="/Jumbotron/Jumbotron Content" />
             <r
               uid="{4AF9EB16-30C5-4772-A252-E963DAE3B4FA}"

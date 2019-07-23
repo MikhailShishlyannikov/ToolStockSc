@@ -268,6 +268,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\Header.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\LogoLink\LogoLink.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Account\NavBar.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\MenuLink\MenuLink.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -366,11 +367,15 @@
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\LogoLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuController.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IAccountService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\AccountService.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LogoLinkScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuLinkOptionScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuSectionScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogInViewModel.cs" />

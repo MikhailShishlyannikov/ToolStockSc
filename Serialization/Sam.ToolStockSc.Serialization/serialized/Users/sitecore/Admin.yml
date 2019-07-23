@@ -28,12 +28,12 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
-  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=0&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=0&Search Results=1"
+  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=0&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{57266A47-583F-4876-AF06-6E116F4FC069}"
+  Value: "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -48,7 +48,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{57266A47-583F-4876-AF06-6E116F4FC069}"
+  Value: "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -103,7 +103,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: false
+  Value: true
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -158,7 +158,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/SelectRendering/Selected
-  Value: "{96CA6D58-BA47-4685-8C97-B7EE8DE593D7}"
+  Value: "{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -251,6 +251,11 @@ Properties:
 - Key: "SpeakComponentStatus-B6C7F56E334443A7B74064FF48853EAE-ExpanderStructure"
   Value: |
     {"IsOpen":true}
+  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  IsCustom: True
+- Key: "SpeakComponentStatus-CCC9E5E41C084DBC8858E87D02FB1FAE-ReferenceContentListControl"
+  Value: |
+    {"columnWidths":[33.33,40.66,26]}
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Wallpaper

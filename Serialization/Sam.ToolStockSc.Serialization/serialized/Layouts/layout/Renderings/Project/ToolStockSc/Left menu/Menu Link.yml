@@ -1,26 +1,25 @@
 ﻿---
-ID: "605491f2-0cd7-4806-8126-103bf46c9c8f"
+ID: "130119a7-f4b3-4598-a4c6-60915ea6cdf4"
 Parent: "2e340a03-34eb-4a83-ba42-3ba02b0cb478"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/ToolStockSc/Left menu/Menu Section
+Path: /sitecore/layout/Renderings/Project/ToolStockSc/Left menu/Menu Link
 DB: master
 SharedFields:
+- ID: "13f89250-ad6b-4548-882e-118a12c18094"
+  Hint: Parameters Template
+  Value: "{B38F6E41-496D-4920-8E57-9484F19685EF}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/ToolStockSc/Menu/Menu Section
+  Value: /sitecore/templates/Project/ToolStockSc/Menu/Menu Link Data Source
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Menu Sections
+  Value: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Menu Links
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: MenuSection
+  Value: MenuLink
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Menu
-- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
-  Hint: __Enable item fallback
-  Type: Checkbox
-  Value: 1
+  Value: MenuLink
 Languages:
 - Language: en
   Versions:
@@ -28,7 +27,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190719T134223Z
+      Value: 20190722T144232Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

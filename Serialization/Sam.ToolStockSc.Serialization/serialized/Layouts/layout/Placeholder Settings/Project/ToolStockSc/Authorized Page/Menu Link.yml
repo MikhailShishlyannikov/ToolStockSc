@@ -8,6 +8,10 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: Menu Link
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: "{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
 Languages:
 - Language: en
   Versions:

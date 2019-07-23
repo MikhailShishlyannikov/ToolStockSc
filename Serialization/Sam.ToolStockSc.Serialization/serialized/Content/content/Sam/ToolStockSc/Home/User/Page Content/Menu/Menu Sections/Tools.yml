@@ -1,8 +1,8 @@
 ﻿---
-ID: "0906137c-92e7-4538-9f9c-197060a17a78"
-Parent: "c18f4912-d3ba-4d6c-b62e-246222b5d34d"
-Template: "659b6357-8373-4032-8090-396de692bd03"
-Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Borrowed Tools
+ID: "053a44ae-afdb-44b9-8fa0-43bcdd60d162"
+Parent: "a3f739e3-cc50-4bd8-ab2b-92045c0aae73"
+Template: "41209c48-8557-45d6-a828-b5e405dcb2d6"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Menu Sections/Tools
 DB: master
 Languages:
 - Language: en
@@ -11,25 +11,25 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190719T141830Z
+      Value: 20190723T084444Z
+    - ID: "56b8a026-c69b-423e-aa90-d2373ca5f71a"
+      Hint: Name
+      Value: Menu
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
-      Hint: SectionName
-      Value: menu
 - Language: ru
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190722T065654Z
+      Value: 20190723T090946Z
+    - ID: "56b8a026-c69b-423e-aa90-d2373ca5f71a"
+      Hint: Name
+      Value: Меню
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\Admin
-    - ID: "7f2a9b86-4ee4-4ab0-95ba-fba036173efe"
-      Hint: SectionName
-      Value: меню

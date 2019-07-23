@@ -28,12 +28,27 @@
 
         public struct MenuSection
         {
-            public const string Id = "{659B6357-8373-4032-8090-396DE692BD03}";
+            public const string Id = "{41209C48-8557-45D6-A828-B5E405DCB2D6}";
         }
 
         public struct LogoLink
         {
             public const string Id = "{57266A47-583F-4876-AF06-6E116F4FC069}";
+        }
+
+        public struct MenuLinkDataSource
+        {
+            public const string Id = "{700A3007-CA17-4F3F-A40A-1738661A2457}";
+        }
+
+        public struct MenuLinkOption
+        {
+            public const string Id = "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}";
+        }
+
+        public struct MenuLinkRenderingParameter
+        {
+            public const string Id = "{B38F6E41-496D-4920-8E57-9484F19685EF}";
         }
     }
 }

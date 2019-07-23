@@ -73,6 +73,14 @@
         #cellPaiChart {
             height: 160px;
         }
+
+        .scEmptyPlaceholder {
+            border: 1px dotted red;
+        }
+
+        .left-panel .scEmptyPlaceholder {
+            width: 200px;
+        }
     </style>
 </head>
 
@@ -83,7 +91,7 @@
     @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
     {
         <aside id="left-panel" class="left-panel">
-            <div style="padding-left: 5px; padding-top: 35px;">
+            <div style="padding-left: 5px; padding-top: 100px;">
                 @Html.Sitecore().Placeholder("Left menu")
             </div>
         </aside>

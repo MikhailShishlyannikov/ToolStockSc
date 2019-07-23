@@ -1,8 +1,8 @@
 ﻿---
-ID: "87b20e69-e5e6-4529-a919-c91dc7e0df80"
-Parent: "41209c48-8557-45d6-a828-b5e405dcb2d6"
+ID: "82c0b4bc-27d2-4b30-87d2-96a68628cf05"
+Parent: "a0dc35e3-2ab6-4ccd-935b-de0da23cb0a5"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Section/Fields
+Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Link Option/Fields
 DB: master
 Languages:
 - Language: en
@@ -11,4 +11,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190723T083526Z
+      Value: 20190722T135014Z
