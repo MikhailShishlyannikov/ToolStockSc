@@ -8,6 +8,14 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: Applications/32x32/add.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {50011809-A560-4C92-BA18-3B601A6ADF7B}
+    {1C7D7B0C-54A0-4163-ACAC-6952972327C5}
+    {5DD41240-FD93-4B4C-8D1F-DAFF51ED9007}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100

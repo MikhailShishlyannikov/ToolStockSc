@@ -1,0 +1,21 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.NavLinkViewModel
+@using Glass.Mapper.Sc.Web.Mvc
+
+<li>
+    @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        if (Model.Icon != null && Model.Link != null)
+        {
+            <a href=@Model.Link.Url>@Html.Raw(Model.Icon)</a>@Html.Glass().Editable(m => m.Link)
+        }
+        else
+        {
+            @Html.Glass().Editable(m => m.Link)
+        }
+
+    }
+    else
+    {
+        <a href=@Model.Link.Url>@Html.Raw(Model.Icon) @Model.Link.Text</a>
+    }
+</li>

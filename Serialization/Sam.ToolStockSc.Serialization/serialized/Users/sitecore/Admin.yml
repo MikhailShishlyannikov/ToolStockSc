@@ -33,7 +33,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}"
+  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -48,7 +48,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}"
+  Value: "{118D5BDA-4319-4372-B2EB-637B4FAFC410}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -108,7 +108,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishRelatedItems
-  Value: false
+  Value: true
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -133,7 +133,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: office/32x32/information.png|database/32x32/cancel.png|people/32x32/keyboard_key.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|applications/16x16/edit.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/upload.png|network/32x32/security_agent_delete.png|network/32x32/at.png|network/32x32/security_agent_edit.png|office/32x32/edit_domain.png|wordprocessing/32x32/thesaurus_orange.png|wordprocessing/32x32/thesaurus_green.png
+  Value: applications/32x32/signpost_add.png|people/32x32/keyboard_key.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/security_agent_delete.png|network/32x32/at.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

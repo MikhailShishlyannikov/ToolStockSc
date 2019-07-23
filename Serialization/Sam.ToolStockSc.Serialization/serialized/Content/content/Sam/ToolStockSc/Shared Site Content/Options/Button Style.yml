@@ -8,6 +8,10 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: people/32x32/keyboard_key.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{842BFE53-5540-44FF-BDEA-CB8F69E98B8A}"
 Languages:
 - Language: en
   Versions:

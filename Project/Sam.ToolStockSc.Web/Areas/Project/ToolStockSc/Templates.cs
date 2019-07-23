@@ -50,5 +50,20 @@
         {
             public const string Id = "{B38F6E41-496D-4920-8E57-9484F19685EF}";
         }
+
+        public struct NavLinkDataSource
+        {
+            public const string Id = "{24E7C6F0-333B-4FF3-AFDF-E49D8E898340}";
+        }
+
+        public struct NavLinkRenderingParameter
+        {
+            public const string Id = "{4415F053-D7A7-4D94-9BD0-39AB492DCDBB}";
+        }
+
+        public struct NavLinkOption
+        {
+            public const string Id = "{72819CEC-E000-4FFB-8D5A-AA8A5F477A69}";
+        }
     }
 }

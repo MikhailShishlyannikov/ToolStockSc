@@ -1,0 +1,27 @@
+﻿---
+ID: "6c842682-bc30-4635-a58f-182dd545151c"
+Parent: "656279dd-65af-4990-b452-0512f43f47bf"
+Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Profile
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{C1DF8C65-282F-468E-BD74-9A78D648EB3D}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T131411Z
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Profile

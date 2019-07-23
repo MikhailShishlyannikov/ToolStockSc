@@ -6,20 +6,32 @@
     <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         @Model.Profile.GetCustomProperty("UserName") @Model.Profile.GetCustomProperty("Surname")
     </a>
+    @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        <div class="user-menu dropdown-menu show">
+            @Html.Sitecore().DynamicPlaceholder("Nav Link")
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+            {
+                @Html.AntiForgeryToken()
 
-    <div class="user-menu dropdown-menu">
-        @Html.Sitecore().DynamicPlaceholder("Menu Link")
-        @*<a class="nav-link" href=@Url.Action("Profile", "Account")><i class="fa fa-user"></i>@Resources.Resource.MyProfile</a>
+                <a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">
+                    <i class="fa fa-power-off"></i>@Translate.Text("Account.LogOut")
+                </a>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="user-menu dropdown-menu">
+            @Html.Sitecore().DynamicPlaceholder("Nav Link")
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+            {
+                @Html.AntiForgeryToken()
 
-            <a class="nav-link" href=@Url.Action("Index", "Setting")><i class="fa fa-cog"></i>@Resources.Resource.Settings</a>*@
-
-        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
-        {
-            @Html.AntiForgeryToken()
-
-            <a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">
-                <i class="fa fa-power-off"></i>@Translate.Text("Account.LogOut")
-            </a>
-        }
-    </div>
+                <a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">
+                    <i class="fa fa-power-off"></i>@Translate.Text("Account.LogOut")
+                </a>
+            }
+        </div>
+    }
 </div>

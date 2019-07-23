@@ -1,17 +1,17 @@
 ﻿---
-ID: "a9594b3b-5470-47fa-93e9-fd271389840a"
+ID: "e08ea0cc-f4dd-4a34-ad16-eabcccbe93a5"
 Parent: "1938444c-01f1-46aa-ae08-023fb10d5a42"
-Template: "50011809-a560-4c92-ba18-3b601a6adf7b"
-Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Menu Link Icons
+Template: "1c7d7b0c-54a0-4163-acac-6952972327c5"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Nav Link Icons
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: office/32x32/information.png
+  Value: Applications/32x32/about.png
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
-  Value: "{A0DC35E3-2AB6-4CCD-935B-DE0DA23CB0A5}"
+  Value: "{72819CEC-E000-4FFB-8D5A-AA8A5F477A69}"
 Languages:
 - Language: en
   Versions:
@@ -19,4 +19,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190722T161313Z
+      Value: 20190723T105336Z

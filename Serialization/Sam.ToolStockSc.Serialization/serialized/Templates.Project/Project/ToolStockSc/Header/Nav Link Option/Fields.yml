@@ -1,0 +1,14 @@
+﻿---
+ID: "533c0ad6-560a-42f6-b8b5-e39ad814ca00"
+Parent: "72819cec-e000-4ffb-8d5a-aa8a5f477a69"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Header/Nav Link Option/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T104912Z
