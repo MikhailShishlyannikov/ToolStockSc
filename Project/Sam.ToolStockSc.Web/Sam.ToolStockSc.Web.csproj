@@ -377,9 +377,12 @@
     <Compile Include="Areas\Project\ToolStockSc\Controllers\NavLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IAccountService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IFooterService.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\ILogoLinkService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\AccountService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\FooterService.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Logic\Services\LogoLinkService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Mappings\FooterProfile.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Mappings\LogoLinkProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
