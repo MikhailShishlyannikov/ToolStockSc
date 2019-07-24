@@ -6,7 +6,7 @@
     {
         if (Model.Icon != null && Model.Link != null)
         {
-            <a href=@Model.Link.Url>@Html.Raw(Model.Icon)</a>@Html.Glass().Editable(m => m.Link)
+            <a class="nav-link" style="display: inline-block" href=@Model.Link.Url>@Html.Raw(Model.Icon)</a>@Html.Glass().Editable(m => m.Link)
         }
         else
         {
@@ -16,6 +16,6 @@
     }
     else
     {
-        <a href=@Model.Link.Url>@Html.Raw(Model.Icon) @Model.Link.Text</a>
+        <a class="nav-link" href=@Model.Link.Url>@Html.Raw(Model.Icon) @Model.Link.Text</a>
     }
 </li>

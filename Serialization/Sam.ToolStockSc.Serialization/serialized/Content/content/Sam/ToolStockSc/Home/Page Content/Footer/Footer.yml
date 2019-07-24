@@ -1,0 +1,46 @@
+﻿---
+ID: "8d8be02b-841e-40a4-8a78-9acb7f1d5cbd"
+Parent: "42bac44c-3680-4f22-90e7-1b775377c877"
+Template: "fdf7c62e-b636-4816-b47d-e2deef97c9bb"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Footer/Footer
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190724T080004Z
+    - ID: "2c425229-ac8b-4c4f-8a4e-6d8d0bb84684"
+      Hint: Copyright
+      Value: "© 1993-2019 SaM Solutions. All Rights Reserved"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "a0c33bee-cdf7-4a35-a467-4c8db5feb2ea"
+      Hint: Design
+      Value: Designed by Colorlib
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190724T081754Z
+    - ID: "2c425229-ac8b-4c4f-8a4e-6d8d0bb84684"
+      Hint: Copyright
+      Value: "© 1993-2019 SaM Solutions. Все права защищены."
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "a0c33bee-cdf7-4a35-a467-4c8db5feb2ea"
+      Hint: Design
+      Value: Дизайн Colorlib

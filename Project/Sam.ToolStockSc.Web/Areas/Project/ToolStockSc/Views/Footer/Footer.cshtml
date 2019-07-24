@@ -1,0 +1,15 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.FooterViewModel
+@using Glass.Mapper.Sc.Web.Mvc
+
+<footer class="site-footer footer">
+    <div class="container-fluid footer-inner bg-white">
+        <div class="row">
+            <div class="col-sm-6">
+                @Html.Glass().Editable(m => m.Copyright)
+            </div>
+            <div class="col-sm-6 text-right">
+                @Html.Glass().Editable(m => m.Design)
+            </div>
+        </div>
+    </div>
+</footer>

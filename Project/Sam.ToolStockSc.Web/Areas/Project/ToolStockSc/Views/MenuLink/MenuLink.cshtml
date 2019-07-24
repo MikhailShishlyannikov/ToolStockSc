@@ -6,7 +6,10 @@
         {
             if (Model.Icons != null && Model.Link != null)
             {
-                <a href=@Model.Link.Url>@foreach (var icon in Model.Icons){@Html.Raw(icon)}</a>@Html.Glass().Editable(m => m.Link)
+                <a style="display: inline;" href=@Model.Link.Url>@foreach (var icon in Model.Icons)
+                {
+                    @Html.Raw(icon)
+                }</a>@Html.Glass().Editable(m => m.Link, new {style = "display: inline;"})
             }
             else
             {

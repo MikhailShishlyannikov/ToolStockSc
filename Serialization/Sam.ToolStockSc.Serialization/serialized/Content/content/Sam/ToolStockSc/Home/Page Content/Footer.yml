@@ -1,0 +1,14 @@
+﻿---
+ID: "42bac44c-3680-4f22-90e7-1b775377c877"
+Parent: "5373465a-0614-4bd0-97b6-9108e0574c38"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Footer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190724T075742Z

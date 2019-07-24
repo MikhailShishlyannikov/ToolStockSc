@@ -270,6 +270,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Account\NavBar.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\MenuLink\MenuLink.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\NavLink\NavLink.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Footer\Footer.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -366,6 +367,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Controllers\WebFooterController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\LogoLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuLinkController.cs" />
@@ -375,6 +377,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\FooterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LogoLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuLinkOptionScModel.cs" />
@@ -383,6 +386,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkOptionScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogInViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogoLinkViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\MenuLinkViewModel.cs" />

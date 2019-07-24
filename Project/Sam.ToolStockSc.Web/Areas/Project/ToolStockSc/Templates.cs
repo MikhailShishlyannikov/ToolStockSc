@@ -65,5 +65,10 @@
         {
             public const string Id = "{72819CEC-E000-4FFB-8D5A-AA8A5F477A69}";
         }
+
+        public struct Footer
+        {
+            public const string Id = "{FDF7C62E-B636-4816-B47D-E2DEEF97C9BB}";
+        }
     }
 }
