@@ -23,28 +23,23 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         // GET: Project/Account
         public ActionResult Login()
         {
-            var vm = new LoginViewModel();
-            var scModel = _mvcContext.GetDataSourceItem<LoginScModel>();
-
-            vm.Id = scModel.Id;
-            vm.EmailField = scModel.EmailField;
-            vm.PasswordField = scModel.PasswordField;
+            var vm = _accountService.GetLoginModel(_mvcContext);
 
             return View("~/Areas/Project/ToolStockSc/Views/Account/Login.cshtml", vm);
         }
 
         [HttpPost]
-        public ActionResult Login(LoginViewModel model)
+        public ActionResult Login(LoginViewModel vm)
         {
             if (ModelState.IsValid)
             {
                 using (new Sitecore.SecurityModel.SecurityDisabler())
                 {
-                    var login = _accountService.Login(model);
+                    var login = _accountService.Login(vm);
 
                     if (login)
                     {
-                        var user = Sitecore.Security.Accounts.User.FromName($"{model.Email}", true);
+                        var user = Sitecore.Security.Accounts.User.FromName($"{vm.Email}", true);
                         if (user.IsInRole(@"extranet\Keeper")) return Redirect("/keeper");
                         if (user.IsInRole(@"extranet\User")) return Redirect("/user");
                     }

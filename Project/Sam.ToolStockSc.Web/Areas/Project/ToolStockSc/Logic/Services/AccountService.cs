@@ -1,5 +1,8 @@
-﻿using Sam.Foundation.DependencyInjection;
+﻿using AutoMapper;
+using Glass.Mapper.Sc.Web.Mvc;
+using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
+using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Security.Accounts;
 using Sitecore.SecurityModel;
@@ -17,6 +20,13 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
     [Service(typeof(IAccountService))]
     public class AccountService : IAccountService
     {
+        private readonly IMapper _mapper;
+
+        public AccountService(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+
         public bool Login(LoginViewModel vm)
         {
             vm.Email = string.Format(@"{0}\{1}", "extranet", vm.Email);
@@ -88,6 +98,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             throw new System.NotImplementedException();
         }
 
-        
+        public LoginViewModel GetLoginModel(IMvcContext mvcContext)
+        {
+            return _mapper.Map<LoginViewModel>(mvcContext.GetDataSourceItem<LoginScModel>());
+        }
     }
 }
