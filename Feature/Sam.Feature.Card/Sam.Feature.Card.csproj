@@ -196,16 +196,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\Feature\Card\Views\web.config" />
-    <Content Include="App_Config\Include\Glass\z.Glass.Mapper.Sc.ViewRender.config.exclude" />
-    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.Start.config" />
-    <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
+    <Content Include="Areas\Feature\Card\Views\Card\Card.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\GlassMapperSc.cs" />
-    <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Feature\Card\CardAreaRegistration.cs" />
+    <Compile Include="Areas\Feature\Card\Controllers\CardController.cs" />
+    <Compile Include="Areas\Feature\Card\Logic\Interfaces\ICardService.cs" />
+    <Compile Include="Areas\Feature\Card\Logic\Services\CardService.cs" />
+    <Compile Include="Areas\Feature\Card\Mappings\CardProfile.cs" />
+    <Compile Include="Areas\Feature\Card\Models\ScModels\CardScModel.cs" />
+    <Compile Include="Areas\Feature\Card\Models\ViewModels\CardViewModel.cs" />
+    <Compile Include="Areas\Feature\Card\Templates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,9 +221,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Feature\Card\Controllers\" />
-    <Folder Include="Areas\Feature\Card\Models\" />
-    <Folder Include="Areas\Feature\Card\Views\Shared\" />
+    <Folder Include="App_Config\Include\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\Sam.Foundation.DependencyInjection\Sam.Foundation.DependencyInjection.csproj">
+      <Project>{29A9A38E-C973-4A26-BAEB-062B46901C14}</Project>
+      <Name>Sam.Foundation.DependencyInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Foundation\Sam.Foundation.GlassMapper\Sam.Foundation.GlassMapper.csproj">
+      <Project>{75F5319A-64DA-448C-B1AE-84F3672DD4F8}</Project>
+      <Name>Sam.Foundation.GlassMapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

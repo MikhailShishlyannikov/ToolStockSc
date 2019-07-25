@@ -133,7 +133,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: applications/32x32/signpost_add.png|people/32x32/keyboard_key.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/security_agent_delete.png|network/32x32/at.png
+  Value: applications/32x32/clipboard.png|applications/32x32/signpost_add.png|people/32x32/keyboard_key.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png|applications/32x32/folder2_green.png|people/32x32/user1.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|applications/32x32/signpost.png|network/32x32/key1.png|network/32x32/security_agent_delete.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
