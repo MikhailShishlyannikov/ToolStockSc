@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.8.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -177,6 +180,9 @@
   <ItemGroup>
     <Compile Include="Areas\Feature\Link\Controllers\LinkController.cs" />
     <Compile Include="Areas\Feature\Link\LinkAreaRegistration.cs" />
+    <Compile Include="Areas\Feature\Link\Logic\Interfaces\ILinkService.cs" />
+    <Compile Include="Areas\Feature\Link\Logic\Services\LinkService.cs" />
+    <Compile Include="Areas\Feature\Link\Mappings\LinkProfile.cs" />
     <Compile Include="Areas\Feature\Link\Models\ScModels\LinkScModel.cs" />
     <Compile Include="Areas\Feature\Link\Models\ViewModels\LinkViewModel.cs" />
     <Compile Include="Areas\Feature\Link\Templates.cs" />
@@ -196,6 +202,10 @@
     <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\Sam.Foundation.DependencyInjection\Sam.Foundation.DependencyInjection.csproj">
+      <Project>{29A9A38E-C973-4A26-BAEB-062B46901C14}</Project>
+      <Name>Sam.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\Sam.Foundation.GlassMapper\Sam.Foundation.GlassMapper.csproj">
       <Project>{75F5319A-64DA-448C-B1AE-84F3672DD4F8}</Project>
       <Name>Sam.Foundation.GlassMapper</Name>

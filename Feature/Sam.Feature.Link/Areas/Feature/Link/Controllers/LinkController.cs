@@ -1,6 +1,5 @@
 ﻿using Glass.Mapper.Sc.Web.Mvc;
-using Sam.Feature.Link.Areas.Feature.Link.Models.ScModels;
-using Sam.Feature.Link.Areas.Feature.Link.Models.ViewModels;
+using Sam.Feature.Link.Areas.Feature.Link.Logic.Interfaces;
 using Sam.Foundation.GlassMapper.Controllers;
 using System.Web.Mvc;
 
@@ -8,15 +7,18 @@ namespace Sam.Feature.Link.Areas.Feature.Link.Controllers
 {
     public class LinkController : BaseController
     {
-        public LinkController(IMvcContext mvcContext) : base(mvcContext)
+        private readonly ILinkService _linkService;
+
+        public LinkController(IMvcContext mvcContext, ILinkService linkService) : base(mvcContext)
         {
+            _linkService = linkService;
         }
 
         // GET: Feature/Link
         public ActionResult Link()
         {
-            var model = new LinkViewModel(_mvcContext.GetDataSourceItem<LinkScModel>());
-            return View("~/Areas/Feature/Link/Views/Link/Link.cshtml", model);
+            var vm = _linkService.Get(_mvcContext);
+            return View("~/Areas/Feature/Link/Views/Link/Link.cshtml", vm);
         }
     }
 }

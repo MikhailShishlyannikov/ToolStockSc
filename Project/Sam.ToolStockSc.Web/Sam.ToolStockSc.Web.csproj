@@ -414,7 +414,6 @@
     <Compile Include="Areas\Project\ToolStockSc\SitecoreConstants.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Templates.cs" />
     <Compile Include="Areas\Project\ToolStockSc\ToolStockScAreaRegistration.cs" />
-    <Compile Include="Areas\Project\ToolStockSc\Wrapper\AutoMapper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
