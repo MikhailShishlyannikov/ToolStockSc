@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=8.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.8.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -201,6 +204,9 @@
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Feature\Button\ButtonAreaRegistration.cs" />
     <Compile Include="Areas\Feature\Button\Controllers\ButtonController.cs" />
+    <Compile Include="Areas\Feature\Button\Logic\Interfaces\IButtonService.cs" />
+    <Compile Include="Areas\Feature\Button\Logic\Services\ButtonService.cs" />
+    <Compile Include="Areas\Feature\Button\Mappings\ButtonProfile.cs" />
     <Compile Include="Areas\Feature\Button\Models\Rendering Parameters\ButtonRP.cs" />
     <Compile Include="Areas\Feature\Button\Models\ScModels\ButtonScModel.cs" />
     <Compile Include="Areas\Feature\Button\Models\ScModels\Option.cs" />
@@ -221,6 +227,10 @@
     <Folder Include="App_Config\Include\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Foundation\Sam.Foundation.DependencyInjection\Sam.Foundation.DependencyInjection.csproj">
+      <Project>{29A9A38E-C973-4A26-BAEB-062B46901C14}</Project>
+      <Name>Sam.Foundation.DependencyInjection</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\Sam.Foundation.GlassMapper\Sam.Foundation.GlassMapper.csproj">
       <Project>{75f5319a-64da-448c-b1ae-84f3672dd4f8}</Project>
       <Name>Sam.Foundation.GlassMapper</Name>

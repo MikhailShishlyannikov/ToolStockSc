@@ -1,11 +1,6 @@
 ﻿using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Logic.Interfaces;
-using Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Models.ViewModels;
 using Sam.Foundation.GlassMapper.Controllers;
-using Sitecore.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web.Mvc;
 
 namespace Sam.Feature.LanguageSwitcher.Areas.Feature.LanguageSwitcher.Controllers
