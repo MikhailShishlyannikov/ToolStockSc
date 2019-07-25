@@ -84,7 +84,7 @@
             @Html.DropDownListFor(m => m.DepartmentId, new SelectList(Model.Departments, "Id", "Name", Model.DepartmentId), new { @class = "form-control" })
             @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
             {
-                <spam>Editable field <b>ConfirmPassword</b></spam> @: @Html.Glass().Editable(m => m.ConfirmPasswordField)
+                <spam>Editable field <b>Department</b></spam> @: @Html.Glass().Editable(m => m.DepartmentField)
             }
         </div>
     </div>

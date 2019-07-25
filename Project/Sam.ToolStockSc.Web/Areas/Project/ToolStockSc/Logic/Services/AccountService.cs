@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
@@ -7,6 +8,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Security.Accounts;
 using Sitecore.SecurityModel;
 using System;
+using System.Linq;
 using System.Web.Security;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
@@ -21,6 +23,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
     public class AccountService : IAccountService
     {
         private readonly IMapper _mapper;
+        private readonly SitecoreService _sitecoreService = new SitecoreService(SitecoreConstants.MasterDatabase.Master);
+
 
         public AccountService(IMapper mapper)
         {
@@ -101,6 +105,16 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         public LoginViewModel GetLoginModel(IMvcContext mvcContext)
         {
             return _mapper.Map<LoginViewModel>(mvcContext.GetDataSourceItem<LoginScModel>());
+        }
+
+        public RegisterViewModel GetRegisterModel(IMvcContext mvcContext)
+        {
+            var vm = _mapper.Map<RegisterViewModel>(mvcContext.GetDataSourceItem<RegisterScModel>());
+            var master = SitecoreConstants.MasterDatabase.Master;
+            vm.Departments = master.GetItem("/sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Departments")
+                .Children.Select(x => _sitecoreService.GetItem<DepartmentScModel>(x)).OrderBy(x => x.Name).ToList();
+
+            return vm;
         }
     }
 }

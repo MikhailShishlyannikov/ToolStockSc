@@ -5,7 +5,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
 {
     public interface IAccountService
     {
-        LoginViewModel GetLoginModel(IMvcContext mvcContext)
+        LoginViewModel GetLoginModel(IMvcContext mvcContext);
+
+        RegisterViewModel GetRegisterModel(IMvcContext mvcContext);
 
         bool Login(LoginViewModel vm);
         void AddUser(RegisterViewModel vm);
