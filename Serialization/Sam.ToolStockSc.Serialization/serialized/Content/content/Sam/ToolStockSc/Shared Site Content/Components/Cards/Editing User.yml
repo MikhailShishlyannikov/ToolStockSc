@@ -1,0 +1,35 @@
+﻿---
+ID: "397b0d9f-8081-43a7-8c80-a34357c6ed3d"
+Parent: "1810e276-d3cd-45db-a6e3-0925a3007573"
+Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Cards/Editing User
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Editing User
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T151749Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Редактирование пользователя
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T151841Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

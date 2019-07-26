@@ -1,0 +1,41 @@
+﻿@model Sam.Feature.UserCard.Areas.Feature.UserCard.Models.ViewModels.UserCardViewModel
+
+<div class="col-md-12">
+    <aside class="profile-nav alt">
+        <section class="card">
+            <div class="card-header user-header alt bg-dark">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="text-light display-6">
+                            @{
+                                var fullName = Model.Patronymic == null
+                                    ? Model.Name + " " + Model.Surname
+                                    : Model.Name + " " + Model.Patronymic + " " + Model.Surname;
+                            }
+                            @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                            {
+                                <spam>Name Patronymic Surname</spam>
+                            }
+                            else
+                            {
+                                @fullName
+                            }
+                        </h2>
+                        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+                        {
+                            <p>Role</p>
+                        }
+                        else
+                        {
+                            <p>@Model.Role</p>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                @Html.Sitecore().DynamicPlaceholder("Card Content")
+            </div>
+        </section>
+    </aside>
+</div>
+

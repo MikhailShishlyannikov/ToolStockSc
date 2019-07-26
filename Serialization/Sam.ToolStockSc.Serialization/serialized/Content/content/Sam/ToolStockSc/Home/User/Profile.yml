@@ -28,8 +28,19 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{10E3EB9C-485E-440D-A73C-88A40B15A9C5}"
+              uid="{7945D22F-8F53-4385-9764-D0639CD37BE7}"
               p:before="*"
+              s:ds="{397B0D9F-8081-43A7-8C80-A34357C6ED3D}"
+              s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{28A21A92-66D6-4320-A59F-95614DE6213C}-0" />
+            <r
+              uid="{28A21A92-66D6-4320-A59F-95614DE6213C}"
+              p:after="r[@uid='{7945D22F-8F53-4385-9764-D0639CD37BE7}']"
+              s:id="{1BD5B7D7-86F2-4130-8B10-B439A340102D}"
+              s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
+            <r
+              uid="{10E3EB9C-485E-440D-A73C-88A40B15A9C5}"
+              p:after="r[@uid='{28A21A92-66D6-4320-A59F-95614DE6213C}']"
               s:ds="{8D8BE02B-841E-40A4-8A78-9ACB7F1D5CBD}"
               s:id="{016E0C4F-DA4D-4C08-98C0-839DC358D7CC}"
               s:ph="Footer" />
@@ -109,8 +120,19 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{F125480A-4240-4B94-BE91-F9B472F96CC6}"
+              uid="{114E4E71-F577-463D-935D-F2C11DCC233F}"
               p:before="*"
+              s:ds="{397B0D9F-8081-43A7-8C80-A34357C6ED3D}"
+              s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{817AFAFB-0B20-447A-91D5-F394B44DFC65}-0" />
+            <r
+              uid="{817AFAFB-0B20-447A-91D5-F394B44DFC65}"
+              p:after="r[@uid='{114E4E71-F577-463D-935D-F2C11DCC233F}']"
+              s:id="{1BD5B7D7-86F2-4130-8B10-B439A340102D}"
+              s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
+            <r
+              uid="{F125480A-4240-4B94-BE91-F9B472F96CC6}"
+              p:after="r[@uid='{817AFAFB-0B20-447A-91D5-F394B44DFC65}']"
               s:ds="{8D8BE02B-841E-40A4-8A78-9ACB7F1D5CBD}"
               s:id="{016E0C4F-DA4D-4C08-98C0-839DC358D7CC}"
               s:ph="Footer" />
