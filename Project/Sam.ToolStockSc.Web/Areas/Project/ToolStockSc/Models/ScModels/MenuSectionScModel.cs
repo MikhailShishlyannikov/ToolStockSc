@@ -8,6 +8,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels
     public class MenuSectionScModel : BaseScModel
     {
         [SitecoreField(FieldType = SitecoreFieldType.SingleLineText)]
-        public virtual string Name { get; set; }
+        public virtual string Section { get; set; }
     }
 }

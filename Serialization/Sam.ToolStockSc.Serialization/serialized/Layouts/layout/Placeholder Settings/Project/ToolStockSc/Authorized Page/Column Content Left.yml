@@ -1,17 +1,17 @@
 ﻿---
-ID: "002fc554-4b20-4b3a-9607-70b7b8398eba"
+ID: "b3355de8-d2a2-4e89-9c82-0622bc70ad3d"
 Parent: "6e4c905b-4d2b-4316-9e44-3df54bc3167d"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Project/ToolStockSc/Authorized Page/Menu content
+Path: /sitecore/layout/Placeholder Settings/Project/ToolStockSc/Authorized Page/Column Content Left
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: Menu content
+  Value: Column Content Left
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: "{21018264-FBA5-4DEB-9DBA-C6E4FA3D7D43}"
+  Value: "{AE29CC37-BB67-45FF-95DB-FB6192671015}"
 Languages:
 - Language: en
   Versions:
@@ -19,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190719T112808Z
+      Value: 20190725T134859Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

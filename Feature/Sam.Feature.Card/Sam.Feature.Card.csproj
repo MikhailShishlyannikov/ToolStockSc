@@ -197,6 +197,7 @@
   <ItemGroup>
     <Content Include="Areas\Feature\Card\Views\web.config" />
     <Content Include="Areas\Feature\Card\Views\Card\Card.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

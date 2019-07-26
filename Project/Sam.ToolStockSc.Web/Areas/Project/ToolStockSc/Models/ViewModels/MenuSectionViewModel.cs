@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
 {
@@ -7,6 +6,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
     {
         public Guid Id { get; set; }
 
-        public string SectionName { get; set; }
+        public string Section { get; set; }
     }
 }

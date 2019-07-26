@@ -5,15 +5,6 @@
         public struct LoginForm
         {
             public const string Id = "{EE453943-32EE-4F2E-9A67-994A9845E7C6}";
-
-            public struct Fields
-            {
-                public const string EmailField = "{1EF0132C-A34A-4688-972E-A0BBFD7E37D9}";
-                public const string EmailField_FieldName = "Email field";
-
-                public const string PasswordField = "{D3C6F403-13D6-462A-AABE-9F50A62B04BE}";
-                public const string PasswordField_FieldName = "Password field";
-            }
         }
 
         public struct RegisterForm
@@ -69,6 +60,32 @@
         public struct Footer
         {
             public const string Id = "{FDF7C62E-B636-4816-B47D-E2DEEF97C9BB}";
+        }
+
+        public struct ChangePassword
+        {
+            public const string Id = "{4F027DC9-D3C7-46BF-9455-13732FC4E216}";
+
+            public struct Fields
+            {
+                public const string OldPasswordFiled = "{1E4780B5-7426-4C0A-BD7A-C7AEB1C8AF26}";
+                public const string OldPasswordFiled_FieldName = "Old Password";
+
+                public const string NewPasswordFiled = "{1B97A3B3-0BAE-4427-8608-E5BBBD7CEA52}";
+                public const string NewPasswordFiled_FieldName = "New Password";
+
+                public const string ConfirmPasswordFiled = "{A57AE9F0-4A82-48C4-9F42-AD8FEAEA825E}";
+                public const string ConfirmPasswordFiled_FieldName = "Confirm Password";
+
+                public const string OldPasswordHelpText = "{E3F8DEF3-901F-46C7-A785-5EEE55AC6032}";
+                public const string OldPasswordHelpText_FieldName = "Old Password Help Text";
+
+                public const string NewPasswordHelpText = "{0334D43E-1F76-4FFF-A791-615361535A88}";
+                public const string NewPasswordHelpText_FieldName = "New Password Help Text";
+
+                public const string ConfirmPasswordHelpText = "{5C96C9EC-832A-4BCB-9910-C57828BDECC2}";
+                public const string ConfirmPasswordHelpText_FieldName = "Confirm Password Help Text";
+            }
         }
     }
 }

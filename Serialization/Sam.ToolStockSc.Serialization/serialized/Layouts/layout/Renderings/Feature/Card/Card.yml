@@ -1,25 +1,22 @@
 ﻿---
-ID: "1842731a-c519-45bd-858f-4092f3f8ae90"
-Parent: "25bafe09-a044-4232-8627-ab6a854f1bdb"
+ID: "ae29cc37-bb67-45ff-95db-fb6192671015"
+Parent: "cbffcd28-248e-4c32-bce9-deec93fc1246"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/ToolStockSc/Register
+Path: /sitecore/layout/Renderings/Feature/Card/Card
 DB: master
 SharedFields:
-- ID: "13f89250-ad6b-4548-882e-118a12c18094"
-  Hint: Parameters Template
-  Value: "{E0D15A08-A5FF-4C8C-AD3A-B52BCC319C84}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/ToolStockSc/Forms/Register
+  Value: /sitecore/templates/Feature/Card/Card
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ToolStockSc/Home/Register/Page Content
+  Value: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Cards
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Register
+  Value: Card
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
-  Value: Account
+  Value: Card
 Languages:
 - Language: en
   Versions:
@@ -27,7 +24,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190716T121348Z
+      Value: 20190725T135226Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

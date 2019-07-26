@@ -1,22 +1,25 @@
 ﻿---
-ID: "34f971ea-cf7c-4f9a-b4c5-017ef57959f4"
-Parent: "25bafe09-a044-4232-8627-ab6a854f1bdb"
+ID: "1842731a-c519-45bd-858f-4092f3f8ae90"
+Parent: "0a111f8a-dec4-4978-9a69-c6e305f1df48"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/ToolStockSc/Login
+Path: /sitecore/layout/Renderings/Project/ToolStockSc/Forms/Register
 DB: master
 SharedFields:
 - ID: "13f89250-ad6b-4548-882e-118a12c18094"
   Hint: Parameters Template
-  Value: "{EE453943-32EE-4F2E-9A67-994A9845E7C6}"
+  Value: "{E0D15A08-A5FF-4C8C-AD3A-B52BCC319C84}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/ToolStockSc/Forms/Log In
+  Value: /sitecore/templates/Project/ToolStockSc/Forms/Register
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ToolStockSc/Home/Log In/Page Content
+  Value: /sitecore/content/Sam/ToolStockSc/Home/Register/Page Content
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: Login
+  Value: Register
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
   Value: Account
@@ -27,7 +30,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190716T082931Z
+      Value: 20190716T121348Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

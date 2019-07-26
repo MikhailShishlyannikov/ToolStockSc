@@ -1,8 +1,8 @@
 ﻿@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
 {
-    <header id="header" class="header">
+    <header id="header" class="header" style="width: 100%; margin-top: 89px;">
         <div class="top-left">
-            <div class="navbar-header" style="padding-top: 100px;">
+            <div class="navbar-header">
                 @Html.Sitecore().DynamicPlaceholder("Logo")
                 <a id="menuToggle" class="menutoggle">
                     <i class="fa fa-bars"></i>
@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="top-right">
-            <div class="header-menu"  style="padding-top: 100px;">
+            <div class="header-menu">
                 @Html.Sitecore().DynamicPlaceholder("UserInfo")
 
             </div>

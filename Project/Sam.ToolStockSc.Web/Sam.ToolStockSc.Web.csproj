@@ -267,13 +267,15 @@
     <Content Include="Scripts\moment.js" />
     <Content Include="Scripts\weather-init.js" />
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\MenuLayout.cshtml" />
-    <Content Include="Areas\Project\ToolStockSc\Views\Menu\MenuSection.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\MenuSection\MenuSection.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\Header.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\LogoLink\LogoLink.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Account\NavBar.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\MenuLink\MenuLink.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\NavLink\NavLink.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Footer\Footer.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Shared\2Columns8x4.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Account\ChangePassword.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -372,7 +374,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\WebFooterController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\LogoLinkController.cs" />
-    <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuController.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuSectionController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\MenuLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\NavLinkController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IAccountService.cs" />
@@ -396,6 +398,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Mappings\RegisterProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ChangePasswordScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\FooterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
@@ -406,6 +409,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkOptionScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogoLinkViewModel.cs" />

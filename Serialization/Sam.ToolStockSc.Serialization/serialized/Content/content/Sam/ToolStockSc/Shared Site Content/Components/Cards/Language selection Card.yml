@@ -1,0 +1,40 @@
+﻿---
+ID: "dd1aa3c7-ffd1-44a8-bc16-805a21ddf6a5"
+Parent: "1810e276-d3cd-45db-a6e3-0925a3007573"
+Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Cards/Language Selection Card
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Language selection
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190725T140616Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Выбор языка
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190725T141128Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

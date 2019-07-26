@@ -13,5 +13,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         void AddUser(RegisterViewModel vm);
 
         void AssignUserToRole(string domain, string firstName, string lastName, bool isSuperUser);
+        ChangePasswordViewModel GetChangePasswordModel(IMvcContext mvcContext);
     }
 }

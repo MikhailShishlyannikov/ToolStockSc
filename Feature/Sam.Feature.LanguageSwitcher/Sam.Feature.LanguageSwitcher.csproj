@@ -194,6 +194,7 @@
   <ItemGroup>
     <Content Include="Areas\Feature\LanguageSwitcher\Views\web.config" />
     <Content Include="Areas\Feature\LanguageSwitcher\Views\LanguageSwitcher\LanguageSwitcher.cshtml" />
+    <Content Include="Areas\Feature\LanguageSwitcher\Views\LanguageSwitcher\LanguageSwitcherForSettingPage.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>

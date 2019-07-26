@@ -5,11 +5,11 @@ using System.Web.Mvc;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 {
-    public class MenuController : BaseController
+    public class MenuSectionController : BaseController
     {
         private readonly IMenuSectionService _menuSectionService;
 
-        public MenuController(IMvcContext mvcContext, IMenuSectionService menuSectionService) : base(mvcContext)
+        public MenuSectionController(IMvcContext mvcContext, IMenuSectionService menuSectionService) : base(mvcContext)
         {
             _menuSectionService = menuSectionService;
         }
@@ -19,7 +19,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         {
             var vm = _menuSectionService.Get(_mvcContext);
 
-            return View("~/Areas/Project/ToolStockSc/Views/Menu/MenuSection.cshtml", vm);
+            return View("~/Areas/Project/ToolStockSc/Views/MenuSection/MenuSection.cshtml", vm);
         }
     }
 }

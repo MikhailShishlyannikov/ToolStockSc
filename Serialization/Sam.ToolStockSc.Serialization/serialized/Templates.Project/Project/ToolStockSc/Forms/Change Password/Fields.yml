@@ -1,0 +1,14 @@
+﻿---
+ID: "2c3b923c-064b-4230-b086-0eb81ace2ba0"
+Parent: "4f027dc9-d3c7-46bf-9455-13732fc4e216"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Change Password/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T072232Z

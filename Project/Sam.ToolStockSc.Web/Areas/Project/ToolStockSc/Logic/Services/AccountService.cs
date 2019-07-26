@@ -116,5 +116,13 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
             return vm;
         }
+
+        public ChangePasswordViewModel GetChangePasswordModel(IMvcContext mvcContext)
+        {
+            var vm = new ChangePasswordViewModel();
+            vm.ScModel = mvcContext.GetDataSourceItem<ChangePasswordScModel>();
+
+            return vm;
+        }
     }
 }

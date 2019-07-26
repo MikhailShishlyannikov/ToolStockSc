@@ -85,6 +85,10 @@
         #header .scEmptyPlaceholder {
             width: 200px;
         }
+
+        #main-content .row .scEmptyPlaceholder {
+            width: 100%;
+        }
     </style>
 </head>
 
@@ -95,7 +99,7 @@
     @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
     {
         <aside id="left-panel" class="left-panel">
-            <div style="padding-left: 5px; padding-top: 100px;">
+            <div style="padding-left: 5px; margin-top: 100px;">
                 @Html.Sitecore().Placeholder("Left menu")
             </div>
         </aside>
@@ -109,20 +113,30 @@
 
     <!-- /#left-panel -->
     <!-- Right Panel -->
-    <div id="right-panel" class="right-panel h-100">
-        <!-- Header-->
-        @Html.Sitecore().Placeholder("Header")
-        <!-- /#header -->
-        <!-- Content -->
-        <div class="col-sm-12">
-            @Html.Sitecore().Placeholder("Content")
+<div id="right-panel" class="right-panel h-100">
+    <!-- Header-->
+    @Html.Sitecore().Placeholder("Header")
+    <!-- /#header -->
+    <!-- Content -->
+    <div class="content">
+        <!-- Animated -->
+        <div class="animated fadeIn">
+            <div class="row">
+                <div id="main-content" class="col-sm-12">
+                    <div class="row">
+                        @Html.Sitecore().Placeholder("Content")
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.content -->
-        <div class="clearfix"></div>
-        <!-- Footer -->
-        @Html.Sitecore().Placeholder("Footer")
-        <!-- /.site-footer -->
+        <!-- .animated -->
     </div>
+    <!-- /.content -->
+    <div class="clearfix"></div>
+    <!-- Footer -->
+    @Html.Sitecore().Placeholder("Footer")
+    <!-- /.site-footer -->
+</div>
     <!-- /#right-panel -->
     <!-- Scripts -->
     <script src="~/Scripts/jquery-3.4.1.js"></script>

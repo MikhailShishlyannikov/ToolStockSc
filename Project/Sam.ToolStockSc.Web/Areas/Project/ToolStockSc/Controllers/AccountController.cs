@@ -69,5 +69,24 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             var user = Sitecore.Security.Accounts.User.Current;
             return View("~/Areas/Project/ToolStockSc/Views/Account/NavBar.cshtml", user);
         }
+
+        public ActionResult ChangePassword()
+        {
+            var vm = _accountService.GetChangePasswordModel(_mvcContext);
+
+            return View("~/Areas/Project/ToolStockSc/Views/Account/ChangePassword.cshtml", vm);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ChangePassword(ChangePasswordViewModel vm)
+        {
+            var user = System.Web.Security.Membership.GetUser();
+            user.ChangePassword(vm.OldPassword, vm.NewPassword);
+
+            if (Sitecore.Security.Accounts.User.Current.IsInRole(@"extranet\Keeper")) return Redirect("/Keeper/Settings");
+
+            return Redirect("/User/Settings");
+        }
     }
 }

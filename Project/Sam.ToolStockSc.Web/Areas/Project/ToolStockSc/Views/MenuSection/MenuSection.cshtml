@@ -1,0 +1,6 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.MenuSectionViewModel
+@using Glass.Mapper.Sc.Web.Mvc
+
+<li class="menu-title">@Html.Glass().Editable(m => m.Section)</li>
+
+@Html.Sitecore().DynamicPlaceholder("Menu Link")

@@ -3,9 +3,11 @@
 
 <div class="card">
     <div class="card-header">
-        @Html.Glass().Editable(m => m.Title)
+        <strong class="card-title">@Html.Glass().Editable(m => m.Title)</strong>
     </div>
     <div class="card-body">
-        @Html.Sitecore().DynamicPlaceholder("Card Content")
+        <div class="row">
+            @Html.Sitecore().DynamicPlaceholder("Card Content")
+        </div>
     </div>
 </div>
