@@ -64,8 +64,8 @@
                 <label class="form-control-label" for=@Model.Department>@Html.Glass().Editable(Model.ScModel, m => m.Department)</label>
             </div>
             <div class="col-12 col-md-9">
-                @Html.ValidationMessageFor(m => m.Department, "", new { @class = "text-danger" })
-                @Html.TextBoxFor(m => m.Department, new { @class = "form-control", placeholder = Model.ScModel.Department, value = Model.Department, disabled = true })
+                @Html.ValidationMessageFor(m => m.Department.Name, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.Department.Name, new { @class = "form-control", placeholder = Model.ScModel.Department, value = Model.Department, disabled = true })
             </div>
         </div>
     }

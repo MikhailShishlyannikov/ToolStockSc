@@ -126,7 +126,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public ProfileEditingViewModel GetProfileEditingModel(IMvcContext mvcContext)
         {
-            var vm = new ProfileEditingViewModel();
+            //var vm = new ProfileEditingViewModel();
+            var vm = _mapper.Map<ProfileEditingViewModel>(User.Current);
             vm.ScModel = mvcContext.GetDataSourceItem<ProfileEditingScModel>();
 
             return vm;
