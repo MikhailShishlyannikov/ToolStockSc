@@ -87,5 +87,10 @@
                 public const string ConfirmPasswordHelpText_FieldName = "Confirm Password Help Text";
             }
         }
+
+        public struct ProfileEditing
+        {
+            public const string Id = "{8B50623F-91CB-46E1-8AD1-DB2ADEBAE85D}";
+        }
     }
 }

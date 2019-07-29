@@ -88,5 +88,12 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
             return Redirect("/User/Settings");
         }
+
+        public ActionResult ProfileEditing()
+        {
+            var vm = _accountService.GetProfileEditingModel(_mvcContext);
+
+            return View("~/Areas/Project/ToolStockSc/Views/Account/ProfileEditing.cshtml", vm);
+        }
     }
 }

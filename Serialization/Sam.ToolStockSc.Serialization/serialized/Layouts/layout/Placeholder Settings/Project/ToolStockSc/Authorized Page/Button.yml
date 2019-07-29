@@ -1,21 +1,17 @@
 ﻿---
-ID: "d00ddfe4-d9e1-4a89-993f-a17a076c1178"
-Parent: "3034933a-5a06-4bda-a165-3cb208075acd"
+ID: "a37f893a-5baf-4e2c-9da0-bd1902b89bb6"
+Parent: "6e4c905b-4d2b-4316-9e44-3df54bc3167d"
 Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
-Path: /sitecore/layout/Placeholder Settings/Feature/Card/Card Content
+Path: /sitecore/layout/Placeholder Settings/Project/ToolStockSc/Authorized Page/Button
 DB: master
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: Card Content
+  Value: Button
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Type: TreelistEx
-  Value: |
-    {65492001-9DD1-4402-BF1E-CB12D6D5B24E}
-    {F7E50957-1692-461E-845C-A0E1198FC192}
-    {AE29CC37-BB67-45FF-95DB-FB6192671015}
-    {3B52D4F1-6A40-47A0-A2D6-4583F02FF653}
+  Value: "{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
 Languages:
 - Language: en
   Versions:
@@ -23,7 +19,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190725T131327Z
+      Value: 20190726T163433Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

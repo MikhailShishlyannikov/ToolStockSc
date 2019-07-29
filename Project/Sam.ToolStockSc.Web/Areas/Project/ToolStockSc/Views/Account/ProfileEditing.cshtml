@@ -1,0 +1,88 @@
+﻿@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ProfileEditingViewModel
+@using Sitecore.Globalization
+
+@using (Html.BeginForm("Update", "Account", FormMethod.Post, new { @class = "form-horizontal col-12" }))
+{
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Name>@Html.Glass().Editable(Model.ScModel, m => m.Name)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = Model.ScModel.Name, value = Model.Name })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Patronymic>@Html.Glass().Editable(Model.ScModel, m => m.Patronymic)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Patronymic, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Patronymic, new { @class = "form-control", placeholder = Model.ScModel.Patronymic, value = Model.Patronymic })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Surname>@Html.Glass().Editable(Model.ScModel, m => m.Surname)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Surname, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Surname, new { @class = "form-control", placeholder = Model.ScModel.Surname, value = Model.Surname })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Email>@Html.Glass().Editable(Model.ScModel, m => m.Email)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = Model.ScModel.Email, value = Model.Email, type = "email" })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Phone>@Html.Glass().Editable(Model.ScModel, m => m.Phone)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = Model.ScModel.Phone, value = Model.Phone, type = "tel" })
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col col-md-3">
+            <label class="form-control-label" for=@Model.Role>@Html.Glass().Editable(Model.ScModel, m => m.Role)</label>
+        </div>
+        <div class="col-12 col-md-9">
+            @Html.ValidationMessageFor(m => m.Role, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(m => m.Role, new { @class = "form-control", placeholder = Model.ScModel.Role, value = Model.Role, disabled = true })
+        </div>
+    </div>
+    if (Model.Department != null)
+    {
+        <div class="row form-group">
+            <div class="col col-md-3">
+                <label class="form-control-label" for=@Model.Department>@Html.Glass().Editable(Model.ScModel, m => m.Department)</label>
+            </div>
+            <div class="col-12 col-md-9">
+                @Html.ValidationMessageFor(m => m.Department, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.Department, new { @class = "form-control", placeholder = Model.ScModel.Department, value = Model.Department, disabled = true })
+            </div>
+        </div>
+    }
+    if (Model.Stock != null)
+    {
+        <div class="row form-group">
+            <div class="col col-md-3">
+                <label class="form-control-label" for=@Model.Stock>@Html.Glass().Editable(Model.ScModel, m => m.Stock)</label>
+            </div>
+            <div class="col-12 col-md-9">
+                @Html.ValidationMessageFor(m => m.Stock, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(m => m.Stock, new { @class = "form-control", placeholder = Model.ScModel.Stock, value = Model.Stock, disabled = true })
+            </div>
+        </div>
+    }
+    <div class="form-actions form-group">
+        <input type="submit" value=@Translate.Text("Account.Update") name="Update" class="btn btn-primary">
+        @Html.Sitecore().DynamicPlaceholder("Button")
+    </div>
+}

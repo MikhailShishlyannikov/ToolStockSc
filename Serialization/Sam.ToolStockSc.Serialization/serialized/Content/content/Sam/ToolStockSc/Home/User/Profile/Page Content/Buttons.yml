@@ -1,19 +1,19 @@
 ﻿---
-ID: "00fd0184-6f74-46e5-ae50-eb4cbdf334ba"
-Parent: "158a1cf6-8703-4675-b19a-c68d18d27c7b"
+ID: "b7367ed8-9b6c-4e3f-a563-dce191e98606"
+Parent: "9fba1e87-4831-4154-83f6-35ecab66167a"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
-Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Change Password Form
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Profile/Page Content/Buttons
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: applications/32x32/scroll_replace.png
+  Value: people/32x32/keyboard_key.png
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
   Type: TreelistEx
   Value: |
     {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-    {4F027DC9-D3C7-46BF-9455-13732FC4E216}
+    {A13952A6-67A0-406E-95BA-0AD6BDDBF18D}
 Languages:
 - Language: en
   Versions:
@@ -21,4 +21,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190726T082738Z
+      Value: 20190729T082518Z

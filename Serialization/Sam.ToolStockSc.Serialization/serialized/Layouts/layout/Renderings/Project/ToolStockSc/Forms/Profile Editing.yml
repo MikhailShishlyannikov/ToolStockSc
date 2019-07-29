@@ -1,19 +1,19 @@
 ﻿---
-ID: "65492001-9dd1-4402-bf1e-cb12d6d5b24e"
+ID: "3b52d4f1-6a40-47a0-a2d6-4583f02ff653"
 Parent: "0a111f8a-dec4-4978-9a69-c6e305f1df48"
 Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
-Path: /sitecore/layout/Renderings/Project/ToolStockSc/Forms/Change Password
+Path: /sitecore/layout/Renderings/Project/ToolStockSc/Forms/Profile Editing
 DB: master
 SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Project/ToolStockSc/Forms/Change Password
+  Value: /sitecore/templates/Project/ToolStockSc/Forms/Profile Editing
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Change Password Form|query:./Page Content/Forms/*[@@templateid='{4F027DC9-D3C7-46BF-9455-13732FC4E216}']"
+  Value: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Change Password Form|query:./Page Content/Forms/*[@@templateid='{8B50623F-91CB-46E1-8AD1-DB2ADEBAE85D}']"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
-  Value: ChangePassword
+  Value: ProfileEditing
 - ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
   Hint: Controller
   Value: Account
@@ -24,7 +24,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190726T082141Z
+      Value: 20190726T163259Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

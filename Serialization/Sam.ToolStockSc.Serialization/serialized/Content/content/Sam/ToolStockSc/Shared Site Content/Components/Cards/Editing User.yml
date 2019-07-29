@@ -4,6 +4,11 @@ Parent: "1810e276-d3cd-45db-a6e3-0925a3007573"
 Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
 Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Cards/Editing User
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:

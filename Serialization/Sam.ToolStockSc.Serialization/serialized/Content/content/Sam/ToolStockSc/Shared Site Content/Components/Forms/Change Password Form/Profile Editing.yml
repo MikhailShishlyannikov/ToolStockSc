@@ -1,0 +1,73 @@
+﻿---
+ID: "c8b734c2-cd61-46e6-ae74-31528610fe6a"
+Parent: "00fd0184-6f74-46e5-ae50-eb4cbdf334ba"
+Template: "8b50623f-91cb-46e1-8ad1-db2adebae85d"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Change Password Form/Profile Editing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "257b80a5-9c19-4675-a888-c3fead81b0dd"
+      Hint: Role
+      Value: Role
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190729T094130Z
+    - ID: "3ad33c25-6bd8-44ac-ad2a-2ad571ff4aa2"
+      Hint: Stock
+      Value: Stock
+    - ID: "3c409b5b-f411-4d67-a56f-8dcab8b3a53e"
+      Hint: Department
+      Value: Department
+    - ID: "629ae572-a3f3-499c-9d64-5f4211c692c8"
+      Hint: Email
+      Value: Email
+    - ID: "97556413-415f-41b0-9120-e0f203b03c30"
+      Hint: Phone
+      Value: Phone
+    - ID: "dc4edb07-0013-45d5-bea0-86b5bd32a852"
+      Hint: Surname
+      Value: Surname
+    - ID: "ea397aba-b23a-40c2-acb9-1e3812794d18"
+      Hint: Name
+      Value: Name
+    - ID: "ff4cd01f-2eb8-4ea0-9c5f-1f151ecbd74f"
+      Hint: Patronymic
+      Value: Patronymic
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "257b80a5-9c19-4675-a888-c3fead81b0dd"
+      Hint: Role
+      Value: Роль
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190729T094323Z
+    - ID: "3ad33c25-6bd8-44ac-ad2a-2ad571ff4aa2"
+      Hint: Stock
+      Value: Склад
+    - ID: "3c409b5b-f411-4d67-a56f-8dcab8b3a53e"
+      Hint: Department
+      Value: Отдел
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "629ae572-a3f3-499c-9d64-5f4211c692c8"
+      Hint: Email
+      Value: Email
+    - ID: "97556413-415f-41b0-9120-e0f203b03c30"
+      Hint: Phone
+      Value: Телефон
+    - ID: "dc4edb07-0013-45d5-bea0-86b5bd32a852"
+      Hint: Surname
+      Value: Фамилия
+    - ID: "ea397aba-b23a-40c2-acb9-1e3812794d18"
+      Hint: Name
+      Value: Имя
+    - ID: "ff4cd01f-2eb8-4ea0-9c5f-1f151ecbd74f"
+      Hint: Patronymic
+      Value: Отчество

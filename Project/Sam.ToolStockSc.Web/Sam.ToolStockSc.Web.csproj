@@ -276,6 +276,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Footer\Footer.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Shared\2Columns8x4.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Account\ProfileEditing.cshtml" />
     <None Include="Web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -408,6 +409,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuSectionScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkOptionScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ProfileEditingScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
@@ -416,6 +418,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\MenuLinkViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\MenuSectionViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\NavLinkViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ProfileEditingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\RegisterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\SitecoreConstants.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Templates.cs" />

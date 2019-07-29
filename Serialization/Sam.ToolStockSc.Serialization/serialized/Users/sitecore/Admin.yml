@@ -28,7 +28,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
-  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=1&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
+  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=0&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -133,7 +133,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: applications/32x32/signpost.png|applications/32x32/scroll_replace.png|applications/32x32/clipboard.png|applications/32x32/folder2_green.png|applications/32x32/signpost_add.png|people/32x32/keyboard_key.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png|people/32x32/user1.png|network/32x32/earth2.png|business/32x32/businessmen.png|business/32x32/data.png|office/32x32/clone_item.png|network/32x32/key1.png
+  Value: applications/32x32/folder2_green.png|applications/32x32/form_green.png|people/32x32/keyboard_key.png|applications/32x32/exchange.png|database/32x32/user_edit.png|database/32x32/user_edit_h.png|applications/32x32/signpost.png|applications/32x32/scroll_replace.png|applications/32x32/clipboard.png|applications/32x32/signpost_add.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png|people/32x32/user1.png|network/32x32/earth2.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

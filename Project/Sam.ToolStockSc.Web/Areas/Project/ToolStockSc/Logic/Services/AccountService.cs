@@ -124,5 +124,13 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
             return vm;
         }
+
+        public ProfileEditingViewModel GetProfileEditingModel(IMvcContext mvcContext)
+        {
+            var vm = new ProfileEditingViewModel();
+            vm.ScModel = mvcContext.GetDataSourceItem<ProfileEditingScModel>();
+
+            return vm;
+        }
     }
 }
