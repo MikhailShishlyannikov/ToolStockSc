@@ -82,8 +82,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                         user.Profile.SetCustomProperty("Surname", vm.Surname);
                         user.Profile.SetCustomProperty("Phone", vm.Phone);
                         user.Profile.SetCustomProperty("UserName", vm.Name);
-                        user.Profile.SetCustomProperty("Department", vm.DepartmentId.ToString());
-
+                        user.Profile.SetCustomProperty("Department", $"{{{vm.DepartmentId.ToString().ToUpper()}}}");
                     }
 
                     user.Profile.Save();

@@ -1,17 +1,17 @@
 ﻿---
 Username: |
-  extranet\qqqqq@q.q
-Email: qqqqq@q.q
+  extranet\qaz@q.q
+Email: qaz@q.q
 Comment: 
-Created: "2019-07-19T10:54:57.0000000Z"
+Created: "2019-07-29T11:27:08.0000000Z"
 IsApproved: True
 Properties:
 - Key: Department
-  Value: "798aa510-ef5b-4d91-a713-e53629f46aa6"
+  Value: "{798AA510-EF5B-4D91-A713-E53629F46AA6}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: FullName
-  Value: qqqqqqq qqqqqqq
+  Value: йфя qaxz
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: IsAdministrator
@@ -19,7 +19,7 @@ Properties:
   ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Patronymic
-  Value: qqqq
+  Value: qaz
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Phone
@@ -35,19 +35,19 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Surname
-  Value: qqqqqqq
+  Value: qaxz
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: UserName
-  Value: qqqqqqq
+  Value: йфя
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
-  Value: 6f0e5be297c455a00d8631c7130c7b9d
+  Value: 969457f82938acfb3297d029c11d9dd0
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: 03d409c87c583f95ae9a1d717c33124f
+  Value: d984338649fe683eae49d0dedc7a6bb8
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:
