@@ -1,8 +1,5 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Web;
 using AutoMapper;
 using Glass.Mapper.Sc;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;

@@ -132,5 +132,17 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
             return vm;
         }
+
+        public void UpdateProfile(ProfileEditingViewModel vm)
+        {
+            var user = User.Current;
+            user.Profile["UserName"] = vm.Name;
+            user.Profile["Patronymic"] = vm.Patronymic;
+            user.Profile["Surname"] = vm.Surname;
+            user.Profile.Email = vm.Email;
+            user.Profile["Phone"] = vm.Phone;
+
+            User.Current.Profile.Save();
+        }
     }
 }

@@ -95,5 +95,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
             return View("~/Areas/Project/ToolStockSc/Views/Account/ProfileEditing.cshtml", vm);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ProfileEditing(ProfileEditingViewModel vm)
+        {
+            _accountService.UpdateProfile(vm);
+
+            return Redirect("/User/Profile");
+        }
     }
 }

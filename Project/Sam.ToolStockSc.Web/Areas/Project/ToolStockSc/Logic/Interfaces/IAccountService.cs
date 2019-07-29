@@ -17,5 +17,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         ChangePasswordViewModel GetChangePasswordModel(IMvcContext mvcContext);
 
         ProfileEditingViewModel GetProfileEditingModel(IMvcContext mvcContext);
+        void UpdateProfile(ProfileEditingViewModel vm);
     }
 }

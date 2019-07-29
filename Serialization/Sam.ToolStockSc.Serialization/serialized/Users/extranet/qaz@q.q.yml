@@ -1,7 +1,7 @@
 ﻿---
 Username: |
   extranet\qaz@q.q
-Email: qaz@q.q
+Email: qaz@q.qx
 Comment: 
 Created: "2019-07-29T11:27:08.0000000Z"
 IsApproved: True
@@ -19,7 +19,7 @@ Properties:
   ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Patronymic
-  Value: qaz
+  Value: pat
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Phone
@@ -35,11 +35,11 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Surname
-  Value: qaxz
+  Value: User
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: UserName
-  Value: йфя
+  Value: Some
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
