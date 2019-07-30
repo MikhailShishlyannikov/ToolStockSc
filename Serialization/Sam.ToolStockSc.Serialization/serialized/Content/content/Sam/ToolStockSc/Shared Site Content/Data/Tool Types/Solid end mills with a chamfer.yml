@@ -1,0 +1,22 @@
+﻿---
+ID: "c509cca4-874f-4231-a7c1-782fd9b37446"
+Parent: "7ab262d5-f93d-4e96-a7bb-acdc79f9bb3d"
+Template: "fdd79b9d-4a7f-4412-8b0a-a345b1e7d7d2"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Tool Types/Solid end mills with a chamfer
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T101936Z
+    - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
+      Hint: Name
+      Value: Solid end mills with a chamfer

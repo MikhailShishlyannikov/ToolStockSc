@@ -133,7 +133,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/folder2_green.png|applications/32x32/form_green.png|people/32x32/keyboard_key.png|applications/32x32/exchange.png|database/32x32/user_edit.png|database/32x32/user_edit_h.png|applications/32x32/signpost.png|applications/32x32/scroll_replace.png|applications/32x32/clipboard.png|applications/32x32/signpost_add.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png|office/32x32/font.png
+  Value: apps/32x32/sinker.png|people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/folder2_green.png|applications/32x32/form_green.png|people/32x32/keyboard_key.png|applications/32x32/exchange.png|database/32x32/user_edit.png|database/32x32/user_edit_h.png|applications/32x32/signpost.png|applications/32x32/scroll_replace.png|applications/32x32/clipboard.png|applications/32x32/signpost_add.png|applications/16x16/edit.png|network/32x32/upload.png|apps/32x32/pictures.png|applications/32x32/about.png|office/32x32/shelf_empty.png|office/32x32/information.png|database/32x32/cancel.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
