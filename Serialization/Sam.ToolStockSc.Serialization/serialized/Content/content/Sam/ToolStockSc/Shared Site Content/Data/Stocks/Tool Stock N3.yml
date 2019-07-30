@@ -1,0 +1,25 @@
+﻿---
+ID: "8937425f-ab5a-425b-a084-19bbb7f573e4"
+Parent: "4898302c-e4cc-4655-8fe7-cbe3b778cd0f"
+Template: "5a52586c-6587-44a1-94fb-b2f5d877ec55"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Stocks/Tool Stock N3
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T095205Z
+    - ID: "e75348d7-0fce-4c9e-99f9-24ade63db19b"
+      Hint: Name
+      Value: Tool Stock N3
+    - ID: "eb6568a9-cd9c-4e07-aa0e-e543f90794b6"
+      Hint: Department
+      Value: "{F684229D-2511-477F-AB1E-A8C40C56E000}"

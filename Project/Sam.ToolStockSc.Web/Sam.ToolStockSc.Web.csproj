@@ -372,6 +372,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\CommonLogic.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\WebFooterController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\LogoLinkController.cs" />
@@ -412,6 +413,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ProfileEditingScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\UserReferenceScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LoginViewModel.cs" />

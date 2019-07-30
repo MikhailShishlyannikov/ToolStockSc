@@ -1,0 +1,22 @@
+﻿---
+ID: "8cf1d8c6-308b-4700-88a3-755ca93df7b8"
+Parent: "9018bed5-3a86-4267-8ec5-497049de6191"
+Template: "d823338a-f6bc-46b4-b32b-73ba7a02439a"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/User References/keeper__gmail_com
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T100706Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Anonymous
+    - ID: "d77a8036-8097-4715-87a7-eb8b71a3fa21"
+      Hint: User
+      Value: |
+        extranet\keeper@gmail.com

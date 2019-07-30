@@ -92,5 +92,16 @@
         {
             public const string Id = "{8B50623F-91CB-46E1-8AD1-DB2ADEBAE85D}";
         }
+
+        public struct UserReference
+        {
+            public const string Id = "{D823338A-F6BC-46B4-B32B-73BA7A02439A}";
+
+            public struct Fields
+            {
+                public const string User = "{D77A8036-8097-4715-87A7-EB8B71A3FA21}";
+                public const string User_FieldName = "User";
+            }
+        }
     }
 }
