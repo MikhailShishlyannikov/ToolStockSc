@@ -10,11 +10,7 @@ namespace Sam.Foundation.GlassMapper.Controllers
 
         public BaseController(IMvcContext mvcContext)
         {
-            if (mvcContext == null)
-            {
-                throw new ArgumentNullException(nameof(mvcContext));
-            }
-            _mvcContext = mvcContext;
+            _mvcContext = mvcContext ?? throw new ArgumentNullException(nameof(mvcContext));
         }
     }
 }

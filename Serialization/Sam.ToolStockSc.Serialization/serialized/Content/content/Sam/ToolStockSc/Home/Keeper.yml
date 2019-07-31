@@ -23,9 +23,111 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{BA4153A6-C3C6-470E-A611-4FCBB53B29BB}"
+              p:before="*"
+              s:ds="{8D8BE02B-841E-40A4-8A78-9ACB7F1D5CBD}"
+              s:id="{016E0C4F-DA4D-4C08-98C0-839DC358D7CC}"
+              s:ph="Footer" />
+            <r
+              uid="{1837FD27-5C18-4B9F-8F67-B33EDC6224B8}"
+              p:after="r[@uid='{BA4153A6-C3C6-470E-A611-4FCBB53B29BB}']"
+              s:ds="{A8CB7947-918D-4EAA-8335-8BF89E68C184}"
+              s:id="{3632C9B9-D026-4909-ACD7-93F844993F4E}"
+              s:par="Icon=%7B4A53EC92-4222-494C-A90C-51B424E63DDA%7D"
+              s:ph="/Header/UserInfo-{ECA04920-63D6-40EC-86A9-0C37393480BC}-0/Nav Link-{DD968262-DA52-4D0B-8D7F-6FBF80074E1A}-0" />
+            <r
+              uid="{9B34BAE7-D42D-4C20-BE20-7E667101B128}"
+              p:after="r[@uid='{1837FD27-5C18-4B9F-8F67-B33EDC6224B8}']"
+              s:ds="{EFF3E482-B102-44FB-B9E8-43EA7E57C907}"
+              s:id="{3632C9B9-D026-4909-ACD7-93F844993F4E}"
+              s:par="Icon=%7B93AF9C77-6E5F-491A-9F87-8C48FF016471%7D"
+              s:ph="/Header/UserInfo-{ECA04920-63D6-40EC-86A9-0C37393480BC}-0/Nav Link-{DD968262-DA52-4D0B-8D7F-6FBF80074E1A}-0" />
+            <r
+              uid="{DD968262-DA52-4D0B-8D7F-6FBF80074E1A}"
+              p:after="r[@uid='{9B34BAE7-D42D-4C20-BE20-7E667101B128}']"
+              s:id="{96CA6D58-BA47-4685-8C97-B7EE8DE593D7}"
+              s:ph="/Header/UserInfo-{ECA04920-63D6-40EC-86A9-0C37393480BC}-0" />
+            <r
+              uid="{78ADB06C-566D-435F-919F-BDAD615C6FF2}"
+              p:after="r[@uid='{DD968262-DA52-4D0B-8D7F-6FBF80074E1A}']"
+              s:ds="{F0AB3621-AA69-4E5D-8F78-7E624F013FEB}"
+              s:id="{B73E617D-000D-4B8F-A153-9AE2BE5AC587}"
+              s:ph="/Header/Logo-{ECA04920-63D6-40EC-86A9-0C37393480BC}-0" />
+            <r
+              uid="{ECA04920-63D6-40EC-86A9-0C37393480BC}"
+              p:after="*[1=2]"
+              s:id="{553A5910-862F-4B2A-9B4E-37282D1BC015}"
+              s:ph="Header" />
+          </d>
+        </r>
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190717T100849Z
     - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
       Hint: Title
       Value: Keeper
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{1C0327BE-0A6C-4A86-9177-4E9EBBF92D2D}"
+              p:before="*"
+              s:ds="{8D8BE02B-841E-40A4-8A78-9ACB7F1D5CBD}"
+              s:id="{016E0C4F-DA4D-4C08-98C0-839DC358D7CC}"
+              s:ph="Footer" />
+            <r
+              uid="{C71A5F7C-4498-4284-BB6D-E61C7072293A}"
+              p:after="r[@uid='{1C0327BE-0A6C-4A86-9177-4E9EBBF92D2D}']"
+              s:ds="{A8CB7947-918D-4EAA-8335-8BF89E68C184}"
+              s:id="{3632C9B9-D026-4909-ACD7-93F844993F4E}"
+              s:par="Icon=%7B4A53EC92-4222-494C-A90C-51B424E63DDA%7D"
+              s:ph="/Header/UserInfo-{37364381-C348-4933-A132-AC581445BDBC}-0/Nav Link-{E21A9280-D4CC-423D-AC51-0C12B62FDD66}-0" />
+            <r
+              uid="{495C5493-C9A7-49DD-BD22-AB5FA049B42A}"
+              p:after="r[@uid='{C71A5F7C-4498-4284-BB6D-E61C7072293A}']"
+              s:ds="{EFF3E482-B102-44FB-B9E8-43EA7E57C907}"
+              s:id="{3632C9B9-D026-4909-ACD7-93F844993F4E}"
+              s:par="Icon=%7B93AF9C77-6E5F-491A-9F87-8C48FF016471%7D"
+              s:ph="/Header/UserInfo-{37364381-C348-4933-A132-AC581445BDBC}-0/Nav Link-{E21A9280-D4CC-423D-AC51-0C12B62FDD66}-0" />
+            <r
+              uid="{E21A9280-D4CC-423D-AC51-0C12B62FDD66}"
+              p:after="r[@uid='{495C5493-C9A7-49DD-BD22-AB5FA049B42A}']"
+              s:id="{96CA6D58-BA47-4685-8C97-B7EE8DE593D7}"
+              s:ph="/Header/UserInfo-{37364381-C348-4933-A132-AC581445BDBC}-0" />
+            <r
+              uid="{658602AE-048F-4B07-9348-5FA35007FA00}"
+              p:after="r[@uid='{E21A9280-D4CC-423D-AC51-0C12B62FDD66}']"
+              s:ds="{F0AB3621-AA69-4E5D-8F78-7E624F013FEB}"
+              s:id="{B73E617D-000D-4B8F-A153-9AE2BE5AC587}"
+              s:ph="/Header/Logo-{37364381-C348-4933-A132-AC581445BDBC}-0" />
+            <r
+              uid="{37364381-C348-4933-A132-AC581445BDBC}"
+              p:after="*[1=2]"
+              s:id="{553A5910-862F-4B2A-9B4E-37282D1BC015}"
+              s:ph="Header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T104804Z
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Кладовщик

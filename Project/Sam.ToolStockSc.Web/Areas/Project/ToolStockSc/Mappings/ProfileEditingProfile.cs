@@ -4,6 +4,7 @@ using AutoMapper;
 using Glass.Mapper.Sc;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
+using Sitecore.Mvc.Extensions;
 using Sitecore.Security.Accounts;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Mappings
@@ -19,10 +20,16 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Mappings
                 .ForMember(vm => vm.Email, opt => opt.MapFrom(u => u.Profile.Email))
                 .ForMember(vm => vm.Phone, opt => opt.MapFrom(u => u.Profile["Phone"]))
                 .ForMember(vm => vm.Role, opt => opt.MapFrom(u => u.Roles.FirstOrDefault().Name.Split('\\')[1]))
-                .ForMember(vm => vm.Department, 
+                //.ForMember(vm => vm.Department,
+                //    opt => opt.MapFrom(
+                //        u =>
+                //            new SitecoreService(SitecoreConstants.MasterDatabase.Master).GetItem<DepartmentScModel>(Guid.ParseExact(u.Profile["Department"], "B"))));
+                .ForMember(vm => vm.Department,
                     opt => opt.MapFrom(
-                        u => 
-                            new SitecoreService(SitecoreConstants.MasterDatabase.Master).GetItem<DepartmentScModel>(Guid.Parse(u.Profile["Department"]))));
+                        u => u.Profile["Department"].IsEmptyOrNull()
+                            ? null
+                            : new SitecoreService(SitecoreConstants.MasterDatabase.Master).GetItem<DepartmentScModel>(
+                                Guid.ParseExact(u.Profile["Department"], "B"))));
         }
     }
 }

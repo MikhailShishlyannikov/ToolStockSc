@@ -1,9 +1,13 @@
 ﻿---
 ID: "26004c3d-e642-4b45-9a6c-5acd616eb656"
-Parent: "bbfdd32f-cb90-4e65-b658-6d09b5fd1207"
+Parent: "fb5fac57-d888-4648-bc26-313286a3bdea"
 Template: "24e7c6f0-333b-4ff3-afdf-e49d8e898340"
-Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Header/Settings
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Header/Links/Settings
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
 Languages:
 - Language: en
   Versions:

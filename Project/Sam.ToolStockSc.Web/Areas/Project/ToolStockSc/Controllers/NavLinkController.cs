@@ -13,7 +13,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         {
             _navLinkService = navLinkService;
         }
-        // GET: Project/NavLink
+        
         public ActionResult NavLink()
         {
             var vm = _navLinkService.Get(_mvcContext);

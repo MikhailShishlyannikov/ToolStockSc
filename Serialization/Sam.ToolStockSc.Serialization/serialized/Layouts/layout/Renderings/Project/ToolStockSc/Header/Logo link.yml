@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Project/ToolStockSc/Header/Logo link
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Header
+  Value: "query:./Page Content/Header|query:/sitecore/Content/Sam/ToolStockSc/Home/*[@@name='Keeper' or @@name='User']/*[@@name='Page Content']/Header"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: 

@@ -25,21 +25,22 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         [HttpPost]
         public ActionResult Login(LoginViewModel vm)
         {
-            if (ModelState.IsValid)
-            {
-                using (new Sitecore.SecurityModel.SecurityDisabler())
-                {
-                    var login = _accountService.Login(vm);
+            if (Sitecore.Context.PageMode.IsExperienceEditor) return Login();
 
-                    if (login)
-                    {
-                        var user = Sitecore.Security.Accounts.User.FromName($"{vm.Email}", true);
-                        if (user.IsInRole(@"extranet\Keeper")) return Redirect("/keeper");
-                        if (user.IsInRole(@"extranet\User")) return Redirect("/user");
-                    }
-                }
+            if (!ModelState.IsValid) return Redirect($"{Sitecore.Context.Language.Name}/Log-In");
+
+            using (new Sitecore.SecurityModel.SecurityDisabler())
+            {
+                var login = _accountService.Login(vm);
+
+                if (!login) return Redirect($"{Sitecore.Context.Language.Name}/Log-In");
+
+                var user = Sitecore.Security.Accounts.User.FromName($"{vm.Email}", true);
+                if (user.IsInRole(@"extranet\Keeper")) return Redirect($"{Sitecore.Context.Language.Name}/keeper");
+                if (user.IsInRole(@"extranet\User")) return Redirect($"{Sitecore.Context.Language.Name}/user");
             }
-            return Redirect("/Log-In");
+
+            return Redirect($"{Sitecore.Context.Language.Name}/Log-In");
         }
 
         public ActionResult Register()
@@ -52,8 +53,10 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         [HttpPost]
         public ActionResult Register(RegisterViewModel vm)
         {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)return Register();
+
             _accountService.AddUser(vm);
-            return Redirect("/user");
+            return Redirect($"{Sitecore.Context.Language.Name}/user");
         }
 
         [HttpPost]
@@ -61,7 +64,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         public ActionResult LogOff()
         {
             Sitecore.Security.Authentication.AuthenticationManager.Logout();
-            return Redirect("/Home");
+            return Redirect($"{Sitecore.Context.Language.Name}/Home");
         }
 
         public ActionResult NavBar()
@@ -82,11 +85,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         public ActionResult ChangePassword(ChangePasswordViewModel vm)
         {
             var user = System.Web.Security.Membership.GetUser();
-            user.ChangePassword(vm.OldPassword, vm.NewPassword);
+            user?.ChangePassword(vm.OldPassword, vm.NewPassword);
 
-            if (Sitecore.Security.Accounts.User.Current.IsInRole(@"extranet\Keeper")) return Redirect("/Keeper/Settings");
-
-            return Redirect("/User/Settings");
+            return Redirect(Sitecore.Security.Accounts.User.Current.IsInRole(@"extranet\Keeper")
+                ? $"{Sitecore.Context.Language.Name}/Keeper/Settings"
+                : $"{Sitecore.Context.Language.Name}/User/Settings");
         }
 
         public ActionResult ProfileEditing()
@@ -100,9 +103,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult ProfileEditing(ProfileEditingViewModel vm)
         {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)return ProfileEditing();
+
             _accountService.UpdateProfile(vm);
 
-            return Redirect("/User/Profile");
+            return Redirect($"{Sitecore.Context.Language.Name}/User/Profile");
         }
     }
 }

@@ -1,0 +1,42 @@
+﻿---
+ID: "a8cb7947-918d-4eaa-8335-8bf89e68c184"
+Parent: "1fc37376-11b6-4254-a7fc-57ca40cde3f0"
+Template: "24e7c6f0-333b-4ff3-afdf-e49d8e898340"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Page Content/Header/Links/Profile
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T113135Z
+    - ID: "3e6ea968-d969-4296-893f-5b5b301f7e58"
+      Hint: Link
+      Value: |
+        <link text="Profile" anchor="" linktype="internal" class="" title=""  querystring="" id="{E2DCB930-15A0-40B1-956D-C024E200EDF4}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T113445Z
+    - ID: "3e6ea968-d969-4296-893f-5b5b301f7e58"
+      Hint: Link
+      Value: |
+        <link text="Профиль" anchor="" linktype="internal" class="" title=""  querystring="" id="{E2DCB930-15A0-40B1-956D-C024E200EDF4}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

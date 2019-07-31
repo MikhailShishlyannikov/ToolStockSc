@@ -1,9 +1,13 @@
 ﻿---
 ID: "c8b734c2-cd61-46e6-ae74-31528610fe6a"
-Parent: "00fd0184-6f74-46e5-ae50-eb4cbdf334ba"
+Parent: "72804a22-5223-42f3-b91a-0a623fa1ec63"
 Template: "8b50623f-91cb-46e1-8ad1-db2adebae85d"
-Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Change Password Form/Profile Editing
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Profile Editing/Profile Editing
 DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 75
 Languages:
 - Language: en
   Versions:

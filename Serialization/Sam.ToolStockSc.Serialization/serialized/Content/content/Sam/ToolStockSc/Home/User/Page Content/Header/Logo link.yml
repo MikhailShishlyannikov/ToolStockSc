@@ -5,6 +5,9 @@ Template: "57266a47-583f-4876-af06-6e116f4fc069"
 Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Header/Logo link
 DB: master
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 - ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
   Hint: __Enable item fallback
   Type: Checkbox

@@ -119,6 +119,9 @@ Languages:
     - ID: "bd282d6e-e47c-496d-9aa1-64b6d5282ce1"
       Hint: Authorization Request
       Value: Пожалуйста, войдите или зарегестрируйтесь
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Главная
     - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
       Hint: Greeting text
       Value: Вход

@@ -1,0 +1,18 @@
+﻿---
+ID: "72804a22-5223-42f3-b91a-0a623fa1ec63"
+Parent: "efb5bbad-eb47-48ad-8e5e-6639089f3ee5"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Forms/Profile Editing
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: database/32x32/user_edit.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190731T095546Z

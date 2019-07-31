@@ -108,6 +108,9 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Вход
     - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
       Hint: Greeting text
       Value: Войти

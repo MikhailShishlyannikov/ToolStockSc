@@ -13,7 +13,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         {
             _footerService = footerService;
         }
-        // GET: Project/Footer
+        
         public ActionResult Footer()
         {
             var vm = _footerService.Get(_mvcContext);
