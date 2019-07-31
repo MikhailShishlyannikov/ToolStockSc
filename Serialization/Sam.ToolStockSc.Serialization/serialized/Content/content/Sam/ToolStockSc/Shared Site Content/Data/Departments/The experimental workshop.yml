@@ -20,7 +20,7 @@ Languages:
     - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
       Hint: Users
       Type: Multilist
-      Value: "{C42213A9-46DC-4297-867F-06142262870A}"
+      Value: 
     - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
       Hint: Name
       Value: The experimental workshop

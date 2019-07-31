@@ -56,7 +56,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             if (Sitecore.Context.PageMode.IsExperienceEditor)return Register();
 
             _accountService.AddUser(vm);
-            return Redirect($"{Sitecore.Context.Language.Name}/user");
+            var lang = Sitecore.Context.Language.Name;
+
+            return Redirect($"/{lang}/user");
         }
 
         [HttpPost]

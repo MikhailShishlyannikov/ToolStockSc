@@ -1,10 +1,5 @@
 ﻿using Sitecore.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Sitecore.Data.Items;
-using Sitecore.Syndication;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
 {
@@ -19,6 +14,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
         {
             public static Item UserReferences =
                 MasterDatabase.Master.GetItem(ID.Parse("{9018BED5-3A86-4267-8EC5-497049DE6191}"));
+
+            public static Item Departments =
+                MasterDatabase.Master.GetItem(ID.Parse("{2B4D6D09-5059-4082-85A0-DB6C09903B43}"));
 
         }
 

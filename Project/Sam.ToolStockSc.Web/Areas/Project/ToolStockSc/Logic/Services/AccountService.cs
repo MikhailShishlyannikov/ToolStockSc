@@ -10,7 +10,7 @@ using Sitecore.SecurityModel;
 using System;
 using System.Linq;
 using System.Web.Security;
-using Sitecore.Data.Items;
+using Castle.Core.Internal;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 {
@@ -25,16 +25,19 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
     {
         private readonly IMapper _mapper;
         private readonly SitecoreService _sitecoreService = new SitecoreService(SitecoreConstants.MasterDatabase.Master);
+        private readonly IUserReferenceService _userReferenceService;
+        private readonly IDepartmentService _departmentService;
 
-
-        public AccountService(IMapper mapper)
+        public AccountService(IMapper mapper, IUserReferenceService userReferenceService, IDepartmentService departmentService)
         {
             _mapper = mapper;
+            _userReferenceService = userReferenceService;
+            _departmentService = departmentService;
         }
 
         public bool Login(LoginViewModel vm)
         {
-            vm.Email = string.Format(@"{0}\{1}", "extranet", vm.Email);
+            vm.Email = $@"{"extranet"}\{vm.Email}";
             try
             {
                 if (Sitecore.Security.Authentication.AuthenticationManager.Login(vm.Email, vm.Password, true))
@@ -55,92 +58,56 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         ///  </summary>
         public void AddUser(RegisterViewModel vm)
         {
-            string userName = vm.Email;
-            userName = string.Format(@"{0}\{1}", "extranet", userName);
-            string newPassword = vm.Password;
+            var userName = vm.Email;
+            userName = $@"{"extranet"}\{userName}";
+            var newPassword = vm.Password;
             try
             {
-                if (!User.Exists(userName))
-                {
-                    Membership.CreateUser(userName, newPassword, vm.Email);
+                if (User.Exists(userName)) return;
+                Membership.CreateUser(userName, newPassword, vm.Email);
 
-                    // Edit the profile information
-                    User user = User.FromName(userName, true);
+                // Edit the profile information
+                var user = User.FromName(userName, true);
 
-                    user.Roles.Add(Role.FromName(@"extranet\User"));
+                user.Roles.Add(Role.FromName(@"extranet\User"));
 
-                    user.Profile.FullName = string.Format("{0} {1}", vm.Name, vm.Surname);
+                user.Profile.FullName = $"{vm.Name} {vm.Surname}";
 
                     
-                    using(new SecurityDisabler())
-                    {
-                        // Assigning the user profile template
-                        user.Profile.ProfileItemId = "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}";
-                        user.Profile.Save();
-
-                        // Have modified the user template to also contain telephone number and patronomyc.
-                        user.Profile.SetCustomProperty("Patronymic", vm.Patronymic);
-                        user.Profile.SetCustomProperty("Surname", vm.Surname);
-                        user.Profile.SetCustomProperty("Phone", vm.Phone);
-                        user.Profile.SetCustomProperty("UserName", vm.Name);
-                        user.Profile.SetCustomProperty("Department", $"{{{vm.DepartmentId.ToString().ToUpper()}}}");
-                    }
-
+                using(new SecurityDisabler())
+                {
+                    // Assigning the user profile template
+                    user.Profile.ProfileItemId = "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}";
                     user.Profile.Save();
 
-                    // The SecurityDisabler overrides the current security model, allowing you
-                    // to access the item without any security. It's like the user being an administrator
-                    using (new Sitecore.SecurityModel.SecurityDisabler())
-                    {
-                        var referenceForNewUser = new UserReferenceScModel {Id = Guid.NewGuid(), UserName = userName};
-
-                        var itemName = userName.Split('\\')[1];
-                        itemName = itemName.Replace("@", "__");
-                        itemName = itemName.Replace('.', '_');
-                        // Add the item to the site tree
-                        var newItem =
-                            SitecoreConstants.ParentItems.UserReferences.Add(itemName,
-                                SitecoreConstants.TemplateItems.UserReference);
-
-                        // Set the new item in editing mode
-                        // Fields can only be updated when in editing mode
-                        // (It's like the begin tarnsaction on a database)
-                        newItem.Editing.BeginEdit();
-                        try
-                        {
-                            // Assign values to the fields of the new item
-                            newItem.Fields["User"].Value = referenceForNewUser.UserName;
-
-                            // End editing will write the new values back to the Sitecore
-                            // database (It's like commit transaction of a database)
-                            newItem.Editing.EndEdit();
-                            CommonLogic.PublishItem(newItem);
-                        }
-                        catch (Exception ex)
-                        {
-                            // The update failed, write a message to the log
-                            Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this); //TODO $"" и вынести в константу
-
-                            // Cancel the edit (not really needed, as Sitecore automatically aborts
-                            // the transaction on exceptions, but it wont hurt your code)
-                            newItem.Editing.CancelEdit();
-                        }
-                    }
-                    //_sitecoreService.CreateItem<UserReferenceScModel>(SitecoreConstants.ParentItems.UserReferences,
-                    //    new UserReferenceScModel {UserName = userName});
-
-                    Login(new LoginViewModel { Email = vm.Email, Password = vm.Password });
+                    // Have modified the user template to also contain telephone number and patronomyc.
+                    user.Profile.SetCustomProperty("Patronymic", vm.Patronymic.IsNullOrEmpty() ? "" : vm.Patronymic);
+                    user.Profile.SetCustomProperty("Surname", vm.Surname);
+                    user.Profile.SetCustomProperty("Phone", vm.Phone);
+                    user.Profile.SetCustomProperty("UserName", vm.Name);
+                    user.Profile.SetCustomProperty("Department", $"{{{vm.DepartmentId.ToString().ToUpper()}}}");
                 }
+
+                user.Profile.Save();
+
+                _userReferenceService.Create(userName);
+
+                var department = _departmentService.Get(vm.DepartmentId);
+                department.Users.Add(_userReferenceService.Get(userName));
+                _departmentService.Update(department);
+
+                Login(new LoginViewModel { Email = vm.Email, Password = vm.Password });
             }
             catch (Exception ex)
             {
-                Sitecore.Diagnostics.Log.Error(string.Format("Error in Sam.ToolStockSc.Logic.AccountService (AddUser): Message: {0}; Source:{1}", ex.Message, ex.Source), this);
+                Sitecore.Diagnostics.Log.Error(
+                    $"Error in Sam.ToolStockSc.Logic.AccountService (AddUser): Message: {ex.Message}; Source:{ex.Source}", this);
             }
         }
 
         public void AssignUserToRole(string domain, string firstName, string lastName, bool isSuperUser)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public LoginViewModel GetLoginModel(IMvcContext mvcContext)
@@ -160,8 +127,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public ChangePasswordViewModel GetChangePasswordModel(IMvcContext mvcContext)
         {
-            var vm = new ChangePasswordViewModel();
-            vm.ScModel = mvcContext.GetDataSourceItem<ChangePasswordScModel>();
+            var vm = new ChangePasswordViewModel {ScModel = mvcContext.GetDataSourceItem<ChangePasswordScModel>()};
 
             return vm;
         }

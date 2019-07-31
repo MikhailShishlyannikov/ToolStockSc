@@ -1,9 +1,9 @@
 ﻿---
 Username: |
-  extranet\keeper@gmail.com
-Email: keeper@gmail.com
+  extranet\Keeper@gmail.com
+Email: Keeper@gmail.com
 Comment: 
-Created: "2019-07-30T10:06:57.0000000Z"
+Created: "2019-07-31T11:00:01.0000000Z"
 IsApproved: True
 Properties:
 - Key: Department
@@ -11,7 +11,7 @@ Properties:
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: FullName
-  Value: Central keeper
+  Value: Keeper C
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: IsAdministrator
@@ -19,11 +19,11 @@ Properties:
   ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Patronymic
-  Value: keeper
+  Value: Central
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Phone
-  Value: "+375 (43) 434-34-34"
+  Value: "+375 (31) 230-10-03"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Portrait
@@ -34,26 +34,22 @@ Properties:
   Value: "{2E513D92-2DD0-4E63-9B58-7E7B5CCC4E6D}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
-- Key: Stock
-  Value: "{2DDDBF05-DBC1-40B2-AF17-B9A750846CF7}"
-  ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-  IsCustom: True
 - Key: Surname
-  Value: keeper
+  Value: C
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: UserName
-  Value: Central
+  Value: Keeper
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhash
-  Value: bc8f483702c7e3c1097d365992324baa
+  Value: 2bd0f09f09b9677cfe070921f7e5aed1
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: digestcredentialhashwithoutdomain
-  Value: f0119a8484961529ff5f68c04fcacb68
+  Value: 066f5605fabfe3a2a91b2edfe2aeee79
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 Roles:
   MemberOf: |
-    extranet\Keeper
+    extranet\User
