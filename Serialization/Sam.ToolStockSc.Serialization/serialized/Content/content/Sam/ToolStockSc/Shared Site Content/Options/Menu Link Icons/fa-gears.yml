@@ -1,0 +1,27 @@
+﻿---
+ID: "e5375354-ecf6-45f3-8f98-2ba98d077d48"
+Parent: "a9594b3b-5470-47fa-93e9-fd271389840a"
+Template: "a0dc35e3-2ab6-4ccd-935b-de0da23cb0a5"
+Path: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Menu Link Icons/fa-gears"
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T120910Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "a0433169-68a4-43b6-a2b5-a7b207854416"
+      Hint: IconTag
+      Value: |
+        <i class="menu-icon fa fa-gears"></i>

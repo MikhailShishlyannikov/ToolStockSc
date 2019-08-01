@@ -1,0 +1,37 @@
+﻿---
+ID: "2b65e0d4-2fd4-400f-9316-d01493cd29f2"
+Parent: "66767dae-db45-4c7a-bedc-f85908a8646d"
+Template: "700a3007-ca17-4f3f-a40a-1738661a2457"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Page Content/Menu/Menu Links/All Tools
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T124156Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b1c25290-b102-4709-8192-3a5ebc8e4f03"
+      Hint: Link
+      Value: |
+        <link id="{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}" querystring="" target="" text="All tools" url="/Sam/ToolStockSc/Home/Keeper" linktype="internal" />
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T124533Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b1c25290-b102-4709-8192-3a5ebc8e4f03"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Все инструменты" querystring="" target="" id="{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}" />

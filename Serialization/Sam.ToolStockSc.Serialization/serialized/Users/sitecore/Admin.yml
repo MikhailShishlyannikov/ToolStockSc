@@ -33,7 +33,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{A13952A6-67A0-406E-95BA-0AD6BDDBF18D}"
+  Value: "{D687705A-5BBB-44A4-AD96-57AC2BAB96D5}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -48,7 +48,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{A13952A6-67A0-406E-95BA-0AD6BDDBF18D}"
+  Value: "{D687705A-5BBB-44A4-AD96-57AC2BAB96D5}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -108,7 +108,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: true
+  Value: false
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

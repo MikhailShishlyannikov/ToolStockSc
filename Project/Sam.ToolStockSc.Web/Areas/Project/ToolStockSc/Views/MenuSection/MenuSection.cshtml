@@ -3,4 +3,14 @@
 
 <li class="menu-title">@Html.Glass().Editable(m => m.Section)</li>
 
-@Html.Sitecore().DynamicPlaceholder("Menu Link")
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+    <div>
+        @Html.Sitecore().DynamicPlaceholder("Menu Link")
+    </div>
+}
+else
+{
+    @Html.Sitecore().DynamicPlaceholder("Menu Link")
+}
+

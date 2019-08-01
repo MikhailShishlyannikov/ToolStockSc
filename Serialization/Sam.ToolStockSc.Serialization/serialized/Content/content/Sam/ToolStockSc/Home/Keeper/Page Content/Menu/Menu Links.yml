@@ -1,0 +1,14 @@
+﻿---
+ID: "66767dae-db45-4c7a-bedc-f85908a8646d"
+Parent: "8c705949-515f-4fb5-9a88-bd571135c248"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Page Content/Menu/Menu Links
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T101746Z

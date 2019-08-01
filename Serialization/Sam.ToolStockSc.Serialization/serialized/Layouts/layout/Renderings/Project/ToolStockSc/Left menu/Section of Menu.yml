@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Project/ToolStockSc/Menu/Menu Section
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Menu/Menu Sections
+  Value: "query:./Page Content/Menu/Menu Sections|query:/sitecore/Content/Sam/ToolStockSc/Home/*[@@name='Keeper' or @@name='User']/*[@@name='Page Content']/Menu/Menu Sections"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: MenuSection
