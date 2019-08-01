@@ -42,17 +42,30 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                 {
                     item.Fields["Name"].Value = department.Name;
 
-                    MultilistField multiList = item.Fields["Users"];
+                    MultilistField userMultiList = item.Fields["Users"];
 
                     //clear multilist
-                    foreach (var multiListItem in multiList.List)
+                    foreach (var multiListItem in userMultiList.List)
                     {
-                        multiList.Remove(multiListItem);
+                        userMultiList.Remove(multiListItem);
                     }
 
                     foreach (var user in department.Users)
                     {
-                        multiList.Add(user.Id.ToID().ToString());
+                        userMultiList.Add(user.Id.ToID().ToString());
+                    }
+
+                    MultilistField stockMultiList = item.Fields["Stocks"];
+
+                    //clear multilist
+                    foreach (var multiListItem in stockMultiList.List)
+                    {
+                        stockMultiList.Remove(multiListItem);
+                    }
+
+                    foreach (var stock in department.Stocks)
+                    {
+                        stockMultiList.Add(stock.Id.ToID().ToString());
                     }
 
                     item.Editing.EndEdit();
