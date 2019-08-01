@@ -33,14 +33,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             {
                 var login = _accountService.Login(vm);
 
-                if (!login) return Redirect($"{Sitecore.Context.Language.Name}/Log-In");
+                if (!login) return Redirect($"/{Sitecore.Context.Language.Name}/Log-In");
 
                 var user = Sitecore.Security.Accounts.User.FromName($"{vm.Email}", true);
-                if (user.IsInRole(@"extranet\Keeper")) return Redirect($"{Sitecore.Context.Language.Name}/keeper");
-                if (user.IsInRole(@"extranet\User")) return Redirect($"{Sitecore.Context.Language.Name}/user");
+                if (user.IsInRole(@"extranet\Keeper")) return Redirect($"/{Sitecore.Context.Language.Name}/keeper");
+                if (user.IsInRole(@"extranet\User")) return Redirect($"/{Sitecore.Context.Language.Name}/user");
             }
 
-            return Redirect($"{Sitecore.Context.Language.Name}/Log-In");
+            return Redirect($"/{Sitecore.Context.Language.Name}/Log-In");
         }
 
         public ActionResult Register()
@@ -56,9 +56,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             if (Sitecore.Context.PageMode.IsExperienceEditor)return Register();
 
             _accountService.AddUser(vm);
-            var lang = Sitecore.Context.Language.Name;
 
-            return Redirect($"/{lang}/user");
+            return Redirect($"/{Sitecore.Context.Language.Name}/user");
         }
 
         [HttpPost]
@@ -66,7 +65,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         public ActionResult LogOff()
         {
             Sitecore.Security.Authentication.AuthenticationManager.Logout();
-            return Redirect($"{Sitecore.Context.Language.Name}/Home");
+            return Redirect($"/{Sitecore.Context.Language.Name}/Home");
         }
 
         public ActionResult NavBar()
@@ -90,8 +89,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             user?.ChangePassword(vm.OldPassword, vm.NewPassword);
 
             return Redirect(Sitecore.Security.Accounts.User.Current.IsInRole(@"extranet\Keeper")
-                ? $"{Sitecore.Context.Language.Name}/Keeper/Settings"
-                : $"{Sitecore.Context.Language.Name}/User/Settings");
+                ? $"/{Sitecore.Context.Language.Name}/Keeper/Settings"
+                : $"/{Sitecore.Context.Language.Name}/User/Settings");
         }
 
         public ActionResult ProfileEditing()
@@ -109,7 +108,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
             _accountService.UpdateProfile(vm);
 
-            return Redirect($"{Sitecore.Context.Language.Name}/User/Profile");
+            return Redirect(Sitecore.Security.Accounts.User.Current.IsInRole(@"extranet\Keeper")
+                ? $"/{Sitecore.Context.Language.Name}/Keeper/Profile"
+                : $"/{Sitecore.Context.Language.Name}/User/Profile");
         }
     }
 }

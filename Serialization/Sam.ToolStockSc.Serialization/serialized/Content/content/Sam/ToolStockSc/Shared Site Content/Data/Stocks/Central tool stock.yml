@@ -17,6 +17,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190730T095539Z
+    - ID: "8534ab9f-064d-4113-9ec0-4a36f178a1d8"
+      Hint: Users
+      Type: Multilist
+      Value: "{80450BE9-0393-4A27-99E0-E533840431DA}"
     - ID: "e75348d7-0fce-4c9e-99f9-24ade63db19b"
       Hint: Name
       Value: Central tool stock
