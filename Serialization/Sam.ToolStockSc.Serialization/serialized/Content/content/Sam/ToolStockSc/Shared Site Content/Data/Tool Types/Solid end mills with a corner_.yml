@@ -20,3 +20,9 @@ Languages:
     - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
       Hint: Name
       Value: Solid end mills with a corner radius
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {F9F20D6E-7A42-4222-9AB4-52976A6FD26C}
+        {A6D8DB7F-DC83-459C-A854-8E3EE2CB9DF7}

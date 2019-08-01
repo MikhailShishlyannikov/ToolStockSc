@@ -103,5 +103,25 @@
                 public const string User_FieldName = "User";
             }
         }
+
+        public struct Status
+        {
+            public const string Id = "{34DA2A92-D862-4459-8595-06649C6873CE}";
+        }
+
+        public struct Stock
+        {
+            public const string Id = "{5A52586C-6587-44A1-94FB-B2F5D877EC55}";
+        }
+
+        public struct Tool
+        {
+            public const string Id = "{51283586-EFA7-4BDF-A3EF-53394B5530DB}";
+        }
+
+        public struct ToolType
+        {
+            public const string Id = "{FDD79B9D-4A7F-4412-8B0A-A345B1E7D7D2}";
+        }
     }
 }

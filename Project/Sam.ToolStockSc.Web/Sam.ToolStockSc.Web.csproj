@@ -417,6 +417,10 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ProfileEditingScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\StatusScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\StockScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolTypeScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\UserReferenceScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />

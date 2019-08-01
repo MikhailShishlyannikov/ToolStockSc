@@ -20,3 +20,7 @@ Languages:
     - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
       Hint: Name
       Value: Universal drill chucks
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: "{7B4AA600-6428-4BAF-99A6-9476D9B16DB1}"

@@ -20,3 +20,7 @@ Languages:
     - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
       Hint: Name
       Value: Shrinkfit holders
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: "{6343C5AF-3B84-4548-96E5-3C1B29A59B1C}"

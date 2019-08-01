@@ -20,3 +20,10 @@ Languages:
     - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
       Hint: Name
       Value: Drills
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {77B694ED-CAC4-4BD4-9DE4-94D062A53E01}
+        {4BC4F5F3-8982-4A24-8FC6-0E3C6C31BC29}
+        {24FBBE33-51EC-4D04-9F46-5F8CD2695D3F}

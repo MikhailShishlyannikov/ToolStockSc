@@ -101,7 +101,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult ProfileEditing(ProfileEditingViewModel vm)
         {
             if (Sitecore.Context.PageMode.IsExperienceEditor)return ProfileEditing();

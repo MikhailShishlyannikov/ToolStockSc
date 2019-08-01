@@ -27,7 +27,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
 
         public DepartmentScModel Department { get; set; }
 
-        public string Stock { get; set; }
+        public StockScModel Stock { get; set; }
 
         public ProfileEditingScModel ScModel { get; set; }
     }
