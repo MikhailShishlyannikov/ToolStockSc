@@ -35,8 +35,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{4F427DE0-A787-41C3-A95F-23ADCB4AB75A}"
+              uid="{4E427224-D5B6-45F6-873A-914E386AD23E}"
               p:before="*"
+              s:ds="{6C3E33E2-90B4-4E12-9BBD-BF9EFE1CCABD}"
+              s:id="{24651F98-B8B5-413E-A327-251E2FDA6887}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{4F427DE0-A787-41C3-A95F-23ADCB4AB75A}-0" />
+            <r
+              uid="{4F427DE0-A787-41C3-A95F-23ADCB4AB75A}"
+              p:after="r[@uid='{4E427224-D5B6-45F6-873A-914E386AD23E}']"
               s:ds="{C1435934-97B5-406D-87B4-ED1D3BB9F024}"
               s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
               s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
@@ -148,8 +154,14 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B14F64EA-CA83-48CF-9C5F-B415A0C8A724}"
+              uid="{2BD1E7E3-7821-4C72-8493-C414B0678B69}"
               p:before="*"
+              s:ds="{6C3E33E2-90B4-4E12-9BBD-BF9EFE1CCABD}"
+              s:id="{24651F98-B8B5-413E-A327-251E2FDA6887}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{B14F64EA-CA83-48CF-9C5F-B415A0C8A724}-0" />
+            <r
+              uid="{B14F64EA-CA83-48CF-9C5F-B415A0C8A724}"
+              p:after="r[@uid='{2BD1E7E3-7821-4C72-8493-C414B0678B69}']"
               s:ds="{C1435934-97B5-406D-87B4-ED1D3BB9F024}"
               s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
               s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />

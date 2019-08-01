@@ -1,0 +1,14 @@
+﻿---
+ID: "3abcea74-89bc-46f0-a09e-fd1452562e85"
+Parent: "0d15212a-d802-4f4c-a3ef-3e2e2f82f0ed"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Tool Type Creating/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T143756Z

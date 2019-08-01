@@ -123,5 +123,10 @@
         {
             public const string Id = "{FDD79B9D-4A7F-4412-8B0A-A345B1E7D7D2}";
         }
+
+        public struct ToolTypeCreating
+        {
+            public const string Id = "{0D15212A-D802-4F4C-A3EF-3E2E2F82F0ED}";
+        }
     }
 }

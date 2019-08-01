@@ -1,0 +1,20 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ToolTypeCreatingViewModel
+
+<div class="col-12">
+    @using (Html.BeginForm("ToolTypeCreating", "ToolType", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <div class="row form-group">
+            <div class="col col-sm-1">
+                <label class="form-control-label" for=@Model.Name>@Html.Glass().Editable(Model.ScModel, m => m.Name)</label>
+            </div>
+            <div class="col col-sm-11">
+                @Html.ValidationMessageFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = Model.ScModel.Name })
+            </div>
+        </div>
+        <div class="form-actions form-group">
+            <input type="submit" value=@Translate.Text("ToolType.Create") name="Create" class="btn btn-primary">
+        </div>
+    }
+</div>

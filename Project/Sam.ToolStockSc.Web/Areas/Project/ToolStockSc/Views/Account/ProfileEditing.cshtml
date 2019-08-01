@@ -3,7 +3,6 @@
 
 @using (Html.BeginForm("ProfileEditing", "Account", FormMethod.Post, new { @class = "form-horizontal col-12" }))
 {
-    @*@Html.AntiForgeryToken()*@
     <div class="row form-group">
         <div class="col col-md-3">
             <label class="form-control-label" for=@Model.Name>@Html.Glass().Editable(Model.ScModel, m => m.Name)</label>
