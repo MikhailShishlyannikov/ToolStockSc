@@ -1,0 +1,15 @@
+﻿@model Sam.Feature.TableCard.Areas.Feature.TableCard.Models.ViewModel.TableCardViewModel
+
+<div class="col-sm-12">
+    <div class="card">
+        <div class="card-header d-flex align-items-center">
+            <strong class="card-title">@Html.Glass().Editable(m => m.Title)</strong>
+            <div class="ml-auto">
+                @Html.Sitecore().DynamicPlaceholder("Button")
+            </div>
+        </div>
+        <div class="table-stats order-table ov-h">
+            @Html.Sitecore().DynamicPlaceholder("Table")
+        </div> <!-- /.table-stats -->
+    </div>
+</div>
