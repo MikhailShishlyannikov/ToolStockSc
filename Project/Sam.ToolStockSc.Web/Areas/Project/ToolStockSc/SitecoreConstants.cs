@@ -31,5 +31,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public static TemplateItem ToolType =
                 MasterDatabase.Master.GetItem(ID.Parse(Templates.ToolType.Id));
         }
+
+        public struct PageItems
+        {
+            public static Item ToolTypeRename =
+                MasterDatabase.Master.GetItem(ID.Parse("{B9E0DB48-F58D-455B-A97C-4000DBAECAAB}"));
+        }
     }
 }

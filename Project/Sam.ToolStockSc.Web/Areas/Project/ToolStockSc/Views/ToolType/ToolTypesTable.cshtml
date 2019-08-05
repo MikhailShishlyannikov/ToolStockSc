@@ -1,0 +1,32 @@
+﻿@using Sitecore.Globalization
+@model IEnumerable<Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ToolTypeViewModel>
+
+<table class="table ">
+    <thead>
+    <tr>
+        <th>@Translate.Text("ToolTypesTable.ID")</th>
+        <th>@Translate.Text("ToolTypesTable.Name")</th>
+        <th>@Translate.Text("ToolTypesTable.ToolAmount")</th>
+        <th>@Translate.Text("ToolTypesTable.Actions")</th>
+    </tr>
+    </thead>
+    <tbody>
+    @{
+        foreach (var toolTypeViewModel in Model)
+        {
+            <tr>
+                <td>@toolTypeViewModel.Id</td>
+                <td>
+                    <span class="name">@toolTypeViewModel.Name</span>
+                </td>
+                <td>
+                    <span class="count">@toolTypeViewModel.Tools.Count()</span>
+                </td>
+                <td>
+                    <a class="btn btn-success col-10 ml-auto" href=@toolTypeViewModel.UrlForRename>@Translate.Text("ToolTypesTable.Rename")</a>
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>

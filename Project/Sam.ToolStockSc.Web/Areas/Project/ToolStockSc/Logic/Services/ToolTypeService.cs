@@ -1,7 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using AutoMapper;
+using Glass.Mapper;
+using Glass.Mapper.Sc;
+using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
+using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
+using Sitecore.Common;
+using Sitecore.Data.Items;
+using Sitecore.Links;
 using Sitecore.SecurityModel;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
@@ -9,6 +19,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
     [Service(typeof(IToolTypeService))]
     public class ToolTypeService : IToolTypeService
     {
+        private readonly IMapper _mapper;
+        private readonly SitecoreService _sitecoreService = new SitecoreService(SitecoreConstants.MasterDatabase.Master);
+
+        public ToolTypeService(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
+
         public void Create(ToolTypeCreatingViewModel vm)
         {
             using (new SecurityDisabler())
@@ -41,6 +59,54 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                     // Cancel the edit (not really needed, as Sitecore automatically aborts
                     // the transaction on exceptions, but it wont hurt your code)
                     newItem.Editing.CancelEdit();
+                }
+            }
+        }
+
+        public IEnumerable<ToolTypeViewModel> GetAll()
+        {
+            var urlToPage =
+                LinkManager.GetItemUrl(_sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename));
+
+            var toolTypes =  _mapper.Map<IEnumerable<ToolTypeViewModel>>(
+                SitecoreConstants.ParentItems.ToolTypes.Children.Select(x =>
+                    _sitecoreService.GetItem<ToolTypeScModel>(x)));
+
+            return toolTypes.ForEach(x => x.UrlForRename = $"{urlToPage}?id={x.Id}");
+        }
+
+        public ToolTypeViewModel Get(Guid id)
+        {
+            return _mapper.Map<ToolTypeViewModel>(_sitecoreService.GetItem<ToolTypeScModel>(id));
+        }
+
+        public void Update(ToolTypeViewModel vm)
+        {
+            using (new SecurityDisabler())
+            {
+                // Get item
+                var item = SitecoreConstants.MasterDatabase.Master.GetItem(vm.Id.ToID());
+
+                // Set the new item in editing mode
+                // Fields can only be updated when in editing mode
+                // (It's like the begin tarnsaction on a database)
+                item.Editing.BeginEdit();
+
+                try
+                {
+                    item.Fields["Name"].Value = vm.Name;
+
+                    item.Editing.EndEdit();
+                    CommonLogic.PublishItem(item);
+                }
+                catch (Exception ex)
+                {
+                    // The update failed, write a message to the log
+                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                    // Cancel the edit (not really needed, as Sitecore automatically aborts
+                    // the transaction on exceptions, but it wont hurt your code)
+                    item.Editing.CancelEdit();
                 }
             }
         }

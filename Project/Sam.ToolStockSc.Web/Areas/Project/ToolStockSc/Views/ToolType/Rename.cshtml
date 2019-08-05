@@ -1,0 +1,35 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ToolTypeViewModel
+
+<div class="col-12">
+    @using (Html.BeginForm("ToolTypeRename", "ToolType", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <div class="row form-group">
+            <div class="col col-sm-1">
+                @Html.LabelFor(m => m.Id, new { @class = "form-control-lable" })
+            </div>
+            <div class="col col-sm-11">
+                @Html.TextBoxFor(m => m.Id, new
+                {
+                    @class = "form-control",
+                    placeholder = @Translate.Text("ToolType.Disabled"),
+                    disabled = true
+                })
+            </div>
+        </div>
+        @Html.HiddenFor(m => m.Id)
+        <div class="row form-group">
+            <div class="col col-sm-1">
+                @Html.LabelFor(m => m.Name, new { @class = "form-control-label" })
+            </div>
+            <div class="col col-sm-11">
+                @Html.ValidationMessageFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = @Translate.Text("Name") })
+            </div>
+        </div>
+        <div class="form-actions form-group">
+            <input type="submit" value=@Translate.Text("ToolTypesTable.Rename") name="Rename" class="btn btn-success">
+        </div>
+    }
+</div>
+        

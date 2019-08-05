@@ -20,3 +20,18 @@ Languages:
       Hint: __Created by
       Value: |
         sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T094045Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Создать новый тип инструмента" querystring="" target="" id="{9AC9F711-9EAD-4295-B58E-CB112F37C508}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

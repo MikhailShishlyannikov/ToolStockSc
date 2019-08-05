@@ -8,6 +8,12 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: Table
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {EB2E4FFD-2761-4653-B052-26A64D385227}
+    {180AAF8D-F114-4092-966D-298C9AE1F6B9}
 Languages:
 - Language: en
   Versions:

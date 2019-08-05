@@ -35,8 +35,13 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{7FA81464-AA8E-4515-86EB-16C332308317}"
+              uid="{4770B4BA-8806-40C0-9A85-88DB43485072}"
               p:before="*"
+              s:id="{180AAF8D-F114-4092-966D-298C9AE1F6B9}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Table-{1D32D304-F5EE-42FF-9C4B-6AE32135D9BC}-0" />
+            <r
+              uid="{7FA81464-AA8E-4515-86EB-16C332308317}"
+              p:after="r[@uid='{4770B4BA-8806-40C0-9A85-88DB43485072}']"
               s:ds="{FB902D41-C9B4-45D0-BD90-F40640C5F3F1}"
               s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
               s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
@@ -155,8 +160,26 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{FF62FCA7-830A-44FF-9213-8B1E9AA2EFE8}"
+              uid="{BA79B992-71FA-45EE-BA7C-DAB6A1CB6E5F}"
               p:before="*"
+              s:id="{180AAF8D-F114-4092-966D-298C9AE1F6B9}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Table-{C06B6185-6BCD-4B6F-90A8-661017969E36}-0" />
+            <r
+              uid="{945F1AD4-D3F9-4148-BF62-A6416AC21CAB}"
+              p:after="r[@uid='{BA79B992-71FA-45EE-BA7C-DAB6A1CB6E5F}']"
+              s:ds="{FB902D41-C9B4-45D0-BD90-F40640C5F3F1}"
+              s:id="{C3E0394B-FAD9-4960-89F9-21250325FFB0}"
+              s:par="Style=%7BD72C5D71-CAC7-4E3C-AE7A-55EF16E0E14C%7D"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Button-{C06B6185-6BCD-4B6F-90A8-661017969E36}-0" />
+            <r
+              uid="{C06B6185-6BCD-4B6F-90A8-661017969E36}"
+              p:after="r[@uid='{945F1AD4-D3F9-4148-BF62-A6416AC21CAB}']"
+              s:ds="{2955703B-F9B9-4E0A-81BE-B6031B1BACB0}"
+              s:id="{4794B62F-66A7-48A5-B766-25FFDEB67830}"
+              s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
+            <r
+              uid="{FF62FCA7-830A-44FF-9213-8B1E9AA2EFE8}"
+              p:after="r[@uid='{C06B6185-6BCD-4B6F-90A8-661017969E36}']"
               s:ds="{63582341-ACBE-4A91-A8D6-153A28BE83CA}"
               s:id="{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
               s:par="Icons=%7B2EDB0CC4-B469-4320-917E-4016E0277AA1%7D%7C%7B1AED3973-C982-4067-887D-B8C2C1204E91%7D"
