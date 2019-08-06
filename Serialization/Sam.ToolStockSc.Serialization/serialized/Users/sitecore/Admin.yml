@@ -28,7 +28,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
-  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=0&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
+  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=0&Item Buckets=0&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -178,7 +178,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/UserOptions.View.ShowBucketItems
-  Value: false
+  Value: true
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

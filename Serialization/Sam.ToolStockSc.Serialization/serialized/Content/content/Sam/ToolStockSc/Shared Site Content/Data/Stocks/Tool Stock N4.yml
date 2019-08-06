@@ -20,7 +20,12 @@ Languages:
     - ID: "54048b8b-7a38-4b5c-a9c1-f8cd5ef35809"
       Hint: Tools
       Type: Multilist
-      Value: "{7C7A8259-92A2-447E-BA92-DD86F94E3247}"
+      Value: |
+        {7C7A8259-92A2-447E-BA92-DD86F94E3247}
+        {63AE3F87-D0A8-4117-B089-871AAA4B70C0}
+        {D6A0129F-D8EC-4CB1-996E-49EA9736E46F}
+        {AE69BF27-E7B6-483C-A567-28D3F0D57358}
+        {43BCD15E-A056-40E3-850C-9B78D124C8D5}
     - ID: "e75348d7-0fce-4c9e-99f9-24ade63db19b"
       Hint: Name
       Value: Tool Stock N4

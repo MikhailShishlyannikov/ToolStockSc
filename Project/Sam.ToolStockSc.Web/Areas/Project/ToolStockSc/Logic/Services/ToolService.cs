@@ -6,6 +6,7 @@ using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
+using Sitecore.Buckets.Managers;
 using Sitecore.SecurityModel;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
@@ -98,7 +99,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                     stock.Tools = tools;
                     _stockService.Update(stock);
 
-                    if (vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value) return;
+                    if (vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value) continue;
 
                     var user = _userReferenceService.Get(vm.UserName);
                     tools = user.Tools.ToList();
@@ -106,6 +107,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                     user.Tools = tools;
                     _userReferenceService.Update(user);
                 }
+
+                BucketManager.Sync(SitecoreConstants.ParentItems.Tools);
             }
         }
     }
