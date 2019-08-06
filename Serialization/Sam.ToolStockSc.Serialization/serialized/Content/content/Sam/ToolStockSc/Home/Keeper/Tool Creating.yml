@@ -35,8 +35,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{92857043-5054-4D1D-A0CF-296453717F9B}"
+              uid="{DF88DBDD-DE3C-4B2A-9D30-FB63E3E46683}"
               p:before="*"
+              s:ds="{D5D8E413-66F5-40E9-A8A2-D517DDA20D56}"
+              s:id="{E0253BB2-FC3A-4242-99FA-BDF1CF987350}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{20040B75-EAC6-480F-8BB4-15C8AFEEA5F8}-0" />
+            <r
+              uid="{20040B75-EAC6-480F-8BB4-15C8AFEEA5F8}"
+              p:after="r[@uid='{DF88DBDD-DE3C-4B2A-9D30-FB63E3E46683}']"
+              s:ds="{1AB264F4-AD94-4C7B-91C7-0A2EB2443E54}"
+              s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
+              s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
+            <r
+              uid="{92857043-5054-4D1D-A0CF-296453717F9B}"
+              p:after="r[@uid='{20040B75-EAC6-480F-8BB4-15C8AFEEA5F8}']"
               s:ds="{63582341-ACBE-4A91-A8D6-153A28BE83CA}"
               s:id="{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
               s:par="Icons=%7B2EDB0CC4-B469-4320-917E-4016E0277AA1%7D%7C%7B1AED3973-C982-4067-887D-B8C2C1204E91%7D"
@@ -142,8 +154,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{BF0A80F7-C9A7-4581-B8C8-F1EE005EBA09}"
+              uid="{516D61AA-C549-40FC-8777-E23586FAFCB3}"
               p:before="*"
+              s:ds="{D5D8E413-66F5-40E9-A8A2-D517DDA20D56}"
+              s:id="{E0253BB2-FC3A-4242-99FA-BDF1CF987350}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{5EDB202B-D949-4F5D-A109-B8B04F1157CD}-0" />
+            <r
+              uid="{5EDB202B-D949-4F5D-A109-B8B04F1157CD}"
+              p:after="r[@uid='{516D61AA-C549-40FC-8777-E23586FAFCB3}']"
+              s:ds="{1AB264F4-AD94-4C7B-91C7-0A2EB2443E54}"
+              s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
+              s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
+            <r
+              uid="{BF0A80F7-C9A7-4581-B8C8-F1EE005EBA09}"
+              p:after="r[@uid='{5EDB202B-D949-4F5D-A109-B8B04F1157CD}']"
               s:ds="{63582341-ACBE-4A91-A8D6-153A28BE83CA}"
               s:id="{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
               s:par="Icons=%7B2EDB0CC4-B469-4320-917E-4016E0277AA1%7D%7C%7B1AED3973-C982-4067-887D-B8C2C1204E91%7D"

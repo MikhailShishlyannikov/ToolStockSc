@@ -58,7 +58,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
         public ActionResult ToolTypesTable()
         {
-            var vm = _toolTypeService.GetAll();
+            var vm = _toolTypeService.GetAllViewModels();
 
             return View("~/Areas/Project/ToolStockSc/Views/ToolType/ToolTypesTable.cshtml", vm);
         }
@@ -74,7 +74,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             }
 
             if (id == default) return ToolTypesTable();
-            var vm = _toolTypeService.Get(id);
+            var vm = _toolTypeService.GetViewModel(id);
 
             return View("~/Areas/Project/ToolStockSc/Views/ToolType/Rename.cshtml", vm);
 

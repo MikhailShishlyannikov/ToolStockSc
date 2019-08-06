@@ -1,0 +1,73 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ToolViewModel
+
+<div class="col-12">
+    @using (Html.BeginForm("Create", "Tool", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <div class="row form-group">
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.Name>@Html.Glass().Editable(Model.ScModel, m => m.Name)</label>
+            </div>
+            <div class="col col-sm-10">
+                @Html.ValidationMessageFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = Model.ScModel.Name })
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.Manufacturer>@Html.Glass().Editable(Model.ScModel, m => m.Manufacturer)</label>
+            </div>
+            <div class="col col-sm-10">
+                @Html.ValidationMessageFor(m => m.Manufacturer)
+                @Html.TextBoxFor(m => m.Manufacturer, new { @class = "form-control", placeholder = @Model.ScModel.Manufacturer, value = Model.Manufacturer })
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.Amount>@Html.Glass().Editable(Model.ScModel, m => m.Amount)</label>
+            </div>
+            <div class="col col-sm-3">
+                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Amount)
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.ToolTypeId>@Html.Glass().Editable(Model.ScModel, m => m.ToolType)</label>
+            </div>
+            <div class="col col-sm-4">
+                @Html.DropDownListFor(
+                    m => m.ToolTypeId, new SelectList(Model.ToolTypes, "Id", "Name", Model.ToolTypeId), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.ToolTypeId)
+            </div>
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.StockId>@Html.Glass().Editable(Model.ScModel, m => m.Stock)</label>
+            </div>
+            <div class="col col-sm-4">
+                @Html.DropDownListFor(
+                    m => m.StockId, new SelectList(Model.Stocks, "Id", "Name", Model.StockId), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.StockId)
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.StockId>@Html.Glass().Editable(Model.ScModel, m => m.User)</label>
+            </div>
+            <div class="col col-sm-4">
+                @Html.DropDownListFor(
+                    m => m.UserName, new SelectList(Model.Users, "User.Name", "User.Profile.FullName", Model.UserName), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.UserName)
+            </div>
+            <div class="col col-sm-2">
+                <label class="form-control-label" for=@Model.StatusId>@Html.Glass().Editable(Model.ScModel, m => m.Status)</label>
+            </div>
+            <div class="col col-sm-4">
+                @Html.DropDownListFor(o => o.StatusId, new SelectList(Model.Statuses, "Id", "Name", Model.StatusId), new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.StatusId)
+            </div>
+        </div>
+        <div class="form-actions form-group">
+            <input type="submit" value=@Translate.Text("Tool.Create") name="Create" class="btn btn-primary">
+        </div>
+    }
+</div>

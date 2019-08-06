@@ -21,6 +21,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public static Item ToolTypes =
                 MasterDatabase.Master.GetItem(ID.Parse("{7AB262D5-F93D-4E96-A7BB-ACDC79F9BB3D}"));
 
+            public static Item Stocks =
+                MasterDatabase.Master.GetItem(ID.Parse("{4898302C-E4CC-4655-8FE7-CBE3B778CD0F}"));
+
+            public static Item Statuses =
+                MasterDatabase.Master.GetItem(ID.Parse("{B2265AE9-A406-4724-9D3C-8ABD5EEA811E}"));
+
+            public static Item Tools =
+                MasterDatabase.Master.GetItem(ID.Parse("{2FF7C929-4BCC-4CB3-80C3-0A3040CAA319}"));
         }
 
         public struct TemplateItems
@@ -30,12 +38,24 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
 
             public static TemplateItem ToolType =
                 MasterDatabase.Master.GetItem(ID.Parse(Templates.ToolType.Id));
+
+            public static TemplateItem Tool =
+                MasterDatabase.Master.GetItem(ID.Parse(Templates.Tool.Id));
+
+            public static TemplateItem Stock =
+                MasterDatabase.Master.GetItem(ID.Parse(Templates.Stock.Id));
         }
 
         public struct PageItems
         {
             public static Item ToolTypeRename =
                 MasterDatabase.Master.GetItem(ID.Parse("{B9E0DB48-F58D-455B-A97C-4000DBAECAAB}"));
+        }
+
+        public struct FakeUser
+        {
+            public static Item Fake =
+                MasterDatabase.Master.GetItem(ID.Parse("{F3786F6C-7D71-4012-BAC0-80306B7A6B7D}"));
         }
     }
 }

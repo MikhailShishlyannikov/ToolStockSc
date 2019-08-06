@@ -12,6 +12,16 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190731T110002Z
+    - ID: "2fba9c9a-9a1d-4d8c-822b-ac97da48c24d"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {4411631A-7EB2-4674-ABF1-FCE09923B40B}
+        {EA48029E-E5AD-4EF0-A2DF-F296C8047859}
+        {8D8EDCB4-121F-40EB-AC81-8E3FB182D72B}
+        {540DFC25-C4FF-4E01-8630-9AF8BB343D43}
+        {6D4DC11F-EADC-46E7-BE63-154639F3D22D}
+        {ECA323D1-9397-4274-8C0D-E23749E60403}
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

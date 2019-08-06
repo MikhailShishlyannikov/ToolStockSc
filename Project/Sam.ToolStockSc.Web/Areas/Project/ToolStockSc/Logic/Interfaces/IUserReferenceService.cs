@@ -10,5 +10,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         IEnumerable<UserReferenceScModel> GetAll();
 
         UserReferenceScModel Get(string userName);
+
+        void Update(UserReferenceScModel user);
     }
 }

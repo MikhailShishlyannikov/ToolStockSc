@@ -4,12 +4,12 @@ using System.Linq;
 using AutoMapper;
 using Glass.Mapper;
 using Glass.Mapper.Sc;
-using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Common;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.SecurityModel;
@@ -63,7 +63,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             }
         }
 
-        public IEnumerable<ToolTypeViewModel> GetAll()
+        public IEnumerable<ToolTypeViewModel> GetAllViewModels()
         {
             var urlToPage =
                 LinkManager.GetItemUrl(_sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename));
@@ -75,7 +75,18 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             return toolTypes.ForEach(x => x.UrlForRename = $"{urlToPage}?id={x.Id}");
         }
 
-        public ToolTypeViewModel Get(Guid id)
+        public IEnumerable<ToolTypeScModel> GetAll()
+        {
+            return SitecoreConstants.ParentItems.ToolTypes.Children.Select(x =>
+                _sitecoreService.GetItem<ToolTypeScModel>(x));
+        }
+
+        public ToolTypeScModel Get(Guid id)
+        {
+            return _sitecoreService.GetItem<ToolTypeScModel>(id);
+        }
+
+        public ToolTypeViewModel GetViewModel(Guid id)
         {
             return _mapper.Map<ToolTypeViewModel>(_sitecoreService.GetItem<ToolTypeScModel>(id));
         }
@@ -95,6 +106,49 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                 try
                 {
                     item.Fields["Name"].Value = vm.Name;
+
+                    item.Editing.EndEdit();
+                    CommonLogic.PublishItem(item);
+                }
+                catch (Exception ex)
+                {
+                    // The update failed, write a message to the log
+                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                    // Cancel the edit (not really needed, as Sitecore automatically aborts
+                    // the transaction on exceptions, but it wont hurt your code)
+                    item.Editing.CancelEdit();
+                }
+            }
+        }
+
+        public void Update(ToolTypeScModel scModel)
+        {
+            using (new SecurityDisabler())
+            {
+                // Get item
+                var item = SitecoreConstants.MasterDatabase.Master.GetItem(scModel.Id.ToID());
+
+                // Set the new item in editing mode
+                // Fields can only be updated when in editing mode
+                // (It's like the begin tarnsaction on a database)
+                item.Editing.BeginEdit();
+                try
+                {
+                    item.Fields["Name"].Value = scModel.Name;
+
+                    MultilistField toolsMultiList = item.Fields["Tools"];
+
+                    //clear multilist
+                    foreach (var multiListItem in toolsMultiList.List)
+                    {
+                        toolsMultiList.Remove(multiListItem);
+                    }
+
+                    foreach (var tool in scModel.Tools)
+                    {
+                        toolsMultiList.Add(tool.Id.ToID().ToString());
+                    }
 
                     item.Editing.EndEdit();
                     CommonLogic.PublishItem(item);

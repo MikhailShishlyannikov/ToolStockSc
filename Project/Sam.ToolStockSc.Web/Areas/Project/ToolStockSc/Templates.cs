@@ -117,6 +117,12 @@
         public struct Tool
         {
             public const string Id = "{51283586-EFA7-4BDF-A3EF-53394B5530DB}";
+
+            public struct Fields
+            {
+                public const string ToolType = "{FC812A40-DDA1-4C2E-B617-FBE60D19939C}";
+                public const string ToolType_FieldName = "Tool Type";
+            }
         }
 
         public struct ToolType
@@ -127,6 +133,17 @@
         public struct ToolTypeCreating
         {
             public const string Id = "{0D15212A-D802-4F4C-A3EF-3E2E2F82F0ED}";
+        }
+
+        public struct ToolCreating
+        {
+            public const string Id = "{0E94475C-A95E-495B-9E77-100709CEEEA4}";
+
+            public struct Fields
+            {
+                public const string ToolType = "{A4EC15FD-ED30-4866-961E-0D4F6880F23F}";
+                public const string ToolType_FieldName = "Tool Type";
+            }
         }
     }
 }

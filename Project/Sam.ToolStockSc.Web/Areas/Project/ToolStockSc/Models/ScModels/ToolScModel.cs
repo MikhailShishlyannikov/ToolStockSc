@@ -16,7 +16,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels
         [SitecoreField(FieldType = SitecoreFieldType.Droplink)]
         public virtual StatusScModel Status { get; set; }
 
-        [SitecoreField(FieldType = SitecoreFieldType.Droplink)]
+        [SitecoreField(FieldId = Templates.Tool.Fields.ToolType)]
         public virtual ToolTypeScModel ToolType { get; set; }
 
         [SitecoreField(FieldType = SitecoreFieldType.Droplink)]
