@@ -1,0 +1,13 @@
+﻿@model Sam.Foundation.ErrorHandling.Areas.Foundation.ErrorHandling.Models.ViewModels.ErrorViewModel
+
+<div>
+    <h1>@Html.Glass().Editable(m => m.StatusCode)</h1>
+    <h2>@Html.Glass().Editable(m => m.Message) <b>:(</b></h2>
+    <h2>
+        @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+        {
+            <span>@Html.Glass().Editable(m => m.LinkText)</span>
+        }
+        <a href="javascript:history.go(-1)">@Model.LinkText</a>
+    </h2>
+</div>

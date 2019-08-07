@@ -1,0 +1,22 @@
+﻿---
+ID: "a80b8295-41da-43a2-884d-a314f7bbe55a"
+Parent: "cc60d6e9-6dac-48eb-b472-fb75ecfb70a3"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/ToolStockSc/LayoutNotFound
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{77AA0690-F226-4D59-8885-BDDC070B0CE7}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{119427D3-A882-4D84-9071-E3B48B82E696}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T081553Z

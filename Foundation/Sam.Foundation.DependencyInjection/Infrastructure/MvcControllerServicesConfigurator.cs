@@ -10,6 +10,7 @@ namespace Sam.Foundation.DependencyInjection.Infrastructure
             serviceCollection.AddMvcControllers("*.Feature.*");
             serviceCollection.AddClassesWithServiceAttribute("*.Feature.*");
 
+            serviceCollection.AddMvcControllers("*.Foundation.*");
             serviceCollection.AddClassesWithServiceAttribute("*.Foundation.*");
 
             serviceCollection.AddMvcControllers("*.ToolStockSc.*");
