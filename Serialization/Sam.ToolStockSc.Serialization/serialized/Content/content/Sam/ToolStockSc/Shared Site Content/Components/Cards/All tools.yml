@@ -1,0 +1,31 @@
+﻿---
+ID: "ed74e511-7f4d-4b28-9493-c5136ce1d3b9"
+Parent: "1810e276-d3cd-45db-a6e3-0925a3007573"
+Template: "6c808952-737c-44e0-a7ab-a0794da2532d"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Components/Cards/All tools
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190808T074036Z
+    - ID: "3537ff05-fece-4fba-9ef7-5b3aef478c3b"
+      Hint: Title
+      Value: All tools
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190808T074137Z
+    - ID: "3537ff05-fece-4fba-9ef7-5b3aef478c3b"
+      Hint: Title
+      Value: Все инструменты
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

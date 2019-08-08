@@ -1,0 +1,17 @@
+﻿@model Sam.Feature.ToolCard.Areas.Feature.ToolCard.Models.ViewModels.ToolCardViewModel
+
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <strong class="card-title">@Html.Glass().Editable(m => m.Title)</strong>
+                    </div>
+                </div>
+                @Html.Sitecore().DynamicPlaceholder("Card Header")
+            </div>
+            <div id="results">
+                @Html.Sitecore().DynamicPlaceholder("Card Content")
+            </div>
+        </div>
+    </div>

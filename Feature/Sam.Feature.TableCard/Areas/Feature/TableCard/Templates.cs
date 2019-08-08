@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Sam.Feature.TableCard.Areas.Feature.TableCard
+﻿namespace Sam.Feature.TableCard.Areas.Feature.TableCard
 {
     public class Templates
     {
