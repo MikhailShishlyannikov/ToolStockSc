@@ -354,6 +354,10 @@
     <Content Include="Areas\Project\ToolStockSc\Views\ToolType\Rename.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Create.cshtml" />
     <Content Include="Web.config" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Search\SearchBar.cshtml">
+      <BrowseToURL>~/Areas/Project/ToolStockSc/Views/Search/SearchBar.cshtml</BrowseToURL>
+    </Content>
+    <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.Index.Tools.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -450,6 +454,7 @@
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Areas\Project\ToolStockSc\CommonLogic.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Controllers\SearchController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\ToolController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\ToolTypeController.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Controllers\WebFooterController.cs" />
@@ -464,6 +469,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IMenuLinkService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IMenuSectionService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\INavLinkService.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\ISearchBarService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IStatusService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IStockService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Interfaces\IToolService.cs" />
@@ -476,6 +482,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\MenuLinkService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\MenuSectionService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\NavLinkService.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Logic\Services\SearchBarService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\StatusService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\StockService.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Logic\Services\ToolService.cs" />
@@ -511,6 +518,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolTypeCreatingScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolTypeScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\UserReferenceScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\SearchResultModels\ToolSearchResultItem.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LoginViewModel.cs" />
@@ -520,6 +528,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\NavLinkViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ProfileEditingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\RegisterViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\SearchResultViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolCreatingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolTypeCreatingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolTypeViewModel.cs" />

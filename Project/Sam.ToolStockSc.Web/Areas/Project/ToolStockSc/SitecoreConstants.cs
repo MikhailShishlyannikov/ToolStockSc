@@ -57,5 +57,13 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public static Item Fake =
                 MasterDatabase.Master.GetItem(ID.Parse("{F3786F6C-7D71-4012-BAC0-80306B7A6B7D}"));
         }
+
+        public struct Indexes
+        {
+            public struct Tool
+            {
+                public const string Tools = "sc910_web_tools_index";
+            }
+        }
     }
 }

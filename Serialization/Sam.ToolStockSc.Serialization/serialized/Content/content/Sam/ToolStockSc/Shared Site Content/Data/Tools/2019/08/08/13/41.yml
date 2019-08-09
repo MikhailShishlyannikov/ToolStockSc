@@ -1,0 +1,18 @@
+﻿---
+ID: "10074073-912b-470f-9d03-43e605851dba"
+Parent: "23737180-c85c-4e2f-904a-250f0347691c"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Tools/2019/08/08/13/41
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190808T134114Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Keeper@gmail.com

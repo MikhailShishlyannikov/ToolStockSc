@@ -1,0 +1,37 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.SearchResultViewModel
+
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <div class="col-md-10 offset-md-1">
+                    @using (Ajax.BeginForm("Index", "Search", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }))
+                    {
+                        <div class="row form-group">
+                            <div class="col col-md-12">
+                                <div class="input-group">
+                                    @Html.HiddenFor(m => m.PageNumber)
+                                    @Html.HiddenFor(m => m.PageSize)
+                                    @Html.TextBoxFor(m => m.searchString, new { @class = "form-control", placeholder = @Translate.Text("Searching.Tool") })
+                                    <div class="input-group-prepend">
+                                        @Html.DropDownListFor(
+                                            m => m.Manufacturer, new SelectList(Model.Manufacturers, Model.Manufacturer), new { @class = "form-control input-group-text" })
+                                    </div>
+                                    <div class="input-group-prepend">
+                                        @Html.DropDownListFor(
+                                            m => m.toolTypeId, new SelectList(Model.ToolTypes, "Id", "Name", Model.toolTypeId), new { @class = "form-control  input-group-text" })
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary"><i class="fa fa-search"></i>@Translate.Text("Searching.Search")</button>
+                                    </div>
+                                    <div class="input-group-btn">
+                                        <input class="btn btn-danger" type="button" value=@Translate.Text("Searching.Reset") onclick="ClearAllFilter('@Url.Action("Index", "Search")', '@Translate.Text("Searching.ChooseManufacturer")', '@Translate.Text("Searching.ChooseToolType")')" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
