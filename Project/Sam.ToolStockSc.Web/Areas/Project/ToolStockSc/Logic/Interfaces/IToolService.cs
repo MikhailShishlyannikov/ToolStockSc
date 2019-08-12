@@ -11,10 +11,12 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
 
         IEnumerable<ToolScModel> Get(string name);
 
+        IEnumerable<ToolScModel> Get(string name, string manufacturer);
+
         ToolScModel Get(Guid Id);
 
         void Create(ToolViewModel vm);
 
-        IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId);
+        IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId, string name, string manufacturer);
     }
 }

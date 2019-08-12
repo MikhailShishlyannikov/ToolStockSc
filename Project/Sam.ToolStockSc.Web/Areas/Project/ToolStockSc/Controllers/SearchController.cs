@@ -47,21 +47,21 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             
             var tools = Sitecore.Security.Accounts.User.Current.IsInRole("extranet\\Keeper")
                 ? _toolService.GetAllToolCounts(true,
-                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid()).ToList()
+                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid(), searchString, manufacturer).ToList()
                 : _toolService.GetAllToolCounts(false,
-                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid()).ToList();
+                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid(), searchString, manufacturer).ToList();
 
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();
             var manufacturers = tools.Select(t => t.Manufacturer).Distinct().ToList();
 
-            if (searchString != "")
-            {
-                tools = tools.Where(t => t.Name.Contains(searchString)).ToList();
-            }
-            if (manufacturer != Translate.Text("Searching.ChooseManufacturer"))
-            {
-                tools = tools.Where(t => t.Manufacturer == manufacturer).ToList();
-            }
+            //if (searchString != "")
+            //{
+            //    tools = tools.Where(t => t.Name.Contains(searchString)).ToList();
+            //}
+            //if (manufacturer != Translate.Text("Searching.ChooseManufacturer"))
+            //{
+            //    tools = tools.Where(t => t.Manufacturer == manufacturer).ToList();
+            //}
             if (toolTypeId == new Guid() || toolTypeId == null)
             {
                 toolTypes.Insert(0, new ToolTypeViewModel { Id = toolTypeId, Name = Translate.Text("Searching.ChooseToolType") });

@@ -58,8 +58,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public IEnumerable<ToolScModel> Get(string name)
         {
-            //return GetAll().Where(x => x.Name == name);
-
             var items = Enumerable.Empty<ToolScModel>();
 
             var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
@@ -67,6 +65,42 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             {
                 var predicate = PredicateBuilder.True<ToolSearchResultItem>();
                 predicate = predicate.And(x => x.Name == name);
+
+                items = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
+                    .Select(x => new ToolScModel
+                    {
+                        Id = x.ItemId.ToGuid(),
+                        Name = x.ToolName,
+                        Manufacturer = x.Manufacturer,
+                        ToolType = _sitecoreService.GetItem<ToolTypeScModel>(x.ToolType.FirstOrDefault()),
+                        User = _sitecoreService.GetItem<UserReferenceScModel>(x.User.FirstOrDefault()),
+                        Status = _sitecoreService.GetItem<StatusScModel>(x.Status.FirstOrDefault()),
+                        Stock = _sitecoreService.GetItem<StockScModel>(x.Stock.FirstOrDefault())
+                    }).ToList();
+            }
+            return items;
+        }
+
+        public IEnumerable<ToolScModel> Get(string name, string manufacturer)
+        {
+            var items = Enumerable.Empty<ToolScModel>();
+
+            var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
+            using (var context = index.CreateSearchContext())
+            {
+                var predicate = PredicateBuilder.True<ToolSearchResultItem>();
+                if(!name.IsEmptyOrNull() && (!manufacturer.IsEmptyOrNull() && manufacturer != Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Name.Contains(name) && x.Manufacturer == manufacturer);
+                }
+                if (name.IsEmptyOrNull() && (!manufacturer.IsEmptyOrNull() && manufacturer != Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Manufacturer == manufacturer);
+                }
+                if (!name.IsEmptyOrNull() && (manufacturer.IsEmptyOrNull() || manufacturer == Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Name.Contains(name));
+                }
 
                 items = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
                     .Select(x => new ToolScModel
@@ -164,22 +198,21 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             }
         }
 
-        public IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId)
+        public IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId, string name, string manufacturer)
         {
             IEnumerable<ToolScModel> toolModels;
-
 
             if (stockId == new Guid())
             {
                 toolModels = showDeleted
-                    ? GetAll()
-                    : GetAll().Where(t => t.Status.Name != "Written Off");
+                    ? Get(name, manufacturer)
+                    : Get(name, manufacturer).Where(t => t.Status.Name != "Written Off");
             }
             else
             {
                 toolModels = showDeleted
-                    ? GetAll().Where(t => t.Stock.Id == stockId)
-                    : GetAll().Where(t => t.Status.Name != "Written Off" && t.Stock.Id == stockId);
+                    ? Get(name, manufacturer).Where(t => t.Stock.Id == stockId)
+                    : Get(name, manufacturer).Where(t => t.Status.Name != "Written Off" && t.Stock.Id == stockId);
             }
 
             var toolCounts = toolModels.GroupBy(t => t.Name)
