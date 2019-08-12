@@ -65,12 +65,17 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public IEnumerable<ToolTypeViewModel> GetAllViewModels()
         {
-            var urlToPage =
-                LinkManager.GetItemUrl(_sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename));
+            var item = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename);
 
-            var toolTypes =  _mapper.Map<IEnumerable<ToolTypeViewModel>>(
-                SitecoreConstants.ParentItems.ToolTypes.Children.Select(x =>
-                    _sitecoreService.GetItem<ToolTypeScModel>(x)));
+            var toolTypesSc = SitecoreConstants.ParentItems.ToolTypes.Children.Select(x =>
+                _sitecoreService.GetItem<ToolTypeScModel>(x));
+
+            var toolTypes = _mapper.Map<IEnumerable<ToolTypeViewModel>>(toolTypesSc);
+
+            if (item == null) return toolTypes;
+
+            var urlToPage =
+                LinkManager.GetItemUrl(item);
 
             return toolTypes.ForEach(x => x.UrlForRename = $"{urlToPage}?id={x.Id}");
         }
@@ -96,7 +101,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             using (new SecurityDisabler())
             {
                 // Get item
-                var item = SitecoreConstants.MasterDatabase.Master.GetItem(vm.Id.ToID());
+                var item = SitecoreConstants.MasterDatabase.Master.GetItem(vm.Id.GetValueOrDefault().ToID());
 
                 // Set the new item in editing mode
                 // Fields can only be updated when in editing mode

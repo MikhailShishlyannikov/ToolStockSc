@@ -36,6 +36,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             var allTools = _toolService.GetAll().ToList();
             var manufacturers = allTools.Select(t => t.Manufacturer).Distinct().ToList();
             vm.Manufacturers = manufacturers;
+            vm.TotalItems = allTools.Count;
 
             vm.Manufacturers.Insert(0, Translate.Text("Searching.ChooseManufacturer"));
             vm.ToolTypes.Insert(0, new ToolTypeViewModel { Id = new Guid(), Name = Translate.Text("Searching.ChooseToolType") });

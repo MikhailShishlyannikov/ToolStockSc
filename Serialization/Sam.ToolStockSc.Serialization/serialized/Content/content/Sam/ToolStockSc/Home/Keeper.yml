@@ -32,8 +32,13 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{BDBCFCBC-FDFD-4537-A0E3-FD42FD1D3E52}"
+              uid="{6549FEFC-C9CD-47DF-BFBD-890AF9E09E61}"
               p:before="*"
+              s:id="{5659A778-282D-42FA-B862-1BA85C2A42FB}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{AFD5D614-2AF7-4D85-A873-DD869E528640}-0" />
+            <r
+              uid="{BDBCFCBC-FDFD-4537-A0E3-FD42FD1D3E52}"
+              p:after="r[@uid='{6549FEFC-C9CD-47DF-BFBD-890AF9E09E61}']"
               s:id="{F991396B-F66F-463F-8737-40625F0EFF63}"
               s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Header-{AFD5D614-2AF7-4D85-A873-DD869E528640}-0" />
             <r
@@ -150,8 +155,13 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{06D8F61A-9941-43BB-A673-4693AD515359}"
+              uid="{7ABF06DE-D772-41B6-A67E-84C6E0F03E3C}"
               p:before="*"
+              s:id="{5659A778-282D-42FA-B862-1BA85C2A42FB}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{3562E814-12E9-46C1-9397-DCD51688292A}-0" />
+            <r
+              uid="{06D8F61A-9941-43BB-A673-4693AD515359}"
+              p:after="r[@uid='{7ABF06DE-D772-41B6-A67E-84C6E0F03E3C}']"
               s:id="{F991396B-F66F-463F-8737-40625F0EFF63}"
               s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Header-{3562E814-12E9-46C1-9397-DCD51688292A}-0" />
             <r

@@ -1,11 +1,14 @@
-﻿@using Sitecore.Globalization
+﻿@using System.Web.Mvc.Ajax
+@using Sitecore.Globalization
 @model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.SearchResultViewModel
-
+@{
+    var defaultGuid = new Guid().ToString();
+}
     <div class="row">
         <div class="card col-12">
             <div class="card-body">
                 <div class="col-md-10 offset-md-1">
-                    @using (Ajax.BeginForm("Index", "Search", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }))
+                    @using (Ajax.BeginForm("ToolSearch", "Search", new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }))
                     {
                         <div class="row form-group">
                             <div class="col col-md-12">
@@ -25,7 +28,7 @@
                                         <button class="btn btn-primary"><i class="fa fa-search"></i>@Translate.Text("Searching.Search")</button>
                                     </div>
                                     <div class="input-group-btn">
-                                        <input class="btn btn-danger" type="button" value=@Translate.Text("Searching.Reset") onclick="ClearAllFilter('@Url.Action("Index", "Search")', '@Translate.Text("Searching.ChooseManufacturer")', '@Translate.Text("Searching.ChooseToolType")')" />
+                                        <input class="btn btn-danger" type="button" value=@Translate.Text("Searching.Reset") onclick="ClearAllFilter('@Url.Action("ToolSearch", "Search")', '@Translate.Text("Searching.ChooseManufacturer")', '@defaultGuid')" />
                                     </div>
                                 </div>
                             </div>

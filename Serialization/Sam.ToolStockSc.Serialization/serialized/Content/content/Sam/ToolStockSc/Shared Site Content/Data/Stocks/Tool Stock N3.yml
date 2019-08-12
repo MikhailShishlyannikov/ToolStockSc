@@ -33,6 +33,10 @@ Languages:
         {F354AFF6-0FB7-4CBF-A727-9DAA789F9BF2}
         {46E873CC-5D6B-4CA5-A63F-59BBCE050819}
         {A41DA28F-6328-4F02-9805-B581C9AC06A9}
+    - ID: "8534ab9f-064d-4113-9ec0-4a36f178a1d8"
+      Hint: Users
+      Type: Multilist
+      Value: "{5686156F-31D7-4DF1-B026-09E52D80B0FA}"
     - ID: "e75348d7-0fce-4c9e-99f9-24ade63db19b"
       Hint: Name
       Value: Tool Stock N3

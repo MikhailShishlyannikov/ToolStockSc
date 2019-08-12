@@ -1,0 +1,127 @@
+﻿@using System.Web.Mvc.Ajax
+@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.SearchResultViewModel
+
+@{
+    Html.RenderPartial("~/Areas/Project/ToolStockSc/Views/Search/TooList.cshtml", Model.ToolCountViewModels);
+}
+
+<nav aria-label="Page navigation example">
+    <div class="row">
+        <div class="col-9">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">@Translate.Text("Searching.AmounOfElements"):</a>
+                    <span></span>
+                </li>
+                <li class="nav-item">
+                    @Ajax.ActionLink("6", "ToolSearch", "Search", new { pageSize = 6, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link active" })
+                </li>
+                <li class="nav-item">
+                    @Ajax.ActionLink("10", "ToolSearch", "Search", new { pageSize = 10, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Ajax.ActionLink("15", "ToolSearch", "Search", new { pageSize = 15, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                </li>
+            </ul>
+        </div>
+        <div class="col-3">
+            <ul class="pagination justify-content-end">
+                @{
+                    if (Model.PageNumber == 1)
+                    {
+                        <li class="page-item disabled">
+                            <span class="page-link">@Translate.Text("Searching.Previous")</span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            @Ajax.ActionLink(
+                                Translate.Text("Searching.Previous"),
+                                "ToolSearch", "Search",
+                                new
+                                {
+                                    page = Model.PageNumber - 1,
+                                    pageSize = Model.PageSize,
+                                    searchString = Model.searchString,
+                                    manufacturer = Model.Manufacturer,
+                                    toolTypeId = Model.toolTypeId
+                                },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    UpdateTargetId = "results"
+                                },
+                                new { @class = "page-link" }
+                                )
+                        </li>
+                    }
+                    for (var i = 1; i <= Model.TotalPages; i++)
+                    {
+                        if (i == Model.PageNumber)
+                        {
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">
+                                    @i<span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="page-item">
+                                @Ajax.ActionLink(
+                                    i.ToString(),
+                                    "ToolSearch", "Search",
+                                    new
+                                    {
+                                        page = i,
+                                        pageSize = Model.PageSize,
+                                        searchString = Model.searchString,
+                                        manufacturer = Model.Manufacturer,
+                                        toolTypeId = Model.toolTypeId
+                                    },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        UpdateTargetId = "results"
+                                    },
+                                    new { @class = "page-link" }
+                                    )
+                            </li>
+                        }
+                    }
+                    if (Model.PageNumber == Model.TotalPages)
+                    {
+                        <li class="page-item disabled">
+                            <span class="page-link">@Translate.Text("Searching.Next")</span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            @Ajax.ActionLink(
+                                Translate.Text("Searching.Next"),
+                                "ToolSearch", "Search",
+                                new
+                                {
+                                    page = Model.PageNumber + 1,
+                                    pageSize = Model.PageSize,
+                                    searchString = Model.searchString,
+                                    manufacturer = Model.Manufacturer,
+                                    toolTypeId = Model.toolTypeId
+                                },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    UpdateTargetId = "results"
+                                },
+                                new { @class = "page-link" }
+                                )
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

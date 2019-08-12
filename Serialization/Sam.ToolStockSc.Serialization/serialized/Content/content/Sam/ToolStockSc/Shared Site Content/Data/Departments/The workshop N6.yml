@@ -17,6 +17,10 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190716T120524Z
+    - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
+      Hint: Users
+      Type: Multilist
+      Value: "{78C510B4-A866-4DF5-8764-34C41D3A6CB1}"
     - ID: "9f6be952-bd4c-49f4-b861-942f3429c588"
       Hint: Stocks
       Type: Multilist

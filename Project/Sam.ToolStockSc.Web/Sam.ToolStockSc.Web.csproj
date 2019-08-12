@@ -358,6 +358,8 @@
       <BrowseToURL>~/Areas/Project/ToolStockSc/Views/Search/SearchBar.cshtml</BrowseToURL>
     </Content>
     <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.Index.Tools.config" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Search\Pagination.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Search\TooList.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -529,10 +531,13 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ProfileEditingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\RegisterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\SearchResultViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\StockCountViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolCountViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolCreatingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolTypeCreatingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolTypeViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\UserCountViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\SitecoreConstants.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Templates.cs" />
     <Compile Include="Areas\Project\ToolStockSc\ToolStockScAreaRegistration.cs" />

@@ -13,7 +13,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
         public string searchString { get; set; }
         public string Manufacturer { get; set; }
         public IList<string> Manufacturers { get; set; }
-        public Guid toolTypeId { get; set; }
+        public Guid? toolTypeId { get; set; }
         public IList<ToolTypeViewModel> ToolTypes { get; set; }
+
+        public IList<ToolCountViewModel> ToolCountViewModels { get; set; }
     }
 }

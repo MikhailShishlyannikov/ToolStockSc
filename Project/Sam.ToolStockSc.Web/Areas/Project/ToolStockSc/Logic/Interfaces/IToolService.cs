@@ -14,5 +14,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         ToolScModel Get(Guid Id);
 
         void Create(ToolViewModel vm);
+
+        IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId);
     }
 }

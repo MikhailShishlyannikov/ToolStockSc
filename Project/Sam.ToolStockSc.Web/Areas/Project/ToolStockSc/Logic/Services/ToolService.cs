@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using Glass.Mapper.Sc;
 using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
@@ -10,6 +11,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Buckets.Managers;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Utilities;
+using Sitecore.Mvc.Extensions;
 using Sitecore.SecurityModel;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
@@ -21,12 +23,14 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         private readonly IToolTypeService _toolTypeService;
         private readonly IUserReferenceService _userReferenceService;
         private readonly IStockService _stockService;
+        private readonly IMapper _mapper;
 
-        public ToolService(IToolTypeService toolTypeService, IUserReferenceService userReferenceService, IStockService stockService)
+        public ToolService(IToolTypeService toolTypeService, IUserReferenceService userReferenceService, IStockService stockService, IMapper mapper)
         {
             _toolTypeService = toolTypeService;
             _userReferenceService = userReferenceService;
             _stockService = stockService;
+            _mapper = mapper;
         }
 
         public IEnumerable<ToolScModel> GetAll()
@@ -131,6 +135,57 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
                 BucketManager.Sync(SitecoreConstants.ParentItems.Tools);
             }
+        }
+
+        public IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId)
+        {
+            IEnumerable<ToolScModel> toolModels;
+
+
+            if (stockId == new Guid())
+            {
+                toolModels = showDeleted
+                    ? GetAll()
+                    : GetAll().Where(t => t.Status.Name != "Written Off");
+            }
+            else
+            {
+                toolModels = showDeleted
+                    ? GetAll().Where(t => t.Stock.Id == stockId)
+                    : GetAll().Where(t => t.Status.Name != "Written Off" && t.Stock.Id == stockId);
+            }
+
+            var toolCounts = toolModels.GroupBy(t => t.Name)
+                .Select(tc => new ToolCountViewModel
+                {
+                    Count = tc.Count(),
+                    Name = tc.Key,
+                    Manufacturer = tc.First().Manufacturer,
+                    ToolTypeName = tc.FirstOrDefault()?.ToolType.Name,
+                    StockCountViewModels = tc.Where(t => t.Name == tc.Key)
+                        .GroupBy(t => t.Stock.Id)
+                        .Select(x => new StockCountViewModel
+                        {
+                            StockId = x.FirstOrDefault()?.Stock.Id,
+                            Name = x.FirstOrDefault()?.Stock.Name,
+                            ToolAmount = x.Count(),
+                            InStockToolAmount = x.Count(t => t.Status.Id == "{3540BC6C-05BB-40AD-BDCA-E327CCC9944D}".ToGuid()),
+                            UnderRepairToolAmount = x.Count(t => t.Status.Id == "{D2F3433B-7A5C-4853-9053-4A31794515B5}".ToGuid()),
+                            IssuedToUserToolAmount = x.Count(t => t.Status.Id == "{71157EB3-24FC-4E7F-B8D2-9DC416850393}".ToGuid()),
+                            WrittenOffToolAmount = x.Count(t => t.Status.Id == "{0E255E65-8CE0-43AF-BC6B-EB0BCA9DF956}".ToGuid()),
+                            UserCountViewModels = x.Where(t => t.Status.Id == "{71157EB3-24FC-4E7F-B8D2-9DC416850393}".ToGuid())
+                                .Select(t => t.User)
+                                .GroupBy(y => y.User.Profile.GetCustomProperty("UserName") + " " + y.User.Profile.GetCustomProperty("Patronymic") + " " + y.User.Profile.GetCustomProperty("Surname")) //TODO здесь можно сделать computed field
+                                .Select(z => new UserCountViewModel
+                                {
+                                    UserId = z.FirstOrDefault()?.Id,
+                                    FullName = z.FirstOrDefault()?.User.Profile.GetCustomProperty("UserName") + " " + z.FirstOrDefault()?.User.Profile.GetCustomProperty("Patronymic") + " " + z.FirstOrDefault()?.User.Profile.GetCustomProperty("Surname"),
+                                    ToolAmount = z.Count()
+                                }).ToList()
+                        }).ToList()
+                });
+
+            return toolCounts;
         }
     }
 }

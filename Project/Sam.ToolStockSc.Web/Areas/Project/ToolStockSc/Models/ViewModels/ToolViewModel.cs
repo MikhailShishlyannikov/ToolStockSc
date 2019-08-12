@@ -22,17 +22,25 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels
 
         public Guid StatusId { get; set; }
 
+        public StatusScModel Status { get; set; }
+
         public IList<StatusScModel> Statuses { get; set; }
 
         public Guid ToolTypeId { get; set; }
+
+        public ToolTypeScModel ToolType { get; set; }
 
         public IList<ToolTypeScModel> ToolTypes { get; set; }
 
         public Guid StockId { get; set; }
 
+        public StockScModel Stock { get; set; }
+
         public IList<StockScModel> Stocks { get; set; }
 
         public string UserName{ get; set; }
+
+        public UserReferenceScModel User { get; set; }
 
         public IList<UserReferenceScModel> Users { get; set; }
 

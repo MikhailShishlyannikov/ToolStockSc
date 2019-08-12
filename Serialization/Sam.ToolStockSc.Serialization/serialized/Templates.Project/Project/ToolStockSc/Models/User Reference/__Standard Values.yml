@@ -4,6 +4,11 @@ Parent: "d823338a-f6bc-46b4-b32b-73ba7a02439a"
 Template: "d823338a-f6bc-46b4-b32b-73ba7a02439a"
 Path: /sitecore/templates/Project/ToolStockSc/Models/User Reference/__Standard Values
 DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
 Languages:
 - Language: en
   Versions:
