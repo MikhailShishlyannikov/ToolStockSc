@@ -7,6 +7,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sitecore.Common;
 using Sitecore.Data.Fields;
+using Sitecore.Globalization;
 using Sitecore.SecurityModel;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
@@ -20,37 +21,42 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new SecurityDisabler())
             {
-                var itemName = userName.Split('\\')[1];
-                itemName = itemName.Replace("@", "__");
-                itemName = itemName.Replace('.', '_');
-                
-                // Add the item to the site tree
-                var newItem =
-                    SitecoreConstants.ParentItems.UserReferences.Add(itemName,
-                        SitecoreConstants.TemplateItems.UserReference);
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                newItem.Editing.BeginEdit();
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    // Assign values to the fields of the new item
-                    newItem.Fields["User"].Value = userName;
+                    var itemName = userName.Split('\\')[1];
+                    itemName = itemName.Replace("@", "__");
+                    itemName = itemName.Replace('.', '_');
 
-                    // End editing will write the new values back to the Sitecore
-                    // database (It's like commit transaction of a database)
-                    newItem.Editing.EndEdit();
-                    CommonLogic.PublishItem(newItem);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this); //TODO $"" и вынести в константу
+                    // Add the item to the site tree
+                    var newItem =
+                        SitecoreConstants.ParentItems.UserReferences.Add(itemName,
+                            SitecoreConstants.TemplateItems.UserReference);
 
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    newItem.Editing.CancelEdit();
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    newItem.Editing.BeginEdit();
+                    try
+                    {
+                        // Assign values to the fields of the new item
+                        newItem.Fields["User"].Value = userName;
+
+                        // End editing will write the new values back to the Sitecore
+                        // database (It's like commit transaction of a database)
+                        newItem.Editing.EndEdit();
+                        CommonLogic.PublishItem(newItem);
+                    }
+                    catch (Exception ex)
+                    {
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error(
+                            "Could not update item " + newItem.Paths.FullPath + ": " + ex.Message,
+                            this); //TODO $"" и вынести в константу
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        newItem.Editing.CancelEdit();
+                    }
                 }
             }
         }
@@ -70,41 +76,45 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new SecurityDisabler())
             {
-                // Add the item to the site tree
-                var item = SitecoreConstants.MasterDatabase.Master.GetItem(user.Id.ToID());
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                item.Editing.BeginEdit();
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    item.Fields["User"].Value = user.UserName;
+                    // Add the item to the site tree
+                    var item = SitecoreConstants.MasterDatabase.Master.GetItem(user.Id.ToID());
 
-                    MultilistField toolsMultiList = item.Fields["Tools"];
-
-                    //clear multilist
-                    foreach (var multiListItem in toolsMultiList.List)
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    item.Editing.BeginEdit();
+                    try
                     {
-                        toolsMultiList.Remove(multiListItem);
-                    }
+                        item.Fields["User"].Value = user.UserName;
 
-                    foreach (var tool in user.Tools)
+                        MultilistField toolsMultiList = item.Fields["Tools"];
+
+                        //clear multilist
+                        foreach (var multiListItem in toolsMultiList.List)
+                        {
+                            toolsMultiList.Remove(multiListItem);
+                        }
+
+                        foreach (var tool in user.Tools)
+                        {
+                            toolsMultiList.Add(tool.Id.ToID().ToString());
+                        }
+
+                        item.Editing.EndEdit();
+                        CommonLogic.PublishItem(item);
+                    }
+                    catch (Exception ex)
                     {
-                        toolsMultiList.Add(tool.Id.ToID().ToString());
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error(
+                            "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        item.Editing.CancelEdit();
                     }
-
-                    item.Editing.EndEdit();
-                    CommonLogic.PublishItem(item);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
-
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    item.Editing.CancelEdit();
                 }
             }
         }

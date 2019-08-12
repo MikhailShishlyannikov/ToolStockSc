@@ -11,6 +11,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Common;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Globalization;
 using Sitecore.Links;
 using Sitecore.SecurityModel;
 
@@ -29,36 +30,40 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public void Create(ToolTypeCreatingViewModel vm)
         {
+            vm.Name = vm.Name.Trim();
             using (new SecurityDisabler())
             {
-                // Add the item to the site tree
-                var newItem =
-                    SitecoreConstants.ParentItems.ToolTypes.Add(vm.Name,
-                        SitecoreConstants.TemplateItems.ToolType);
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                newItem.Editing.BeginEdit();
-
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    // Assign values to the fields of the new item
-                    newItem.Fields["Name"].Value = vm.Name;
+                    // Add the item to the site tree
+                    var newItem =
+                        SitecoreConstants.ParentItems.ToolTypes.Add(vm.Name,
+                            SitecoreConstants.TemplateItems.ToolType);
 
-                    // End editing will write the new values back to the Sitecore
-                    // database (It's like commit transaction of a database)
-                    newItem.Editing.EndEdit();
-                    CommonLogic.PublishItem(newItem);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this); //TODO $"" и вынести в константу
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    newItem.Editing.BeginEdit();
 
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    newItem.Editing.CancelEdit();
+                    try
+                    {
+                        // Assign values to the fields of the new item
+                        newItem.Fields["Name"].Value = vm.Name;
+
+                        // End editing will write the new values back to the Sitecore
+                        // database (It's like commit transaction of a database)
+                        newItem.Editing.EndEdit();
+                        CommonLogic.PublishItem(newItem);
+                    }
+                    catch (Exception ex)
+                    {
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this); //TODO $"" и вынести в константу
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        newItem.Editing.CancelEdit();
+                    }
                 }
             }
         }
@@ -100,29 +105,33 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new SecurityDisabler())
             {
-                // Get item
-                var item = SitecoreConstants.MasterDatabase.Master.GetItem(vm.Id.GetValueOrDefault().ToID());
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                item.Editing.BeginEdit();
-
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    item.Fields["Name"].Value = vm.Name;
+                    // Get item
+                    var item = SitecoreConstants.MasterDatabase.Master.GetItem(vm.Id.GetValueOrDefault().ToID());
 
-                    item.Editing.EndEdit();
-                    CommonLogic.PublishItem(item);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    item.Editing.BeginEdit();
 
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    item.Editing.CancelEdit();
+                    try
+                    {
+                        item.Fields["Name"].Value = vm.Name;
+
+                        item.Editing.EndEdit();
+                        CommonLogic.PublishItem(item);
+                    }
+                    catch (Exception ex)
+                    {
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error(
+                            "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        item.Editing.CancelEdit();
+                    }
                 }
             }
         }
@@ -131,41 +140,45 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new SecurityDisabler())
             {
-                // Get item
-                var item = SitecoreConstants.MasterDatabase.Master.GetItem(scModel.Id.ToID());
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                item.Editing.BeginEdit();
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    item.Fields["Name"].Value = scModel.Name;
+                    // Get item
+                    var item = SitecoreConstants.MasterDatabase.Master.GetItem(scModel.Id.ToID());
 
-                    MultilistField toolsMultiList = item.Fields["Tools"];
-
-                    //clear multilist
-                    foreach (var multiListItem in toolsMultiList.List)
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    item.Editing.BeginEdit();
+                    try
                     {
-                        toolsMultiList.Remove(multiListItem);
-                    }
+                        item.Fields["Name"].Value = scModel.Name;
 
-                    foreach (var tool in scModel.Tools)
+                        MultilistField toolsMultiList = item.Fields["Tools"];
+
+                        //clear multilist
+                        foreach (var multiListItem in toolsMultiList.List)
+                        {
+                            toolsMultiList.Remove(multiListItem);
+                        }
+
+                        foreach (var tool in scModel.Tools)
+                        {
+                            toolsMultiList.Add(tool.Id.ToID().ToString());
+                        }
+
+                        item.Editing.EndEdit();
+                        CommonLogic.PublishItem(item);
+                    }
+                    catch (Exception ex)
                     {
-                        toolsMultiList.Add(tool.Id.ToID().ToString());
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error(
+                            "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        item.Editing.CancelEdit();
                     }
-
-                    item.Editing.EndEdit();
-                    CommonLogic.PublishItem(item);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
-
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    item.Editing.CancelEdit();
                 }
             }
         }

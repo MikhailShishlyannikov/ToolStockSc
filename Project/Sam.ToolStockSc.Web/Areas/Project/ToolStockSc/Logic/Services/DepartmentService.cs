@@ -7,6 +7,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sitecore.Common;
 using Sitecore.Data.Fields;
+using Sitecore.Globalization;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 {
@@ -31,54 +32,58 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new Sitecore.SecurityModel.SecurityDisabler())
             {
-                // Get item
-                var item = SitecoreConstants.MasterDatabase.Master.GetItem(department.Id.ToID());
-
-                // Set the new item in editing mode
-                // Fields can only be updated when in editing mode
-                // (It's like the begin tarnsaction on a database)
-                item.Editing.BeginEdit();
-                try
+                using (new LanguageSwitcher("en"))
                 {
-                    item.Fields["Name"].Value = department.Name;
+                    // Get item
+                    var item = SitecoreConstants.MasterDatabase.Master.GetItem(department.Id.ToID());
 
-                    MultilistField userMultiList = item.Fields["Users"];
-
-                    //clear multilist
-                    foreach (var multiListItem in userMultiList.List)
+                    // Set the new item in editing mode
+                    // Fields can only be updated when in editing mode
+                    // (It's like the begin tarnsaction on a database)
+                    item.Editing.BeginEdit();
+                    try
                     {
-                        userMultiList.Remove(multiListItem);
-                    }
+                        item.Fields["Name"].Value = department.Name;
 
-                    foreach (var user in department.Users)
+                        MultilistField userMultiList = item.Fields["Users"];
+
+                        //clear multilist
+                        foreach (var multiListItem in userMultiList.List)
+                        {
+                            userMultiList.Remove(multiListItem);
+                        }
+
+                        foreach (var user in department.Users)
+                        {
+                            userMultiList.Add(user.Id.ToID().ToString());
+                        }
+
+                        MultilistField stockMultiList = item.Fields["Stocks"];
+
+                        //clear multilist
+                        foreach (var multiListItem in stockMultiList.List)
+                        {
+                            stockMultiList.Remove(multiListItem);
+                        }
+
+                        foreach (var stock in department.Stocks)
+                        {
+                            stockMultiList.Add(stock.Id.ToID().ToString());
+                        }
+
+                        item.Editing.EndEdit();
+                        CommonLogic.PublishItem(item);
+                    }
+                    catch (Exception ex)
                     {
-                        userMultiList.Add(user.Id.ToID().ToString());
+                        // The update failed, write a message to the log
+                        Sitecore.Diagnostics.Log.Error(
+                            "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                        // Cancel the edit (not really needed, as Sitecore automatically aborts
+                        // the transaction on exceptions, but it wont hurt your code)
+                        item.Editing.CancelEdit();
                     }
-
-                    MultilistField stockMultiList = item.Fields["Stocks"];
-
-                    //clear multilist
-                    foreach (var multiListItem in stockMultiList.List)
-                    {
-                        stockMultiList.Remove(multiListItem);
-                    }
-
-                    foreach (var stock in department.Stocks)
-                    {
-                        stockMultiList.Add(stock.Id.ToID().ToString());
-                    }
-
-                    item.Editing.EndEdit();
-                    CommonLogic.PublishItem(item);
-                }
-                catch (Exception ex)
-                {
-                    // The update failed, write a message to the log
-                    Sitecore.Diagnostics.Log.Error("Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
-
-                    // Cancel the edit (not really needed, as Sitecore automatically aborts
-                    // the transaction on exceptions, but it wont hurt your code)
-                    item.Editing.CancelEdit();
                 }
             }
         }

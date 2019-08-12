@@ -11,6 +11,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Buckets.Managers;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq.Utilities;
+using Sitecore.Globalization;
 using Sitecore.Mvc.Extensions;
 using Sitecore.SecurityModel;
 
@@ -91,69 +92,75 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             using (new SecurityDisabler())
             {
-                for (var i = 0; i < vm.Amount; i++)
+                using (new LanguageSwitcher("en"))
                 {
-                    var itemName = vm.Name.Replace('.', '_');
-                    // Add the item to the site tree
-                    var newItem =
-                        SitecoreConstants.ParentItems.Tools.Add(itemName,
-                            SitecoreConstants.TemplateItems.Tool);
-
-                    // Set the new item in editing mode
-                    // Fields can only be updated when in editing mode
-                    // (It's like the begin tarnsaction on a database)
-                    newItem.Editing.BeginEdit();
-                    try
+                    for (var i = 0; i < vm.Amount; i++)
                     {
-                        // Assign values to the fields of the new item
-                        newItem.Fields["Name"].Value = vm.Name;
-                        newItem.Fields["Manufacturer"].Value = vm.Manufacturer;
-                        newItem.Fields["Status"].Value = vm.StatusId.ToString("B").ToUpper();
-                        newItem.Fields["Tool Type"].Value = vm.ToolTypeId.ToString("B").ToUpper();
-                        newItem.Fields["Stock"].Value = vm.StockId.ToString("B").ToUpper();
-                        newItem.Fields["User"].Value = vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value
-                            ? ""
-                            : _userReferenceService.Get(vm.UserName).Id.ToString("B").ToUpper();
+                        var itemName = vm.Name.Replace('.', '_');
+                        // Add the item to the site tree
+                        var newItem =
+                            SitecoreConstants.ParentItems.Tools.Add(itemName,
+                                SitecoreConstants.TemplateItems.Tool);
 
-                        // End editing will write the new values back to the Sitecore
-                        // database (It's like commit transaction of a database)
-                        newItem.Editing.EndEdit();
-                        CommonLogic.PublishItem(newItem);
+                        // Set the new item in editing mode
+                        // Fields can only be updated when in editing mode
+                        // (It's like the begin tarnsaction on a database)
+                        newItem.Editing.BeginEdit();
+                        try
+                        {
+                            // Assign values to the fields of the new item
+                            newItem.Fields["Name"].Value = vm.Name;
+                            newItem.Fields["Manufacturer"].Value = vm.Manufacturer;
+                            newItem.Fields["Status"].Value = vm.StatusId.ToString("B").ToUpper();
+                            newItem.Fields["Tool Type"].Value = vm.ToolTypeId.ToString("B").ToUpper();
+                            newItem.Fields["Stock"].Value = vm.StockId.ToString("B").ToUpper();
+                            newItem.Fields["User"].Value =
+                                vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value
+                                    ? ""
+                                    : _userReferenceService.Get(vm.UserName).Id.ToString("B").ToUpper();
+
+                            // End editing will write the new values back to the Sitecore
+                            // database (It's like commit transaction of a database)
+                            newItem.Editing.EndEdit();
+                            CommonLogic.PublishItem(newItem);
+                        }
+                        catch (Exception ex)
+                        {
+                            // The update failed, write a message to the log
+                            Sitecore.Diagnostics.Log.Error(
+                                "Could not update item " + newItem.Paths.FullPath + ": " + ex.Message,
+                                this); //TODO $"" и вынести в константу
+
+                            // Cancel the edit (not really needed, as Sitecore automatically aborts
+                            // the transaction on exceptions, but it wont hurt your code)
+                            newItem.Editing.CancelEdit();
+                        }
+
+                        var newTool = Get(newItem.ID.ToGuid());
+
+                        var toolType = _toolTypeService.Get(vm.ToolTypeId);
+                        var tools = toolType.Tools.ToList();
+                        tools.Add(newTool);
+                        toolType.Tools = tools;
+                        _toolTypeService.Update(toolType);
+
+                        var stock = _stockService.Get(vm.StockId);
+                        tools = stock.Tools.ToList();
+                        tools.Add(newTool);
+                        stock.Tools = tools;
+                        _stockService.Update(stock);
+
+                        if (vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value) continue;
+
+                        var user = _userReferenceService.Get(vm.UserName);
+                        tools = user.Tools.ToList();
+                        tools.Add(newTool);
+                        user.Tools = tools;
+                        _userReferenceService.Update(user);
                     }
-                    catch (Exception ex)
-                    {
-                        // The update failed, write a message to the log
-                        Sitecore.Diagnostics.Log.Error("Could not update item " + newItem.Paths.FullPath + ": " + ex.Message, this); //TODO $"" и вынести в константу
 
-                        // Cancel the edit (not really needed, as Sitecore automatically aborts
-                        // the transaction on exceptions, but it wont hurt your code)
-                        newItem.Editing.CancelEdit();
-                    }
-
-                    var newTool = Get(newItem.ID.ToGuid());
-
-                    var toolType = _toolTypeService.Get(vm.ToolTypeId);
-                    var tools = toolType.Tools.ToList();
-                    tools.Add(newTool);
-                    toolType.Tools = tools;
-                    _toolTypeService.Update(toolType);
-
-                    var stock = _stockService.Get(vm.StockId);
-                    tools = stock.Tools.ToList();
-                    tools.Add(newTool);
-                    stock.Tools = tools;
-                    _stockService.Update(stock);
-
-                    if (vm.UserName == SitecoreConstants.FakeUser.Fake.Fields["User"].Value) continue;
-
-                    var user = _userReferenceService.Get(vm.UserName);
-                    tools = user.Tools.ToList();
-                    tools.Add(newTool);
-                    user.Tools = tools;
-                    _userReferenceService.Update(user);
+                    BucketManager.Sync(SitecoreConstants.ParentItems.Tools);
                 }
-
-                BucketManager.Sync(SitecoreConstants.ParentItems.Tools);
             }
         }
 
