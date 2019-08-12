@@ -30,3 +30,24 @@ Languages:
         {C0758227-6028-42CE-B09A-400B485E9DD1}
         {63CC7DD4-5A6E-47FD-A92E-9DD092EEB153}
         {AA65A726-F302-4780-B2CE-49A3EF6A22E7}
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190812T133417Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Keeper3@gmail.com
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {6B050399-E100-4DB6-9E47-D413A5ECD1AE}
+        {752B6C8B-F882-4CE2-A2D6-99CC44B41F06}
+        {3E83F0E5-E0AE-4645-B124-4E584BA8DE05}
+        {C0758227-6028-42CE-B09A-400B485E9DD1}
+        {63CC7DD4-5A6E-47FD-A92E-9DD092EEB153}
+        {AA65A726-F302-4780-B2CE-49A3EF6A22E7}

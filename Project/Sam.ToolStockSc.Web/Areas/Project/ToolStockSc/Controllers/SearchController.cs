@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using Glass.Mapper.Sc.Web.Mvc;
@@ -43,8 +44,13 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             {
                 manufacturer = Translate.Text("Searching.ChooseManufacturer");
             }
+            
+            var tools = Sitecore.Security.Accounts.User.Current.IsInRole("extranet\\Keeper")
+                ? _toolService.GetAllToolCounts(true,
+                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid()).ToList()
+                : _toolService.GetAllToolCounts(false,
+                    Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid()).ToList();
 
-            var tools = _toolService.GetAllToolCounts(true, Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid()).ToList();
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();
             var manufacturers = tools.Select(t => t.Manufacturer).Distinct().ToList();
 

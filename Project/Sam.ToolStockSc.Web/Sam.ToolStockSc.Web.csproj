@@ -551,6 +551,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Project\ToolStockSc\Assets\" />
+    <Folder Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

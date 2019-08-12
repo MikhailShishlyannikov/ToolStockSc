@@ -40,8 +40,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
             using (var context = index.CreateSearchContext())
             {
-                var predicate = PredicateBuilder.True<ToolSearchResultItem>();
-                var result = context.GetQueryable<ToolSearchResultItem>().ToList();
                 items = context.GetQueryable<ToolSearchResultItem>()
                     .Select(x => new ToolScModel
                     {
@@ -59,7 +57,29 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public IEnumerable<ToolScModel> Get(string name)
         {
-            return GetAll().Where(x => x.Name == name);
+            //return GetAll().Where(x => x.Name == name);
+
+            var items = Enumerable.Empty<ToolScModel>();
+
+            var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
+            using (var context = index.CreateSearchContext())
+            {
+                var predicate = PredicateBuilder.True<ToolSearchResultItem>();
+                predicate = predicate.And(x => x.Name == name);
+
+                items = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
+                    .Select(x => new ToolScModel
+                    {
+                        Id = x.ItemId.ToGuid(),
+                        Name = x.ToolName,
+                        Manufacturer = x.Manufacturer,
+                        ToolType = _sitecoreService.GetItem<ToolTypeScModel>(x.ToolType.FirstOrDefault()),
+                        User = _sitecoreService.GetItem<UserReferenceScModel>(x.User.FirstOrDefault()),
+                        Status = _sitecoreService.GetItem<StatusScModel>(x.Status.FirstOrDefault()),
+                        Stock = _sitecoreService.GetItem<StockScModel>(x.Stock.FirstOrDefault())
+                    }).ToList();
+            }
+            return items;
         }
 
         public ToolScModel Get(Guid id)
