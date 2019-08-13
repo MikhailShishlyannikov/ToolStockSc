@@ -247,5 +247,77 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
             return toolCounts;
         }
+
+        public IEnumerable<ToolCountViewModel> GetAllBorrowedToolCounts(Guid userId, string searchString, string manufacturer)
+        {
+            var items = Enumerable.Empty<ToolScModel>();
+
+            var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
+            using (var context = index.CreateSearchContext())
+            {
+                var predicate = PredicateBuilder.True<ToolSearchResultItem>();
+                if (!searchString.IsEmptyOrNull() && (!manufacturer.IsEmptyOrNull() && manufacturer != Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Name.Contains(searchString) && x.Manufacturer == manufacturer && x.User.Contains(userId));
+                }
+                else if (searchString.IsEmptyOrNull() && (!manufacturer.IsEmptyOrNull() && manufacturer != Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Manufacturer == manufacturer && x.User.Contains(userId));
+                }
+                else if (!searchString.IsEmptyOrNull() && (manufacturer.IsEmptyOrNull() || manufacturer == Translate.Text("Searching.ChooseManufacturer")))
+                {
+                    predicate = predicate.And(x => x.Name.Contains(searchString) && x.User.Contains(userId));
+                }
+                else
+                {
+                    predicate = predicate.And(x => x.User.Contains(userId));
+
+                }
+
+                var sr = context.GetQueryable<ToolSearchResultItem>().Where(predicate);
+                items = sr
+                    .Select(x => new ToolScModel
+                    {
+                        Id = x.ItemId.ToGuid(),
+                        Name = x.ToolName,
+                        Manufacturer = x.Manufacturer,
+                        ToolType = _sitecoreService.GetItem<ToolTypeScModel>(x.ToolType.FirstOrDefault()),
+                        User = _sitecoreService.GetItem<UserReferenceScModel>(x.User.FirstOrDefault()),
+                        Status = _sitecoreService.GetItem<StatusScModel>(x.Status.FirstOrDefault()),
+                        Stock = _sitecoreService.GetItem<StockScModel>(x.Stock.FirstOrDefault())
+                    }).ToList();
+            }
+            var toolCounts = items.GroupBy(t => t.Name)
+                .Select(tc => new ToolCountViewModel
+                {
+                    Count = tc.Count(),
+                    Name = tc.Key,
+                    Manufacturer = tc.First().Manufacturer,
+                    ToolTypeName = tc.FirstOrDefault()?.ToolType.Name,
+                    StockCountViewModels = tc.Where(t => t.Name == tc.Key)
+                        .GroupBy(t => t.Stock.Id)
+                        .Select(x => new StockCountViewModel
+                        {
+                            StockId = x.FirstOrDefault()?.Stock.Id,
+                            Name = x.FirstOrDefault()?.Stock.Name,
+                            ToolAmount = x.Count(),
+                            InStockToolAmount = x.Count(t => t.Status.Id == "{3540BC6C-05BB-40AD-BDCA-E327CCC9944D}".ToGuid()),
+                            UnderRepairToolAmount = x.Count(t => t.Status.Id == "{D2F3433B-7A5C-4853-9053-4A31794515B5}".ToGuid()),
+                            IssuedToUserToolAmount = x.Count(t => t.Status.Id == "{71157EB3-24FC-4E7F-B8D2-9DC416850393}".ToGuid()),
+                            WrittenOffToolAmount = x.Count(t => t.Status.Id == "{0E255E65-8CE0-43AF-BC6B-EB0BCA9DF956}".ToGuid()),
+                            UserCountViewModels = x.Where(t => t.Status.Id == "{71157EB3-24FC-4E7F-B8D2-9DC416850393}".ToGuid())
+                                .Select(t => t.User)
+                                .GroupBy(y => y.User.Profile.GetCustomProperty("UserName") + " " + y.User.Profile.GetCustomProperty("Patronymic") + " " + y.User.Profile.GetCustomProperty("Surname")) //TODO здесь можно сделать computed field
+                                .Select(z => new UserCountViewModel
+                                {
+                                    UserId = z.FirstOrDefault()?.Id,
+                                    FullName = z.FirstOrDefault()?.User.Profile.GetCustomProperty("UserName") + " " + z.FirstOrDefault()?.User.Profile.GetCustomProperty("Patronymic") + " " + z.FirstOrDefault()?.User.Profile.GetCustomProperty("Surname"),
+                                    ToolAmount = z.Count()
+                                }).ToList()
+                        }).ToList()
+                });
+
+            return toolCounts;
+        }
     }
 }

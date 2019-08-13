@@ -360,6 +360,7 @@
     <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.Index.Tools.config" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\Pagination.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\TooList.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Search\BorrowedTools.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />

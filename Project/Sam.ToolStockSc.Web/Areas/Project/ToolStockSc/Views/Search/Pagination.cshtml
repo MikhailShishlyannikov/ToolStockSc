@@ -2,7 +2,12 @@
 @using Sitecore.Globalization
 @model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.SearchResultViewModel
 
-@{
+@if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+{
+    Html.RenderPartial("~/Areas/Project/ToolStockSc/Views/Search/BorrowedTools.cshtml", Model.ToolCountViewModels);
+}
+else
+{
     Html.RenderPartial("~/Areas/Project/ToolStockSc/Views/Search/TooList.cshtml", Model.ToolCountViewModels);
 }
 
@@ -15,13 +20,34 @@
                     <span></span>
                 </li>
                 <li class="nav-item">
-                    @Ajax.ActionLink("6", "ToolSearch", "Search", new { pageSize = 6, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link active" })
+                    @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                    {
+                        @Ajax.ActionLink("6", "BorrowedTools", "Search", new { pageSize = 6, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link active" })
+                    }
+                    else
+                    {
+                        @Ajax.ActionLink("6", "ToolSearch", "Search", new { pageSize = 6, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link active" })
+                    }
                 </li>
                 <li class="nav-item">
-                    @Ajax.ActionLink("10", "ToolSearch", "Search", new { pageSize = 10, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                    {
+                        @Ajax.ActionLink("10", "BorrowedTools", "Search", new { pageSize = 10, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    }
+                    else
+                    {
+                        @Ajax.ActionLink("10", "ToolSearch", "Search", new { pageSize = 10, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    }
                 </li>
                 <li class="nav-item">
-                    @Ajax.ActionLink("15", "ToolSearch", "Search", new { pageSize = 15, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                    {
+                        @Ajax.ActionLink("15", "BorrowedTools", "Search", new { pageSize = 15, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    }
+                    else
+                    {
+                        @Ajax.ActionLink("15", "ToolSearch", "Search", new { pageSize = 15, Model.searchString, manufacturer = Model.Manufacturer, Model.toolTypeId }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "results" }, new { @class = "nav-link" })
+                    }
                 </li>
             </ul>
         </div>
@@ -37,24 +63,48 @@
                     else
                     {
                         <li class="page-item">
-                            @Ajax.ActionLink(
-                                Translate.Text("Searching.Previous"),
-                                "ToolSearch", "Search",
-                                new
-                                {
-                                    page = Model.PageNumber - 1,
-                                    pageSize = Model.PageSize,
-                                    searchString = Model.searchString,
-                                    manufacturer = Model.Manufacturer,
-                                    toolTypeId = Model.toolTypeId
-                                },
-                                new AjaxOptions
-                                {
-                                    HttpMethod = "GET",
-                                    UpdateTargetId = "results"
-                                },
-                                new { @class = "page-link" }
-                                )
+                            @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                            {
+                                @Ajax.ActionLink(
+                                    Translate.Text("Searching.Previous"),
+                                    "BorrowedTools", "Search",
+                                    new
+                                    {
+                                        page = Model.PageNumber - 1,
+                                        pageSize = Model.PageSize,
+                                        searchString = Model.searchString,
+                                        manufacturer = Model.Manufacturer,
+                                        toolTypeId = Model.toolTypeId
+                                    },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        UpdateTargetId = "results"
+                                    },
+                                    new { @class = "page-link" }
+                                    )
+                            }
+                            else
+                            {
+                                @Ajax.ActionLink(
+                                    Translate.Text("Searching.Previous"),
+                                    "ToolSearch", "Search",
+                                    new
+                                    {
+                                        page = Model.PageNumber - 1,
+                                        pageSize = Model.PageSize,
+                                        searchString = Model.searchString,
+                                        manufacturer = Model.Manufacturer,
+                                        toolTypeId = Model.toolTypeId
+                                    },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        UpdateTargetId = "results"
+                                    },
+                                    new { @class = "page-link" }
+                                    )
+                            }
                         </li>
                     }
                     for (var i = 1; i <= Model.TotalPages; i++)
@@ -70,24 +120,49 @@
                         else
                         {
                             <li class="page-item">
-                                @Ajax.ActionLink(
-                                    i.ToString(),
-                                    "ToolSearch", "Search",
-                                    new
-                                    {
-                                        page = i,
-                                        pageSize = Model.PageSize,
-                                        searchString = Model.searchString,
-                                        manufacturer = Model.Manufacturer,
-                                        toolTypeId = Model.toolTypeId
-                                    },
-                                    new AjaxOptions
-                                    {
-                                        HttpMethod = "GET",
-                                        UpdateTargetId = "results"
-                                    },
-                                    new { @class = "page-link" }
-                                    )
+                                @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                                {
+                                    @Ajax.ActionLink(
+                                        i.ToString(),
+                                        "BorrowedTools", "Search",
+                                        new
+                                        {
+                                            page = i,
+                                            pageSize = Model.PageSize,
+                                            searchString = Model.searchString,
+                                            manufacturer = Model.Manufacturer,
+                                            toolTypeId = Model.toolTypeId
+                                        },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            UpdateTargetId = "results"
+                                        },
+                                        new { @class = "page-link" }
+                                        )
+                                }
+                                else
+                                {
+                                    @Ajax.ActionLink(
+                                        i.ToString(),
+                                        "ToolSearch", "Search",
+                                        new
+                                        {
+                                            page = i,
+                                            pageSize = Model.PageSize,
+                                            searchString = Model.searchString,
+                                            manufacturer = Model.Manufacturer,
+                                            toolTypeId = Model.toolTypeId
+                                        },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            UpdateTargetId = "results"
+                                        },
+                                        new { @class = "page-link" }
+                                        )
+                                }
+
                             </li>
                         }
                     }
@@ -100,24 +175,49 @@
                     else
                     {
                         <li class="page-item">
-                            @Ajax.ActionLink(
-                                Translate.Text("Searching.Next"),
-                                "ToolSearch", "Search",
-                                new
-                                {
-                                    page = Model.PageNumber + 1,
-                                    pageSize = Model.PageSize,
-                                    searchString = Model.searchString,
-                                    manufacturer = Model.Manufacturer,
-                                    toolTypeId = Model.toolTypeId
-                                },
-                                new AjaxOptions
-                                {
-                                    HttpMethod = "GET",
-                                    UpdateTargetId = "results"
-                                },
-                                new { @class = "page-link" }
-                                )
+                            @if (Request.Url.PathAndQuery.Contains("Borrowed-Tools") || Request.Url.PathAndQuery.Contains("BorrowedTools"))
+                            {
+                                @Ajax.ActionLink(
+                                    Translate.Text("Searching.Next"),
+                                    "BorrowedTools", "Search",
+                                    new
+                                    {
+                                        page = Model.PageNumber + 1,
+                                        pageSize = Model.PageSize,
+                                        searchString = Model.searchString,
+                                        manufacturer = Model.Manufacturer,
+                                        toolTypeId = Model.toolTypeId
+                                    },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        UpdateTargetId = "results"
+                                    },
+                                    new { @class = "page-link" }
+                                    )
+                            }
+                            else
+                            {
+                                @Ajax.ActionLink(
+                                    Translate.Text("Searching.Next"),
+                                    "ToolSearch", "Search",
+                                    new
+                                    {
+                                        page = Model.PageNumber + 1,
+                                        pageSize = Model.PageSize,
+                                        searchString = Model.searchString,
+                                        manufacturer = Model.Manufacturer,
+                                        toolTypeId = Model.toolTypeId
+                                    },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        UpdateTargetId = "results"
+                                    },
+                                    new { @class = "page-link" }
+                                    )
+                            }
+
                         </li>
                     }
                 }

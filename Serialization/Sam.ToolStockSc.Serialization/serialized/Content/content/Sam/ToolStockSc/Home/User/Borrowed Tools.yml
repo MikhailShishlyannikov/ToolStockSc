@@ -28,8 +28,13 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{9C8B793A-E66F-4416-B7CD-DE73D65F3B69}"
+              uid="{E22E6D05-49E7-49A4-A1F9-607A29813E4D}"
               p:before="*"
+              s:id="{9CCC1D9C-9A77-4356-996F-D1BC7D507CAE}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{D2670D26-1763-4038-AEAA-59CF3DA33700}-0" />
+            <r
+              uid="{9C8B793A-E66F-4416-B7CD-DE73D65F3B69}"
+              p:after="r[@uid='{E22E6D05-49E7-49A4-A1F9-607A29813E4D}']"
               s:id="{F991396B-F66F-463F-8737-40625F0EFF63}"
               s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Header-{D2670D26-1763-4038-AEAA-59CF3DA33700}-0" />
             <r
