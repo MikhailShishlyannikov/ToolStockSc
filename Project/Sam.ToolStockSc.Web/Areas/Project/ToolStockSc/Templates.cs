@@ -145,5 +145,10 @@
                 public const string ToolType_FieldName = "Tool Type";
             }
         }
+
+        public struct IssueToUser
+        {
+            public const string Id = "{DCDE1AF6-9468-4AB0-B53B-AB75D1F0E24B}";
+        }
     }
 }

@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
+using Glass.Mapper.Sc;
 using Glass.Mapper.Sc.Web.Mvc;
 using Sam.Foundation.GlassMapper.Controllers;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
-using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
+using Sitecore.Data.Items;
 using Sitecore.Globalization;
+using Sitecore.Links;
 using Sitecore.Mvc.Extensions;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
@@ -18,6 +19,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
         private readonly IToolService _toolService;
         private readonly IToolTypeService _toolTypeService;
         private readonly IUserReferenceService _userReferenceService;
+        private readonly SitecoreService _sitecoreService = new SitecoreService(SitecoreConstants.MasterDatabase.Master);
 
         public SearchController(IMvcContext mvcContext, ISearchBarService searchBarService, IToolService toolService, IToolTypeService toolTypeService, IUserReferenceService userReferenceService) : base(mvcContext)
         {
@@ -52,6 +54,12 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
                     Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid(), searchString, manufacturer).ToList()
                 : _toolService.GetAllToolCounts(false,
                     Sitecore.Security.Accounts.User.Current.Profile.GetCustomProperty("Stock").ToGuid(), searchString, manufacturer).ToList();
+
+            foreach (var tool in tools)
+            {
+                var issueItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.Issue);
+                tool.UrlToIssue = LinkManager.GetItemUrl(issueItem);
+            }
 
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();
             var manufacturers = tools.Select(t => t.Manufacturer).Distinct().ToList();

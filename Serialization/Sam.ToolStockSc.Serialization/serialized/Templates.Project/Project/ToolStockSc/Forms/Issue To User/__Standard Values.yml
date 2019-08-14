@@ -1,0 +1,23 @@
+﻿---
+ID: "b72c21db-d7ee-4aed-a404-586b6814aeb6"
+Parent: "dcde1af6-9468-4ab0-b53b-ab75d1f0e24b"
+Template: "dcde1af6-9468-4ab0-b53b-ab75d1f0e24b"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Issue To User/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T121242Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -50,6 +50,12 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
         {
             public static Item ToolTypeRename =
                 MasterDatabase.Master.GetItem(ID.Parse("{B9E0DB48-F58D-455B-A97C-4000DBAECAAB}"));
+
+            public static Item Issue =
+                MasterDatabase.Master.GetItem(ID.Parse("{CCAFD326-4EDE-4D57-850B-FFB558FC8577}"));
+
+            public static Item Keeper =
+                MasterDatabase.Master.GetItem(ID.Parse("{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}"));
         }
 
         public struct FakeUser
@@ -63,6 +69,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public struct Tool
             {
                 public const string Tools = "sc910_web_tools_index";
+            }
+
+            public struct User
+            {
+                public const string Users = "sc910_web_users_index";
             }
         }
     }

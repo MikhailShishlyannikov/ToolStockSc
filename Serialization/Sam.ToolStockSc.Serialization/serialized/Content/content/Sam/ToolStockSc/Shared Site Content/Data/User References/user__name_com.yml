@@ -15,7 +15,10 @@ Languages:
     - ID: "2fba9c9a-9a1d-4d8c-822b-ac97da48c24d"
       Hint: Tools
       Type: Multilist
-      Value: "{7C7A8259-92A2-447E-BA92-DD86F94E3247}"
+      Value: |
+        {7C7A8259-92A2-447E-BA92-DD86F94E3247}
+        {F821B9B3-DC0B-4D5F-8108-08D685B51B99}
+        {20E1D8F3-FA97-4969-9361-A8867DF6280C}
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

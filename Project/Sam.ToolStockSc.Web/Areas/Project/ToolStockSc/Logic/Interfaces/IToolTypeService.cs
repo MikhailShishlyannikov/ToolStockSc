@@ -21,6 +21,5 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         void Update(ToolTypeViewModel vm);
 
         void Update(ToolTypeScModel scModel);
-
     }
 }

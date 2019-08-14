@@ -25,13 +25,16 @@ Languages:
       Value: 20190801T081059Z
     - ID: "49b5ca13-fedf-4f40-859c-ea57317cc937"
       Hint: Status
-      Value: "{3540BC6C-05BB-40AD-BDCA-E327CCC9944D}"
+      Value: "{71157EB3-24FC-4E7F-B8D2-9DC416850393}"
     - ID: "4b8dd49f-0687-4674-94ae-b4dff533db9c"
       Hint: Name
       Value: "3839-12.000"
     - ID: "5f1cc717-83b8-45c7-9a48-800470c79934"
       Hint: Stock
       Value: "{2DDDBF05-DBC1-40B2-AF17-B9A750846CF7}"
+    - ID: "afd411e8-0ff4-49e6-a0bf-4e5861ad3969"
+      Hint: User
+      Value: "{5686156F-31D7-4DF1-B026-09E52D80B0FA}"
     - ID: "fc812a40-dda1-4c2e-b617-fbe60d19939c"
       Hint: Tool Type
       Value: "{FDCA907F-41EE-4BC5-B666-1B517C2CF8E9}"

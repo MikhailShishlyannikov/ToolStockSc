@@ -12,10 +12,21 @@ Languages:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20190812T130624Z
+    - ID: "2fba9c9a-9a1d-4d8c-822b-ac97da48c24d"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {AA65A726-F302-4780-B2CE-49A3EF6A22E7}
+        {22108738-B0B7-4737-BDD5-218A847950B7}
+        {D9B6B2C9-F2CA-4DFC-8100-46572FA8E368}
+        {D0E62DA3-D449-4F26-95D0-3BBF975E96F2}
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         extranet\Anonymous
+    - ID: "c8544c00-1472-486f-a870-44b2f341fe83"
+      Hint: Stock
+      Value: "{8937425F-AB5A-425B-A084-19BBB7F573E4}"
     - ID: "d77a8036-8097-4715-87a7-eb8b71a3fa21"
       Hint: User
       Value: |

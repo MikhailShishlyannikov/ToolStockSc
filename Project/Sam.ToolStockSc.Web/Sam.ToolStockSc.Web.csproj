@@ -353,7 +353,8 @@
     <Content Include="Areas\Project\ToolStockSc\Views\ToolType\ToolTypesTable.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\ToolType\Rename.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Create.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.Index.Users.config" />
+    <None Include="Web.config" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\SearchBar.cshtml">
       <BrowseToURL>~/Areas/Project/ToolStockSc/Views/Search/SearchBar.cshtml</BrowseToURL>
     </Content>
@@ -361,6 +362,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Search\Pagination.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\TooList.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\BorrowedTools.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Tool\Issue.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -500,11 +502,13 @@
     <Compile Include="Areas\Project\ToolStockSc\Mappings\ProfileEditingProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Mappings\RegisterProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Mappings\ToolTypeProfile.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\FullNameComputedField.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ChangePasswordScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\FooterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\IssueToUserScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LogoLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\MenuLinkOptionScModel.cs" />
@@ -522,8 +526,10 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolTypeScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\UserReferenceScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\SearchResultModels\ToolSearchResultItem.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\SearchResultModels\UserSearchResultItem.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\IssueToolViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\LogoLinkViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\MenuLinkViewModel.cs" />
@@ -540,6 +546,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\UserCountViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\SitecoreConstants.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Statuses.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Templates.cs" />
     <Compile Include="Areas\Project\ToolStockSc\ToolStockScAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
@@ -552,7 +559,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Project\ToolStockSc\Assets\" />
-    <Folder Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />

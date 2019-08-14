@@ -16,5 +16,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels
         public virtual IEnumerable<ToolScModel> Tools { get; set; }
 
         public User User => User.FromName(UserName, true);
+
+        public string FullName { get; set; }
     }
 }

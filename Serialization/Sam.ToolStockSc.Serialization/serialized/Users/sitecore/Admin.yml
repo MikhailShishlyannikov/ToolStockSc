@@ -138,12 +138,12 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Rebuild Search Index/Selected
-  Value: sc910_web_tools_index
+  Value: sc910_web_users_index
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: applications/32x32/window_view.png|applications/32x32/clipboard.png|applications/32x32/document_gear.png|office/32x32/windows_close.png|applications/32x32/folder2_green.png|applications/32x32/gears_preferences.png|office/32x32/reset_settings.png|control/32x32/grid_b_h.png|control/32x32/grid.png|applications/32x32/gear_add.png|apps/32x32/sinker.png|applications/32x32/gear_replace.png|database/32x32/user_edit.png|people/32x32/keyboard_key.png|people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/form_green.png|applications/32x32/exchange.png|database/32x32/user_edit_h.png|applications/32x32/signpost.png
+  Value: office/32x32/nav_right.png|applications/32x32/window_view.png|applications/32x32/clipboard.png|applications/32x32/document_gear.png|office/32x32/windows_close.png|applications/32x32/folder2_green.png|applications/32x32/gears_preferences.png|office/32x32/reset_settings.png|control/32x32/grid_b_h.png|control/32x32/grid.png|applications/32x32/gear_add.png|apps/32x32/sinker.png|applications/32x32/gear_replace.png|database/32x32/user_edit.png|people/32x32/keyboard_key.png|people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/form_green.png|applications/32x32/exchange.png|database/32x32/user_edit_h.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

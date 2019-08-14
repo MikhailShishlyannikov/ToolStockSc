@@ -5,7 +5,9 @@ using Glass.Mapper.Sc;
 using Sam.Foundation.DependencyInjection;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
+using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.SearchResultModels;
 using Sitecore.Common;
+using Sitecore.ContentSearch;
 using Sitecore.Data.Fields;
 using Sitecore.Globalization;
 using Sitecore.SecurityModel;
@@ -65,6 +67,27 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
         {
             return SitecoreConstants.ParentItems.UserReferences.Children.Select(x =>
                 _sitecoreService.GetItem<UserReferenceScModel>(x));
+        }
+
+        public IEnumerable<UserReferenceScModel> GetAllByIndex()
+        {
+            var items = Enumerable.Empty<UserReferenceScModel>();
+
+            var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.User.Users);
+
+            using (var context = index.CreateSearchContext())
+            {
+                items = context.GetQueryable<UserSearchResultItem>()
+                    .Select(x => new UserReferenceScModel
+                    {
+                        Id = x.ItemId.ToGuid(),
+                        UserName = x.User,
+                        Tools = _sitecoreService.GetItems<ToolScModel>(db => x.Tools.Select(t => db.GetItem(t.ToID()))),
+                        FullName = x.FullName
+                    }).ToList();
+            }
+
+            return items;
         }
 
         public UserReferenceScModel Get(string userName)

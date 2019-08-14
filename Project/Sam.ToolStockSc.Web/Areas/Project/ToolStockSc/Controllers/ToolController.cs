@@ -8,7 +8,10 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Globalization;
+using Sitecore.Links;
+using Sitecore.Mvc.Extensions;
 using Sitecore.Security.Accounts;
+using Sitecore.Web;
 
 namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 {
@@ -86,7 +89,51 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             _toolService.Create(vm);
 
             return Redirect($"/{Sitecore.Context.Language.Name}/Keeper/Tool-Creating");
+        }
 
+        public ActionResult Issue()
+        {
+            var toolName = Request.QueryString["toolName"];
+            int.TryParse(Request.QueryString["maxAmount"], out var maxAmount);
+            Guid.TryParse(Request.QueryString["stockId"], out var stockId);
+
+            var users = _userReferenceService.GetAllByIndex().ToList();
+
+            const int defaultAmount = 1;
+
+            var vm = new IssueToolViewModel
+            {
+                ToolName = toolName,
+                StockId = stockId,
+                Amount = defaultAmount,
+                MaxAmount = maxAmount,
+                UserName = SitecoreConstants.FakeUser.Fake.Fields["User"].Value,
+                Users = users
+            };
+
+            var scModel = _mvcContext.GetDataSourceItem<IssueToUserScModel>();
+            vm.ScModel = scModel;
+
+            return View("~/Areas/Project/ToolStockSc/Views/Tool/Issue.cshtml", vm);
+        }
+
+        [HttpPost]
+        public ActionResult Issue(IssueToolViewModel vm)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                return Redirect($"/{Sitecore.Context.Language.Name}/Keeper/Issue");
+            }
+
+            if (!ModelState.IsValid || vm.Amount > vm.MaxAmount)
+            {
+                return Redirect(LinkManager.GetItemUrl(SitecoreConstants.PageItems.Keeper));
+            }
+
+            _toolService.IssueToUser(vm);
+            
+            //return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
+            return Redirect($"/Keeper");
         }
 
         private ToolViewModel InitializeViewModel(ToolCreatingScModel scModel)

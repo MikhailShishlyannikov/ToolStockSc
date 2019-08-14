@@ -99,7 +99,7 @@
                                                                             {
                                                                                 <div class="row">
                                                                                     <div class="col btn-group">
-                                                                                        <a href=@Url.Action("Issue", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = stock.InStockToolAmount}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.IssueTool")">
+                                                                                        <a href='@tool.UrlToIssue?toolName=@tool.Name&stockId=@stock.StockId&maxAmount=@stock.InStockToolAmount' class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.IssueTool")">
                                                                                             <i class="fa fa-share"></i>
                                                                                         </a>
                                                                                         <a href=@Url.Action("GiveInForRepair", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = stock.InStockToolAmount}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.GiveInForRepair")">
