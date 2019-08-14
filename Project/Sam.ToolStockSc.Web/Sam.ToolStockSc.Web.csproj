@@ -354,7 +354,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\ToolType\Rename.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Create.cshtml" />
     <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.Index.Users.config" />
-    <None Include="Web.config" />
+    <Content Include="Web.config" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\SearchBar.cshtml">
       <BrowseToURL>~/Areas/Project/ToolStockSc/Views/Search/SearchBar.cshtml</BrowseToURL>
     </Content>

@@ -1,0 +1,14 @@
+﻿---
+ID: "d31c91b7-74ea-44a6-9d87-9c6a5966e8e0"
+Parent: "3604c20d-c3a4-4d23-8792-bcda2c3eb19b"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Error/Page Content/Forms
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T131046Z

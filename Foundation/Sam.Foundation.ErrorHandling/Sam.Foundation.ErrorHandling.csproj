@@ -195,6 +195,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="500.aspx" />
     <Content Include="404.html" />
     <Content Include="Areas\Foundation\ErrorHandling\Content\ErrorPage.css" />
     <Content Include="Areas\Foundation\ErrorHandling\Views\web.config" />
