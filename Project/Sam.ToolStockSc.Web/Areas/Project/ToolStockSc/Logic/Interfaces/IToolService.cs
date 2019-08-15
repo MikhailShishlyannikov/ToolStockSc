@@ -22,5 +22,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         IEnumerable<ToolCountViewModel> GetAllBorrowedToolCounts(Guid userId, string searchString, string manufacturer);
 
         void IssueToUser(IssueToolViewModel vm);
+
+        void GiveInForRepair(ActionsViewModel vm);
     }
 }

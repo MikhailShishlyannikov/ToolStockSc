@@ -2,6 +2,11 @@
 {
     public class Templates
     {
+        public struct DictinaryEntry
+        {
+            public const string Id = "{6D1CD897-1936-4A3A-A511-289A94C2A7B1}";
+        }
+
         public struct LoginForm
         {
             public const string Id = "{EE453943-32EE-4F2E-9A67-994A9845E7C6}";
@@ -149,6 +154,11 @@
         public struct IssueToUser
         {
             public const string Id = "{DCDE1AF6-9468-4AB0-B53B-AB75D1F0E24B}";
+        }
+
+        public struct Actions
+        {
+            public const string Id = "{B01B5C22-7CDE-492D-A208-D0151556759C}";
         }
     }
 }

@@ -1,25 +1,25 @@
 ﻿---
-ID: "3e4cde9a-f8cc-46e1-addc-81f35ef77767"
-Parent: "2a2e1baf-64f0-4302-9ec7-ed626fabb323"
+ID: "c842777f-bf49-4bb1-8cb8-754ca4784402"
+Parent: "d2483516-9c0c-46af-b07e-6bc4ef1e56df"
 Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
-Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Labels/Translations/Tool/Issue the tool
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Labels/Translations/Actions/Give in for repair
 DB: master
 SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
-  Value: Tool.IssueTool
+  Value: Actions.GiveInForRepair
 Languages:
 - Language: en
   Fields:
   - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
     Hint: Phrase
-    Value: Issue the tool
+    Value: Give in for repair
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190813T123649Z
+      Value: 20190815T111636Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -28,13 +28,13 @@ Languages:
   Fields:
   - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
     Hint: Phrase
-    Value: Выдать инструмент
+    Value: Отдать в ремонт
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20190813T123836Z
+      Value: 20190815T120011Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |

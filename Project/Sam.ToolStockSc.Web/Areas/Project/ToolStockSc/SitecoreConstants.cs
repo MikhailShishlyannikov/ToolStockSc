@@ -54,6 +54,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public static Item Issue =
                 MasterDatabase.Master.GetItem(ID.Parse("{CCAFD326-4EDE-4D57-850B-FFB558FC8577}"));
 
+            public static Item GiveInForRepairItem =
+                MasterDatabase.Master.GetItem(ID.Parse("{7C411CD0-414C-4C71-8A29-342322F39BF6}"));
+
             public static Item Keeper =
                 MasterDatabase.Master.GetItem(ID.Parse("{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}"));
         }

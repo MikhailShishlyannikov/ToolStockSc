@@ -1,8 +1,8 @@
 ﻿---
-ID: "ccafd326-4ede-4d57-850b-ffb558fc8577"
+ID: "7c411cd0-414c-4c71-8a29-342322f39bf6"
 Parent: "bf6ea320-b7ae-4d6c-a586-62c78c5c5844"
 Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
-Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Issue
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Give in for repair
 DB: master
 BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
 SharedFields:
@@ -35,20 +35,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{D1DE2ADF-0D0F-4488-B8E9-FCBFD3766F23}"
+              uid="{2F7BB7AE-E640-4CD6-A6D7-EEC94F3901CF}"
               p:before="*"
-              s:ds="{96EBD158-B5F5-4CBD-8E03-8ADB005F2283}"
-              s:id="{33282DAA-17E0-48DE-ACF6-985E623871CD}"
-              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{12D02735-ACC2-45BE-B811-BCB3CB623EBA}-0" />
+              s:ds="{AE2396E1-D650-471F-9884-3AA27932588E}"
+              s:id="{3127D24B-82CF-4352-8703-EA75F3058F7A}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{3C1509DF-2FC3-44F6-A1E9-48CA559DD243}-0" />
             <r
-              uid="{12D02735-ACC2-45BE-B811-BCB3CB623EBA}"
-              p:after="r[@uid='{D1DE2ADF-0D0F-4488-B8E9-FCBFD3766F23}']"
-              s:ds="{75952321-6977-499F-B9BA-DF3C005048FD}"
+              uid="{3C1509DF-2FC3-44F6-A1E9-48CA559DD243}"
+              p:after="r[@uid='{2F7BB7AE-E640-4CD6-A6D7-EEC94F3901CF}']"
+              s:ds="{53F15B1F-4746-47CF-8643-E7A625115732}"
               s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
               s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
             <r
               uid="{10186DF7-0EE9-45F9-8E7B-9E2BCCAFD853}"
-              p:after="r[@uid='{12D02735-ACC2-45BE-B811-BCB3CB623EBA}']"
+              p:after="r[@uid='{3C1509DF-2FC3-44F6-A1E9-48CA559DD243}']"
               s:ds="{63582341-ACBE-4A91-A8D6-153A28BE83CA}"
               s:id="{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
               s:par="Icons=%7B2EDB0CC4-B469-4320-917E-4016E0277AA1%7D%7C%7B1AED3973-C982-4067-887D-B8C2C1204E91%7D"
@@ -140,7 +140,7 @@ Languages:
       Value: 20190801T115653Z
     - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
       Hint: Title
-      Value: Issue the tool
+      Value: Give in for repair
 - Language: ru
   Versions:
   - Version: 1
@@ -154,20 +154,20 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{A18C1A60-0D70-4E6E-AE33-5A6E886AA0D8}"
+              uid="{8E019BD2-6958-44FE-8492-AB233A6B3FCC}"
               p:before="*"
-              s:ds="{96EBD158-B5F5-4CBD-8E03-8ADB005F2283}"
-              s:id="{33282DAA-17E0-48DE-ACF6-985E623871CD}"
-              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{073C1C87-2F5C-411A-9215-BCD405167D97}-0" />
+              s:ds="{AE2396E1-D650-471F-9884-3AA27932588E}"
+              s:id="{3127D24B-82CF-4352-8703-EA75F3058F7A}"
+              s:ph="/Content-{00000000-0000-0000-0000-000000000000}-0/Card Content-{35777184-DFC9-4F0D-BD76-756340280F3F}-0" />
             <r
-              uid="{073C1C87-2F5C-411A-9215-BCD405167D97}"
-              p:after="r[@uid='{A18C1A60-0D70-4E6E-AE33-5A6E886AA0D8}']"
-              s:ds="{75952321-6977-499F-B9BA-DF3C005048FD}"
+              uid="{35777184-DFC9-4F0D-BD76-756340280F3F}"
+              p:after="r[@uid='{8E019BD2-6958-44FE-8492-AB233A6B3FCC}']"
+              s:ds="{53F15B1F-4746-47CF-8643-E7A625115732}"
               s:id="{AE29CC37-BB67-45FF-95DB-FB6192671015}"
               s:ph="Content-{00000000-0000-0000-0000-000000000000}-0" />
             <r
               uid="{0B9AE6B3-0035-40FC-A3E7-05A77C84CEB0}"
-              p:after="r[@uid='{073C1C87-2F5C-411A-9215-BCD405167D97}']"
+              p:after="r[@uid='{35777184-DFC9-4F0D-BD76-756340280F3F}']"
               s:ds="{63582341-ACBE-4A91-A8D6-153A28BE83CA}"
               s:id="{130119A7-F4B3-4598-A4C6-60915EA6CDF4}"
               s:par="Icons=%7B2EDB0CC4-B469-4320-917E-4016E0277AA1%7D%7C%7B1AED3973-C982-4067-887D-B8C2C1204E91%7D"
@@ -263,4 +263,4 @@ Languages:
         sitecore\Admin
     - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
       Hint: Title
-      Value: Выдать инструмент
+      Value: Отдать в ремонт

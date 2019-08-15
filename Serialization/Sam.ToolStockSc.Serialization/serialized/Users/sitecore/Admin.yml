@@ -28,12 +28,12 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
-  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=0&Item Buckets=0&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1"
+  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=0&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=1&Indexing=1&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1&Tasks=1&Tagging=1"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{5C547D4E-7111-4995-95B0-6B561751BF2E}"
+  Value: "{B01B5C22-7CDE-492D-A208-D0151556759C}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -48,7 +48,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{5C547D4E-7111-4995-95B0-6B561751BF2E}"
+  Value: "{B01B5C22-7CDE-492D-A208-D0151556759C}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -143,7 +143,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/RecentIcons
-  Value: office/32x32/nav_right.png|applications/32x32/window_view.png|applications/32x32/clipboard.png|applications/32x32/document_gear.png|office/32x32/windows_close.png|applications/32x32/folder2_green.png|applications/32x32/gears_preferences.png|office/32x32/reset_settings.png|control/32x32/grid_b_h.png|control/32x32/grid.png|applications/32x32/gear_add.png|apps/32x32/sinker.png|applications/32x32/gear_replace.png|database/32x32/user_edit.png|people/32x32/keyboard_key.png|people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/form_green.png|applications/32x32/exchange.png|database/32x32/user_edit_h.png
+  Value: applications/32x32/gear_replace.png|office/32x32/tools.png|apps/32x32/sinker.png|office/32x32/nav_right.png|applications/32x32/window_view.png|applications/32x32/clipboard.png|applications/32x32/document_gear.png|office/32x32/windows_close.png|applications/32x32/folder2_green.png|applications/32x32/gears_preferences.png|office/32x32/reset_settings.png|control/32x32/grid_b_h.png|control/32x32/grid.png|applications/32x32/gear_add.png|database/32x32/user_edit.png|people/32x32/keyboard_key.png|people/32x32/cubes.png|network/32x32/id_card_information.png|applications/32x32/form_green.png|applications/32x32/exchange.png
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |

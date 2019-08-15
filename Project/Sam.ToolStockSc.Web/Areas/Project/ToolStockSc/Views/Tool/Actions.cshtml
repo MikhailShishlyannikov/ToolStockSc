@@ -1,0 +1,28 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ActionsViewModel
+
+<div class="col-12">
+    @using (Html.BeginForm(Model.ScModel.Action, "Tool", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        @Html.HiddenFor(m => m.MaxAmount)
+        @Html.HiddenFor(m => m.StockId)
+        @Html.HiddenFor(m => m.ToolName)
+        <div class="row form-group">
+            <div class="col col-md-3">
+                <label class="form-control-label" for=@Model.Amount>@Html.Glass().Editable(Model.ScModel, m => m.Amount)</label>
+            </div>
+            <div class="col col-md-9">
+                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", placeholder = Model.ScModel.Amount, value = Model.Amount })
+                @Html.ValidationMessageFor(m => m.Amount)
+            </div>
+        </div>
+        if (Model.ScModel.Button != null)
+        {
+            <button type="submit" class="btn btn-primary mb-2">@Translate.Text(string.Format("{0}", Model.ScModel.Button.Key))</button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-primary mb-2"></button>
+        }
+    }
+</div>

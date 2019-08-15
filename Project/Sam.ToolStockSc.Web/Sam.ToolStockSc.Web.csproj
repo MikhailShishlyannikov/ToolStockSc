@@ -363,6 +363,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Search\TooList.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Search\BorrowedTools.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Issue.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Tool\Actions.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -505,8 +506,10 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\FullNameComputedField.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ActionsScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ChangePasswordScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DepartmentScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\DictionaryEntryScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\FooterScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\IssueToUserScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\LoginScModel.cs" />
@@ -527,6 +530,8 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\UserReferenceScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\SearchResultModels\ToolSearchResultItem.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\SearchResultModels\UserSearchResultItem.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ActionsViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\BaseActionsViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\FooterViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\IssueToolViewModel.cs" />

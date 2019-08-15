@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
+using System.Web.UI;
 using Glass.Mapper.Sc.Web.Mvc;
 using Microsoft.Practices.EnterpriseLibrary.Common.Properties;
 using Sam.Foundation.GlassMapper.Controllers;
@@ -17,6 +18,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 {
     public class ToolController : BaseController
     {
+        private const int defaultAmount = 1;
+
         private readonly IToolService _toolService;
         private readonly IStatusService _statusService;
         private readonly IStockService _stockService;
@@ -98,9 +101,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             Guid.TryParse(Request.QueryString["stockId"], out var stockId);
 
             var users = _userReferenceService.GetAllByIndex().ToList();
-
-            const int defaultAmount = 1;
-
+            
             var vm = new IssueToolViewModel
             {
                 ToolName = toolName,
@@ -131,9 +132,44 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             }
 
             _toolService.IssueToUser(vm);
+
+            return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
+        }
+
+        public ActionResult Actions()
+        {
+            var toolName = Request.QueryString["toolName"];
+            int.TryParse(Request.QueryString["maxAmount"], out var maxAmount);
+            Guid.TryParse(Request.QueryString["stockId"], out var stockId);
             
-            //return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
-            return Redirect($"/Keeper");
+            var vm = new ActionsViewModel
+            {
+                ToolName = toolName,
+                StockId = stockId,
+                Amount = defaultAmount,
+                MaxAmount = maxAmount,
+                ScModel = _mvcContext.GetDataSourceItem<ActionsScModel>()
+            };
+
+            return View("~/Areas/Project/ToolStockSc/Views/Tool/Actions.cshtml", vm);
+        }
+
+        [HttpPost]
+        public ActionResult GiveInForRepair(ActionsViewModel vm)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                return Redirect($"/{Sitecore.Context.Language.Name}/Keeper/Issue");
+            }
+
+            if (!ModelState.IsValid || vm.Amount > vm.MaxAmount)
+            {
+                return Redirect(LinkManager.GetItemUrl(SitecoreConstants.PageItems.Keeper));
+            }
+
+            _toolService.GiveInForRepair(vm);
+
+            return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
         }
 
         private ToolViewModel InitializeViewModel(ToolCreatingScModel scModel)

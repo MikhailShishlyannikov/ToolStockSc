@@ -59,6 +59,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             {
                 var issueItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.Issue);
                 tool.UrlToIssue = LinkManager.GetItemUrl(issueItem);
+
+                var giveInForRepairItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.GiveInForRepairItem);
+                tool.UrlToRepair = LinkManager.GetItemUrl(giveInForRepairItem);
             }
 
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();
@@ -106,7 +109,7 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
             var userId = _userReferenceService.Get(User.Identity.Name)?.Id ?? new Guid();
 
-            var tools = _toolService.GetAllBorrowedToolCounts((Guid)userId, searchString, manufacturer).ToList();
+            var tools = _toolService.GetAllBorrowedToolCounts(userId, searchString, manufacturer).ToList();
 
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();
             var manufacturers = tools.Select(t => t.Manufacturer).Distinct().ToList();
