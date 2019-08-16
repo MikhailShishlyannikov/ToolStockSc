@@ -105,7 +105,7 @@
                                                                                         <a href='@tool.UrlToRepair?toolName=@tool.Name&stockId=@stock.StockId&maxAmount=@stock.InStockToolAmount' class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.GiveInForRepair")">
                                                                                             <i class="fa fa-wrench"></i>
                                                                                         </a>
-                                                                                        <a href=@Url.Action("WriteOff", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = stock.InStockToolAmount}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.WriteOff")">
+                                                                                        <a href='@tool.UrlToWriteOff?toolName=@tool.Name&stockId=@stock.StockId&maxAmount=@stock.InStockToolAmount' class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.WriteOff")">
                                                                                             <i class="fa fa-gavel"></i>
                                                                                         </a>
                                                                                         <a href=@Url.Action("MoveToStock", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = stock.InStockToolAmount}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.MoveToStock")">
@@ -126,7 +126,7 @@
                                                                 else
                                                                 {
                                                                     <strong>@Translate.Text("Searching.UnderRepair"): </strong> <span class="badge badge-warning">@stock.UnderRepairToolAmount</span>
-                                                                    <a href=@Url.Action("ReturnFromRepair", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = stock.UnderRepairToolAmount}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.ReturnFromRepair")">
+                                                                    <a href='@tool.UrlToReturnFromRepair?toolName=@tool.Name&stockId=@stock.StockId&maxAmount=@stock.InStockToolAmount' class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.ReturnFromRepair")">
                                                                         <i class="fa fa-reply-all"></i>
                                                                     </a>
                                                                 }
@@ -143,14 +143,15 @@
                                                                 <ul>
                                                                     @foreach (var user in stock.UserCountViewModels)
                                                                     {
-                                                                        <li>
-                                                                            @user.FullName<span class="badge badge-warning">@user.ToolAmount</span>
-                                                                            @if (Sitecore.Security.Accounts.User.Current.IsInRole("extranet\\Keeper"))
-                                                                            {
-                                                                                <a href=@Url.Action("ReturnFromUser", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = user.ToolAmount, userId = user.UserId}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.ReturnFromUser")">
+                                                                    <li>
+                                                                        @user.FullName<span class="badge badge-warning">@user.ToolAmount</span>
+                                                                        @if (Sitecore.Security.Accounts.User.Current.IsInRole("extranet\\Keeper"))
+                                                                        {
+                                                                            @*<a href=@Url.Action("ReturnFromUser", new {toolName = tool.Name, stockId = stock.StockId, maxAmount = user.ToolAmount, userId = user.UserId}) class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.ReturnFromUser")">*@
+                                                                                <a href='@tool.UrlToReturnFromUser?toolName=@tool.Name&stockId=@stock.StockId&maxAmount=@stock.InStockToolAmount&userId=@user.UserId' class="btn btn-primary btn-sm" data-toggle-second="tooltip" data-placement="top" title="@Translate.Text("Searching.ReturnFromUser")">
                                                                                     <i class="fa fa-reply"></i>
                                                                                 </a>
-                                                                            }
+                                                                                }
                                                                         </li>
                                                                     }
                                                                 </ul>

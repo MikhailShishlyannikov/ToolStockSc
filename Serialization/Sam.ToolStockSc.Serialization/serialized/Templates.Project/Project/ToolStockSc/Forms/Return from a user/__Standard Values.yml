@@ -1,0 +1,18 @@
+﻿---
+ID: "6f896ef5-6bd4-4261-81be-b552dbbd58aa"
+Parent: "acef0330-37cb-4dd6-92e7-beab6b66f33c"
+Template: "acef0330-37cb-4dd6-92e7-beab6b66f33c"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Return from a user/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T145345Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

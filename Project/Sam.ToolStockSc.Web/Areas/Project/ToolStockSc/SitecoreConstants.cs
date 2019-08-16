@@ -57,8 +57,17 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             public static Item GiveInForRepairItem =
                 MasterDatabase.Master.GetItem(ID.Parse("{7C411CD0-414C-4C71-8A29-342322F39BF6}"));
 
+            public static Item ReturnFromRepairItem =
+                MasterDatabase.Master.GetItem(ID.Parse("{2FB192CA-E4DF-427B-84C8-BF285DC86E1E}"));
+
+            public static Item WriteOffItem =
+                MasterDatabase.Master.GetItem(ID.Parse("{1727CC14-2407-4EBE-9B01-5925A14FEA5A}"));
+
             public static Item Keeper =
                 MasterDatabase.Master.GetItem(ID.Parse("{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}"));
+
+            public static Item ReturnFromUserItem =
+                MasterDatabase.Master.GetItem(ID.Parse("{555071E0-5F25-4863-AF39-EB325ACCB57D}"));
         }
 
         public struct FakeUser

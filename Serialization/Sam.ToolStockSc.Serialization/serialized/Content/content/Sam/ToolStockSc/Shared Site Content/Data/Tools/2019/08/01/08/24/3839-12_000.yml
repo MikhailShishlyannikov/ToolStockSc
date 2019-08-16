@@ -40,9 +40,6 @@ Languages:
     - ID: "5f1cc717-83b8-45c7-9a48-800470c79934"
       Hint: Stock
       Value: "{2DDDBF05-DBC1-40B2-AF17-B9A750846CF7}"
-    - ID: "afd411e8-0ff4-49e6-a0bf-4e5861ad3969"
-      Hint: User
-      Value: "{78C510B4-A866-4DF5-8764-34C41D3A6CB1}"
     - ID: "fc812a40-dda1-4c2e-b617-fbe60d19939c"
       Hint: Tool Type
       Value: "{FDCA907F-41EE-4BC5-B666-1B517C2CF8E9}"

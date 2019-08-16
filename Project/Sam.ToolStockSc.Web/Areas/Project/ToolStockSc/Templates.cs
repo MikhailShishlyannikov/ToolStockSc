@@ -160,5 +160,10 @@
         {
             public const string Id = "{B01B5C22-7CDE-492D-A208-D0151556759C}";
         }
+
+        public struct ReturnFromUser
+        {
+            public const string Id = "{ACEF0330-37CB-4DD6-92E7-BEAB6B66F33C}";
+        }
     }
 }

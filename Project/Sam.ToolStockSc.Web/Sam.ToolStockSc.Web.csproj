@@ -364,6 +364,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Search\BorrowedTools.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Issue.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Actions.cshtml" />
+    <Content Include="Areas\Project\ToolStockSc\Views\Tool\ReturnFromUser.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -521,6 +522,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\NavLinkScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ProfileEditingScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\RegisterScModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ReturnFromUserScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\StatusScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\StockScModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ToolCreatingScModel.cs" />
@@ -542,6 +544,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\NavLinkViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ProfileEditingViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\RegisterViewModel.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ReturnFromUserViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\SearchResultViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\StockCountViewModel.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ViewModels\ToolCountViewModel.cs" />

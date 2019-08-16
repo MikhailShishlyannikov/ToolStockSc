@@ -417,5 +417,145 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                 }
             }
         }
+
+        public void ReturnFromRepair(ActionsViewModel vm)
+        {
+            var tools = GetAll().Where(t =>
+                t.Name == vm.ToolName && t.Stock.Id == vm.StockId &&
+                t.Status.Id == Statuses.UnderRepair.ID.Guid &&
+                t.User == null).Take(vm.Amount);
+
+            foreach (var tool in tools)
+            {
+                using (new SecurityDisabler())
+                {
+                    using (new LanguageSwitcher("en"))
+                    {
+                        // Get item
+                        var item = SitecoreConstants.MasterDatabase.Master.GetItem(tool.Id.ToID());
+
+                        // Set the new item in editing mode
+                        // Fields can only be updated when in editing mode
+                        // (It's like the begin tarnsaction on a database)
+                        item.Editing.BeginEdit();
+
+                        try
+                        {
+                            item.Fields["Status"].Value = Statuses.InStock.ID.ToGuid().ToString("B").ToUpper();
+
+                            item.Editing.EndEdit();
+                            CommonLogic.PublishItem(item);
+                        }
+                        catch (Exception ex)
+                        {
+                            // The update failed, write a message to the log
+                            Sitecore.Diagnostics.Log.Error(
+                                "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                            // Cancel the edit (not really needed, as Sitecore automatically aborts
+                            // the transaction on exceptions, but it wont hurt your code)
+                            item.Editing.CancelEdit();
+                        }
+                    }
+                }
+            }
+        }
+
+        public void WriteOff(ActionsViewModel vm)
+        {
+            var tools = GetAll().Where(t =>
+                t.Name == vm.ToolName && t.Stock.Id == vm.StockId &&
+                t.Status.Id == Statuses.InStock.ID.Guid &&
+                t.User == null).Take(vm.Amount);
+
+            foreach (var tool in tools)
+            {
+                using (new SecurityDisabler())
+                {
+                    using (new LanguageSwitcher("en"))
+                    {
+                        // Get item
+                        var item = SitecoreConstants.MasterDatabase.Master.GetItem(tool.Id.ToID());
+
+                        // Set the new item in editing mode
+                        // Fields can only be updated when in editing mode
+                        // (It's like the begin tarnsaction on a database)
+                        item.Editing.BeginEdit();
+
+                        try
+                        {
+                            item.Fields["Status"].Value = Statuses.WrittenOff.ID.ToGuid().ToString("B").ToUpper();
+
+                            item.Editing.EndEdit();
+                            CommonLogic.PublishItem(item);
+                        }
+                        catch (Exception ex)
+                        {
+                            // The update failed, write a message to the log
+                            Sitecore.Diagnostics.Log.Error(
+                                "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                            // Cancel the edit (not really needed, as Sitecore automatically aborts
+                            // the transaction on exceptions, but it wont hurt your code)
+                            item.Editing.CancelEdit();
+                        }
+                    }
+                }
+            }
+        }
+
+        public void ReturnFromUser(ReturnFromUserViewModel vm)
+        {
+            var tools = GetAll().Where(t =>
+                t.Name == vm.ToolName && t.Stock.Id == vm.StockId &&
+                t.Status.Id == Statuses.IssuedToUser.ID.Guid &&
+                t.User.Id == vm.UserId).Take(vm.Amount);
+
+            foreach (var tool in tools)
+            {
+                using (new SecurityDisabler())
+                {
+                    using (new LanguageSwitcher("en"))
+                    {
+                        // Get item
+                        var item = SitecoreConstants.MasterDatabase.Master.GetItem(tool.Id.ToID());
+
+                        // Set the new item in editing mode
+                        // Fields can only be updated when in editing mode
+                        // (It's like the begin tarnsaction on a database)
+                        item.Editing.BeginEdit();
+
+                        try
+                        {
+                            item.Fields["Status"].Value = Statuses.InStock.ID.ToGuid().ToString("B").ToUpper();
+
+                            var user = _userReferenceService.GetAll().FirstOrDefault(u => u.Id == vm.UserId);
+                            item.Fields["User"].Value = null;
+
+                            var userTools = user.Tools.ToList();
+
+                            var toolForRemove = userTools.FirstOrDefault(t => t.Id == tool.Id);
+                            userTools.Remove(toolForRemove);
+                            user.Tools = userTools;
+
+                            _userReferenceService.Update(user);
+
+                            item.Editing.EndEdit();
+                            CommonLogic.PublishItem(item);
+                        }
+                        catch (Exception ex)
+                        {
+                            // The update failed, write a message to the log
+                            Sitecore.Diagnostics.Log.Error(
+                                "Could not update item " + item.Paths.FullPath + ": " + ex.Message, this);
+
+                            // Cancel the edit (not really needed, as Sitecore automatically aborts
+                            // the transaction on exceptions, but it wont hurt your code)
+                            item.Editing.CancelEdit();
+                        }
+                    }
+                }
+            }
+        }
     }
 }

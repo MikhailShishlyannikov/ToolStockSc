@@ -24,5 +24,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
         void IssueToUser(IssueToolViewModel vm);
 
         void GiveInForRepair(ActionsViewModel vm);
+
+        void ReturnFromRepair(ActionsViewModel vm); 
+
+        void WriteOff(ActionsViewModel vm);
+
+        void ReturnFromUser(ReturnFromUserViewModel vm);
     }
 }

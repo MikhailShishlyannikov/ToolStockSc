@@ -62,6 +62,15 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
 
                 var giveInForRepairItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.GiveInForRepairItem);
                 tool.UrlToRepair = LinkManager.GetItemUrl(giveInForRepairItem);
+
+                var returnFromRepairItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ReturnFromRepairItem);
+                tool.UrlToReturnFromRepair = LinkManager.GetItemUrl(returnFromRepairItem);
+
+                var writeOffItem = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.WriteOffItem);
+                tool.UrlToWriteOff = LinkManager.GetItemUrl(writeOffItem);
+
+                var returnFromUser = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ReturnFromUserItem);
+                tool.UrlToReturnFromUser = LinkManager.GetItemUrl(returnFromUser);
             }
 
             var toolTypes = _toolTypeService.GetAllViewModels().ToList();

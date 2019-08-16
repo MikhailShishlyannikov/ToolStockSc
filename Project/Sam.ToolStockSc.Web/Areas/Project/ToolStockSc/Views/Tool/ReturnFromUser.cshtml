@@ -1,0 +1,22 @@
+﻿@using Sitecore.Globalization
+@model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ReturnFromUserViewModel
+
+    <div class="col-12">
+        @using (Html.BeginForm("ReturnFromUser", "Tool", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.HiddenFor(m => m.MaxAmount)
+            @Html.HiddenFor(m => m.StockId)
+            @Html.HiddenFor(m => m.ToolName)
+            @Html.HiddenFor(m => m.UserId)
+            <div class="row form-group">
+                <div class="col col-md-3">
+                    <label class="form-control-label" for=@Model.Amount>@Html.Glass().Editable(Model.ScModel, m => m.Amount)</label>
+                </div>
+                <div class="col col-md-9">
+                    @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", placeholder = Model.ScModel.Amount, value = Model.Amount })
+                    @Html.ValidationMessageFor(m => m.Amount)
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">@Translate.Text("Actions.ReturnFromUser")</button>
+        }
+    </div>

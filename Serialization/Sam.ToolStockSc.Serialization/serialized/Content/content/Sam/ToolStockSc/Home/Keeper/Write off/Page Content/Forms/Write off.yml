@@ -1,0 +1,43 @@
+﻿---
+ID: "2361dcda-6694-48c0-a4a5-fc8892499a99"
+Parent: "778df425-82bc-4136-a5a0-0d3ec8ac9cfa"
+Template: "b01b5c22-7cde-492d-a208-d0151556759c"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Write off/Page Content/Forms/Write off
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: WriteOff
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T142847Z
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Amount
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{7591D7A6-55F2-41D5-B5DB-0E7AE9F23067}"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: WriteOff
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T142754Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Количество
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{7591D7A6-55F2-41D5-B5DB-0E7AE9F23067}"

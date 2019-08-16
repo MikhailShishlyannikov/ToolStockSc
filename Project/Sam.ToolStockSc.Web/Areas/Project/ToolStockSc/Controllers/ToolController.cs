@@ -172,6 +172,84 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Controllers
             return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
         }
 
+        [HttpPost]
+        public ActionResult ReturnFromRepair(ActionsViewModel vm)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                return Redirect($"/{Sitecore.Context.Language.Name}/Keeper/Issue");
+            }
+
+            if (!ModelState.IsValid || vm.Amount > vm.MaxAmount)
+            {
+                return Redirect(LinkManager.GetItemUrl(SitecoreConstants.PageItems.Keeper));
+            }
+
+            _toolService.ReturnFromRepair(vm);
+
+            return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
+        }
+
+        [HttpPost]
+        public ActionResult WriteOff(ActionsViewModel vm)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                return Redirect($"/{Sitecore.Context.Language.Name}/Keeper/Issue");
+            }
+
+            if (!ModelState.IsValid || vm.Amount > vm.MaxAmount)
+            {
+                return Redirect(LinkManager.GetItemUrl(SitecoreConstants.PageItems.Keeper));
+            }
+
+            _toolService.WriteOff(vm);
+
+            return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
+        }
+
+        public ActionResult ReturnFromUser()
+        {
+            var toolName = Request.QueryString["toolName"];
+            int.TryParse(Request.QueryString["maxAmount"], out var maxAmount);
+            Guid.TryParse(Request.QueryString["stockId"], out var stockId);
+            Guid.TryParse(Request.QueryString["userId"], out var userId);
+
+            var users = _userReferenceService.GetAllByIndex().ToList();
+
+            var vm = new ReturnFromUserViewModel
+            {
+                ToolName = toolName,
+                StockId = stockId,
+                Amount = defaultAmount,
+                MaxAmount = maxAmount,
+                UserId = userId
+            };
+
+            var scModel = _mvcContext.GetDataSourceItem<ReturnFromUserScModel>();
+            vm.ScModel = scModel;
+
+            return View("~/Areas/Project/ToolStockSc/Views/Tool/ReturnFromUser.cshtml", vm);
+        }
+
+        [HttpPost]
+        public ActionResult ReturnFromUser(ReturnFromUserViewModel vm)
+        {
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                return ReturnFromUser();
+            }
+
+            if (!ModelState.IsValid || vm.Amount > vm.MaxAmount)
+            {
+                return Redirect(LinkManager.GetItemUrl(SitecoreConstants.PageItems.Keeper));
+            }
+
+            _toolService.ReturnFromUser(vm);
+
+            return Redirect($"/{Sitecore.Context.Language.Name}/Keeper");
+        }
+
         private ToolViewModel InitializeViewModel(ToolCreatingScModel scModel)
         {
             var vm = new ToolViewModel

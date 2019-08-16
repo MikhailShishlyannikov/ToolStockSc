@@ -13,5 +13,8 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
 
         public static Item UnderRepair =
             SitecoreConstants.MasterDatabase.Master.GetItem(ID.Parse("{D2F3433B-7A5C-4853-9053-4A31794515B5}"));
+
+        public static Item WrittenOff =
+            SitecoreConstants.MasterDatabase.Master.GetItem(ID.Parse("{D2F3433B-7A5C-4853-9053-4A31794515B5}"));
     }
 }
