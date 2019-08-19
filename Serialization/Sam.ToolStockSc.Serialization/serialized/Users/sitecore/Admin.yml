@@ -183,7 +183,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/UserOptions.View.ShowBucketItems
-  Value: true
+  Value: false
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -194,7 +194,7 @@ Properties:
 - Key: |
     /sitecore\admins/RecentUserList
   Value: |
-    extranet\User|extranet\Keeper|default\Anonymous|extranet\Anonymous|extranet\Everyone|default\Everyone
+    extranet\Anonymous|extranet\User|extranet\Keeper|default\Anonymous|extranet\Everyone|default\Everyone
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: FullName
