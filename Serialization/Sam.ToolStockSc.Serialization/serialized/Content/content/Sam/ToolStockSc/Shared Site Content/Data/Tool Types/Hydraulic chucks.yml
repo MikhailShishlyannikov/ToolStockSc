@@ -20,3 +20,7 @@ Languages:
     - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
       Hint: Name
       Value: Hydraulic chucks
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: "{D8307707-AD01-4758-B939-6287818F4DD7}"

@@ -15,6 +15,6 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc
             SitecoreConstants.MasterDatabase.Master.GetItem(ID.Parse("{D2F3433B-7A5C-4853-9053-4A31794515B5}"));
 
         public static Item WrittenOff =
-            SitecoreConstants.MasterDatabase.Master.GetItem(ID.Parse("{D2F3433B-7A5C-4853-9053-4A31794515B5}"));
+            SitecoreConstants.MasterDatabase.Master.GetItem(ID.Parse("{0E255E65-8CE0-43AF-BC6B-EB0BCA9DF956}"));
     }
 }

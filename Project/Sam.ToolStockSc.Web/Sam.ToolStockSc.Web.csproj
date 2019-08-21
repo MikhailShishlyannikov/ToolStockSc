@@ -365,6 +365,7 @@
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Issue.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\Actions.cshtml" />
     <Content Include="Areas\Project\ToolStockSc\Views\Tool\ReturnFromUser.cshtml" />
+    <Content Include="App_Config\Include\zzz.ToolStockSc\Sitecore.ContentSearch.Solr.DefaultIndexConfiguration.Tool.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\inputmask\inputmask.phone\inputmask.libphonenumber.extensions.js" />
@@ -505,6 +506,7 @@
     <Compile Include="Areas\Project\ToolStockSc\Mappings\RegisterProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Mappings\ToolTypeProfile.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\FullNameComputedField.cs" />
+    <Compile Include="Areas\Project\ToolStockSc\Models\ComputedIndexFields\StatusComputedIndexField.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\MenuLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\Rendering Parameters\NavLinkRenderingParameter.cs" />
     <Compile Include="Areas\Project\ToolStockSc\Models\ScModels\ActionsScModel.cs" />

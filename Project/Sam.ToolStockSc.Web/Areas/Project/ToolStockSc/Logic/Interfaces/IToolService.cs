@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ScModels;
 using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 
@@ -11,7 +12,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Interfaces
 
         IEnumerable<ToolScModel> Get(string name);
 
-        IEnumerable<ToolScModel> Get(string name, string manufacturer);
+        //IEnumerable<ToolScModel> Get(string name, string manufacturer);
+
+        IQueryable<ToolScModel> Get(string name, string manufacturer);
 
         ToolScModel Get(Guid Id);
 

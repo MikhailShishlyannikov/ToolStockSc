@@ -14,6 +14,13 @@ SharedFields:
   Value: |
     {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
     {51283586-EFA7-4BDF-A3EF-53394B5530DB}
+- ID: "21f74f6e-42d4-42a2-a4b4-4cefbcfbd2bb"
+  Hint: __Facets
+  Type: Treelist
+  Value: |
+    {CBF262E6-7675-405C-8E67-DD84E7E189C1}
+    {0716BD9A-90F7-40BB-A24E-F1A19F234313}
+    {996F4576-7357-4A26-A7C9-F8DF6C3868DA}
 - ID: "a0cb3965-8884-4c7a-8815-b6b2e5ced162"
   Hint: __Editors
   Type: TreelistEx

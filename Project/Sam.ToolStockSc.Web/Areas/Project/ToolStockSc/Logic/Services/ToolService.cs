@@ -11,6 +11,7 @@ using Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels;
 using Sitecore.Buckets.Managers;
 using Sitecore.Common;
 using Sitecore.ContentSearch;
+using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.Linq.Utilities;
 using Sitecore.Globalization;
 using Sitecore.Mvc.Extensions;
@@ -82,9 +83,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
             return items;
         }
 
-        public IEnumerable<ToolScModel> Get(string name, string manufacturer)
+        public IQueryable<ToolScModel> Get(string name, string manufacturer)
         {
-            var items = Enumerable.Empty<ToolScModel>();
+            IQueryable<ToolScModel> result;
 
             var index = ContentSearchManager.GetIndex(SitecoreConstants.Indexes.Tool.Tools);
             using (var context = index.CreateSearchContext())
@@ -103,7 +104,11 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                     predicate = predicate.And(x => x.Name.Contains(name));
                 }
 
-                items = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
+                //var a = context.GetQueryable<ToolSearchResultItem>().FacetOn(s => s.Manufacturer,1).FacetOn(s => s.ToolName).GetResults();
+
+                //var b = a.Categories;
+
+                result = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
                     .Select(x => new ToolScModel
                     {
                         Id = x.ItemId.ToGuid(),
@@ -113,9 +118,21 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
                         User = _sitecoreService.GetItem<UserReferenceScModel>(x.User.FirstOrDefault()),
                         Status = _sitecoreService.GetItem<StatusScModel>(x.Status.FirstOrDefault()),
                         Stock = _sitecoreService.GetItem<StockScModel>(x.Stock.FirstOrDefault())
-                    }).ToList();
+                    }).FacetOn(t => t.Name);
+
+                //items = context.GetQueryable<ToolSearchResultItem>().Where(predicate)
+                //    .Select(x => new ToolScModel
+                //    {
+                //        Id = x.ItemId.ToGuid(),
+                //        Name = x.ToolName,
+                //        Manufacturer = x.Manufacturer,
+                //        ToolType = _sitecoreService.GetItem<ToolTypeScModel>(x.ToolType.FirstOrDefault()),
+                //        User = _sitecoreService.GetItem<UserReferenceScModel>(x.User.FirstOrDefault()),
+                //        Status = _sitecoreService.GetItem<StatusScModel>(x.Status.FirstOrDefault()),
+                //        Stock = _sitecoreService.GetItem<StockScModel>(x.Stock.FirstOrDefault())
+                //    }).ToList();
             }
-            return items;
+            return result;
         }
 
         public ToolScModel Get(Guid id)
@@ -201,19 +218,23 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public IEnumerable<ToolCountViewModel> GetAllToolCounts(bool showDeleted, Guid stockId, string name, string manufacturer)
         {
-            IEnumerable<ToolScModel> toolModels;
+            List<ToolScModel> toolModels;
+            var query = Get(name, manufacturer);
+            var facet = query.GetFacets();
+
+            var result = query.ToList();
 
             if (stockId == new Guid())
             {
                 toolModels = showDeleted
-                    ? Get(name, manufacturer)
-                    : Get(name, manufacturer).Where(t => t.Status.Name != "Written Off");
+                    ? result
+                    : result.Where(t => t.Status.Name != "Written Off").ToList();
             }
             else
             {
                 toolModels = showDeleted
-                    ? Get(name, manufacturer).Where(t => t.Stock.Id == stockId)
-                    : Get(name, manufacturer).Where(t => t.Status.Name != "Written Off" && t.Stock.Id == stockId);
+                    ? result.Where(t => t.Stock.Id == stockId).ToList()
+                    : result.Where(t => t.Status.Name != "Written Off" && t.Stock.Id == stockId).ToList();
             }
 
             var toolCounts = toolModels.GroupBy(t => t.Name)
