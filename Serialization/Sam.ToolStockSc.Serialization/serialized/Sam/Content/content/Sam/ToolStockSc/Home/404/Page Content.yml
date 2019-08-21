@@ -1,0 +1,18 @@
+﻿---
+ID: "04bbd5c7-485d-42c7-be08-60791cfd71c2"
+Parent: "24cb437b-5dd0-40a8-aa29-1f80f0297519"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/404/Page Content
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/folder2_green.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T095525Z

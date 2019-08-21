@@ -1,0 +1,14 @@
+﻿---
+ID: "c4b10e92-cf78-4b66-bfb9-7d553d193de5"
+Parent: "4415f053-d7a7-4d94-9bd0-39ab492dcdbb"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Header/Nav Link Rendering Parameter/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T105111Z

@@ -1,0 +1,37 @@
+﻿---
+ID: "fb902d41-c9b4-45d0-bd90-f40640c5f3f1"
+Parent: "45092d05-f7be-4b05-83c3-2197491283d9"
+Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/All Tool Types/Page Content/Buttons/Create a new tool type
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T082203Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Create a new tool type" querystring="" target="" id="{9AC9F711-9EAD-4295-B58E-CB112F37C508}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T094045Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link linktype="internal" text="Создать новый тип инструмента" querystring="" target="" id="{9AC9F711-9EAD-4295-B58E-CB112F37C508}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

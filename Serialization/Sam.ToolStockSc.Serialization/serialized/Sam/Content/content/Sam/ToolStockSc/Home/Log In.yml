@@ -1,0 +1,116 @@
+﻿---
+ID: "d1392778-9db9-45a4-b772-687b51160512"
+Parent: "4f1336b2-3692-41c2-9c32-398f59d780ed"
+Template: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Log In
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{6CE7194F-3D78-4F3B-9DC9-FB774E566E4E}">
+        <r
+          id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+          ph=""
+          uid="{2020AED3-FE3F-46B7-9DC1-D9A2D5C76635}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A7D4BF56-BAE1-4FD9-9071-3675A7BB6D44}"
+              p:before="*"
+              s:ds="{DB2FB295-3AF4-465F-9555-0F8327FAD570}"
+              s:id="{34F971EA-CF7C-4F9A-B4C5-017EF57959F4}"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{20480724-DD89-4939-82DD-7A252BBC0C3E}"
+              p:after="r[@uid='{A7D4BF56-BAE1-4FD9-9071-3675A7BB6D44}']"
+              s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
+              s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
+              s:ph="/Jumbotron/Jumbotron Content/Home page link" />
+            <r
+              uid="{E64325F6-69D7-4016-A719-4EAF83803E0B}"
+              p:after="r[@uid='{20480724-DD89-4939-82DD-7A252BBC0C3E}']"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
+              uid="{55773E31-6A20-4CD0-9B8A-0FF8128BC8FE}"
+              p:after="r[@uid='{E64325F6-69D7-4016-A719-4EAF83803E0B}']"
+              s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+              s:ph="Jumbotron" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190710T103401Z
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Log In
+    - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
+      Hint: Greeting text
+      Value: Log In
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{7A16808F-939E-4365-B65E-B3BAF240AE71}"
+              p:before="*"
+              s:ds="{DB2FB295-3AF4-465F-9555-0F8327FAD570}"
+              s:id="{34F971EA-CF7C-4F9A-B4C5-017EF57959F4}"
+              s:ph="/Jumbotron/Jumbotron Content" />
+            <r
+              uid="{6DA40306-4B35-4E5D-A3C9-AE96FE925434}"
+              p:after="r[@uid='{7A16808F-939E-4365-B65E-B3BAF240AE71}']"
+              s:ds="{2A1A8CAC-C7CD-4AC6-AF0C-AF51B4A36A2E}"
+              s:id="{7A35F150-B16A-407A-9998-048DC1F2F7BD}"
+              s:ph="/Jumbotron/Jumbotron Content/Home page link" />
+            <r
+              uid="{CD95AEF6-9633-4FF7-89D4-839EDFFF975A}"
+              p:after="r[@uid='{6DA40306-4B35-4E5D-A3C9-AE96FE925434}']"
+              s:id="{99F16910-0352-4683-B8A5-3AD856C79E19}"
+              s:ph="/Jumbotron/Language Switcher" />
+            <r
+              uid="{F30DDD26-2856-4F39-93B4-214A60F2507C}"
+              p:after="r[@uid='{CD95AEF6-9633-4FF7-89D4-839EDFFF975A}']"
+              s:id="{C07AECDE-444A-4FC0-B637-EDFA28C9185C}"
+              s:ph="Jumbotron" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T140442Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: Вход
+    - ID: "e6e1c07a-d5d1-485d-90c2-eff2d9538fb3"
+      Hint: Greeting text
+      Value: Войти

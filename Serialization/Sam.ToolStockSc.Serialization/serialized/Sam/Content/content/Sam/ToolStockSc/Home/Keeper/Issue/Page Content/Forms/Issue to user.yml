@@ -1,0 +1,33 @@
+﻿---
+ID: "96ebd158-b5f5-4cbd-8e03-8adb005f2283"
+Parent: "4ccd9278-1bdc-4db4-889d-4bf9f366588f"
+Template: "dcde1af6-9468-4ab0-b53b-ab75d1f0e24b"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Issue/Page Content/Forms/Issue to user
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "185d2cb5-7c7f-47c1-854d-01863e50c98b"
+      Hint: User
+      Value: User
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T131822Z
+    - ID: "db6f0984-4afd-46d5-ba82-91f6cf364abe"
+      Hint: Amount
+      Value: Amount
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "185d2cb5-7c7f-47c1-854d-01863e50c98b"
+      Hint: User
+      Value: Пользователь
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T131502Z
+    - ID: "db6f0984-4afd-46d5-ba82-91f6cf364abe"
+      Hint: Amount
+      Value: Количество

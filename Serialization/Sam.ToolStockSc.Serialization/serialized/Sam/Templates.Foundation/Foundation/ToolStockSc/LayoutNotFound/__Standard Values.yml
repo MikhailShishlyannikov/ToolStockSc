@@ -1,0 +1,14 @@
+﻿---
+ID: "119427d3-a882-4d84-9071-e3b48b82e696"
+Parent: "a80b8295-41da-43a2-884d-a314f7bbe55a"
+Template: "a80b8295-41da-43a2-884d-a314f7bbe55a"
+Path: /sitecore/templates/Foundation/ToolStockSc/LayoutNotFound/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T081601Z

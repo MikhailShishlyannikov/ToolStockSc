@@ -1,0 +1,35 @@
+﻿---
+ID: "2955703b-f9b9-4e0a-81be-b6031b1bacb0"
+Parent: "fc2b80e1-c25a-44b8-a680-0a2c0bc42f1f"
+Template: "603bd7b3-467a-4db5-aea3-0d3c6e946035"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/All Tool Types/Page Content/Cards/All tool types
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T081126Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7b5a7876-2e35-4ba2-a756-50223930a483"
+      Hint: Title
+      Value: Tool type table
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T094025Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7b5a7876-2e35-4ba2-a756-50223930a483"
+      Hint: Title
+      Value: Таблица типов инструмента

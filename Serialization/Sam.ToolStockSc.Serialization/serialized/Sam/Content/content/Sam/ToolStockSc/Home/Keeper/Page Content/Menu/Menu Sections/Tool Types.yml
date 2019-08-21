@@ -1,0 +1,35 @@
+﻿---
+ID: "5a5745c1-77b9-4d32-b420-43f2756afcda"
+Parent: "79598241-f264-4def-9521-96f8183373c0"
+Template: "41209c48-8557-45d6-a828-b5e405dcb2d6"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Page Content/Menu/Menu Sections/Tool Types
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T112727Z
+    - ID: "56b8a026-c69b-423e-aa90-d2373ca5f71a"
+      Hint: Section
+      Value: Tool Types
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T124600Z
+    - ID: "56b8a026-c69b-423e-aa90-d2373ca5f71a"
+      Hint: Section
+      Value: Типы инструментов
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

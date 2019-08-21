@@ -1,0 +1,18 @@
+﻿---
+ID: "54e02e9c-7168-46b5-bc5e-48a29463bdd4"
+Parent: "10335194-8652-470a-9445-fd7c4fb21b4e"
+Template: "3a45a723-64ee-4919-9d41-02fd40fd1466"
+Path: /sitecore/layout/Layouts/Foundation/LayoutNotFoundUrl
+DB: master
+SharedFields:
+- ID: "a036b2bc-ba04-44f6-a75f-bae6cd242abf"
+  Hint: Path
+  Value: /Areas/Foundation/ErrorHandling/Views/Shared/LayoutNotFound.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T083110Z

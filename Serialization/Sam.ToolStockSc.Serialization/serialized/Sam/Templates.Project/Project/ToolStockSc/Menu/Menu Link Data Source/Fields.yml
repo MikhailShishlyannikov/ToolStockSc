@@ -1,0 +1,14 @@
+﻿---
+ID: "b36a2ff0-afa7-49d9-94e7-33b0651bc8c4"
+Parent: "700a3007-ca17-4f3f-a40a-1738661a2457"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Menu/Menu Link Data Source/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190719T123242Z

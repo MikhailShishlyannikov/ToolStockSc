@@ -1,0 +1,44 @@
+﻿---
+ID: "59a04412-5812-43fb-a83c-b0ff0d4382b7"
+Parent: "2b4d6d09-5059-4082-85a0-db6c09903b43"
+Template: "8067ed30-106f-4d92-895c-098924dc1646"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Departments/The workshop N6
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T120524Z
+    - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
+      Hint: Users
+      Type: Multilist
+      Value: "{78C510B4-A866-4DF5-8764-34C41D3A6CB1}"
+    - ID: "9f6be952-bd4c-49f4-b861-942f3429c588"
+      Hint: Stocks
+      Type: Multilist
+      Value: "{3BBAAD78-3DC2-4990-BDBB-3D14D8CE725B}"
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: The workshop N6
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T070003Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: Цех №6

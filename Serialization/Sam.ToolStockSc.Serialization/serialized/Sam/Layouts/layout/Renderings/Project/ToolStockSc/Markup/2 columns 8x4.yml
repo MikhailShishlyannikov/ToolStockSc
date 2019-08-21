@@ -1,0 +1,22 @@
+﻿---
+ID: "94ab6225-1978-44e7-a080-aa652eff5ad6"
+Parent: "10af5141-2627-4746-960d-71dfdd0e8281"
+Template: "99f8905d-4a87-4eb8-9f8b-a9bebfb3add6"
+Path: /sitecore/layout/Renderings/Project/ToolStockSc/Markup/2 columns 8x4
+DB: master
+SharedFields:
+- ID: "51b435bc-f7b9-478a-9c51-52916af96ff5"
+  Hint: Path
+  Value: /Areas/Project/ToolStockSc/Views/Shared/2Columns8x4.cshtml
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190725T132828Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

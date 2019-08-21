@@ -1,0 +1,24 @@
+﻿---
+ID: "9018bed5-3a86-4267-8ec5-497049de6191"
+Parent: "1ac30271-d436-42a4-87bc-62e4d5f557c7"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/User References
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: network/32x32/id_card_information.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {D823338A-F6BC-46B4-B32B-73BA7A02439A}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190729T140411Z

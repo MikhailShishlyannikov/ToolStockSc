@@ -1,0 +1,14 @@
+﻿---
+ID: "bbfa8b82-fc58-4f39-9ba1-98c0c880185d"
+Parent: "8671c18d-c1e3-4148-a376-c768a07c15be"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190821T121658Z

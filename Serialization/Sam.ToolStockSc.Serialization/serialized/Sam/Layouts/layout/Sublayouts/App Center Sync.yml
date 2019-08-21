@@ -1,0 +1,35 @@
+﻿---
+ID: "6e81addc-1fee-4062-be5a-227e0142189d"
+Parent: "eb443c0b-f923-409e-85f3-e7893c8c30c2"
+Template: "3baa73e5-6ba9-4462-bf72-c106f8801b11"
+Path: /sitecore/layout/Sublayouts/App Center Sync
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/gear_refresh.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {0A98E368-CDB9-4E1E-927C-8E0C24A003FB}
+    {3BAA73E5-6BA9-4462-BF72-C106F8801B11}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Sitecore Client Authoring|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Designing|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Developing|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Client Users|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|ar|sitecore\Sitecore Limited Page Editor|pe|+item:rename|+item:write|+item:create|+item:delete|pd|+item:rename|+item:write|+item:create|+item:delete|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120903T061150Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

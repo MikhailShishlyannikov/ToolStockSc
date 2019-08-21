@@ -1,0 +1,39 @@
+﻿---
+ID: "d00ddfe4-d9e1-4a89-993f-a17a076c1178"
+Parent: "3034933a-5a06-4bda-a165-3cb208075acd"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Feature/Card/Card Content
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: Card Content
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {65492001-9DD1-4402-BF1E-CB12D6D5B24E}
+    {F7E50957-1692-461E-845C-A0E1198FC192}
+    {AE29CC37-BB67-45FF-95DB-FB6192671015}
+    {3B52D4F1-6A40-47A0-A2D6-4583F02FF653}
+    {24651F98-B8B5-413E-A327-251E2FDA6887}
+    {389E5376-E62B-4CF5-BA97-19F61EFFB064}
+    {E0253BB2-FC3A-4242-99FA-BDF1CF987350}
+    {5659A778-282D-42FA-B862-1BA85C2A42FB}
+    {9CCC1D9C-9A77-4356-996F-D1BC7D507CAE}
+    {33282DAA-17E0-48DE-ACF6-985E623871CD}
+    {839D7187-C598-47F4-9528-C6FB31BA2720}
+    {3127D24B-82CF-4352-8703-EA75F3058F7A}
+    {222C4DE3-C00C-47A6-941C-453D16EBF709}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190725T131327Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

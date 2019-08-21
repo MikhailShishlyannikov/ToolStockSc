@@ -1,0 +1,41 @@
+﻿---
+ID: "a7ce9b40-dd08-4add-8dc2-f0c0d48d00b1"
+Parent: "15eb6064-327f-4e82-9ace-a973ef9f23ee"
+Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Page Content/Buttons/Register Button
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190710T103546Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" querystring="" text="Register" url="/Sam/ToolStockSc/Home/Register" linktype="internal" target="" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T141400Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link id="{A92D5D42-1138-4FE6-A509-95C639DB0D32}" querystring="" text="Зарегистрироваться" url="/Sam/ToolStockSc/Home/Register" linktype="internal" target="" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

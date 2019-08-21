@@ -1,0 +1,14 @@
+﻿---
+ID: "07b61265-965c-4581-b25b-0cfd753cc5b7"
+Parent: "ab839eae-3b1d-40a0-821f-d89e0713ce4a"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/ToolStockSc/Errors/Error/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T124040Z

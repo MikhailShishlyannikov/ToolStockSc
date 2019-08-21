@@ -1,0 +1,14 @@
+﻿---
+ID: "24a051c8-0540-4dde-93dc-51a43d93681e"
+Parent: "8b50623f-91cb-46e1-8ad1-db2adebae85d"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Profile Editing/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T154920Z

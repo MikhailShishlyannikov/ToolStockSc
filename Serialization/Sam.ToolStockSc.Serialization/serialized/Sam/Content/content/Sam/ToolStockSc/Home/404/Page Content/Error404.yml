@@ -1,0 +1,43 @@
+﻿---
+ID: "17c5024c-a9b1-4184-b4c5-677ef38996ec"
+Parent: "04bbd5c7-485d-42c7-be08-60791cfd71c2"
+Template: "ab839eae-3b1d-40a0-821f-d89e0713ce4a"
+Path: /sitecore/content/Sam/ToolStockSc/Home/404/Page Content/Error404
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T142325Z
+    - ID: "50cfafbc-0192-4007-b8c1-cc84e409f122"
+      Hint: StatusCode
+      Value: 404
+    - ID: "bada10e9-d404-4da7-bbdb-c8586b7b86a3"
+      Hint: LinkText
+      Value: Go back to the previous page
+    - ID: "c6b268e8-df12-429b-b2ec-5f8814a0e58a"
+      Hint: Message
+      Value: "Oops! This Page Could Not Be Found"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T142927Z
+    - ID: "50cfafbc-0192-4007-b8c1-cc84e409f122"
+      Hint: StatusCode
+      Value: 404
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "bada10e9-d404-4da7-bbdb-c8586b7b86a3"
+      Hint: LinkText
+      Value: Назад на предыдущую страницу
+    - ID: "c6b268e8-df12-429b-b2ec-5f8814a0e58a"
+      Hint: Message
+      Value: "ОЙ! Эта страница не найдена"

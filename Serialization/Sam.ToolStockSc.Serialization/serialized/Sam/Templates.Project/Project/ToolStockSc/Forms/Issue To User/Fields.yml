@@ -1,0 +1,14 @@
+﻿---
+ID: "903eb4db-75e5-4540-a9d7-458067da4346"
+Parent: "dcde1af6-9468-4ab0-b53b-ab75d1f0e24b"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Issue To User/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T120350Z

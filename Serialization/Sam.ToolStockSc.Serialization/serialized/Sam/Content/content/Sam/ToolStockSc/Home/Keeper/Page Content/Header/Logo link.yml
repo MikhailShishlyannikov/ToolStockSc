@@ -1,0 +1,27 @@
+﻿---
+ID: "f0ab3621-aa69-4e5d-8f78-7e624f013feb"
+Parent: "13955756-41df-4556-80b6-c6fe6c9ee46f"
+Template: "57266a47-583f-4876-af06-6e116f4fc069"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Page Content/Header/Logo link
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T110944Z
+    - ID: "c546dd77-634e-484e-8dab-6ec1c3de00b0"
+      Hint: Logo
+      Value: |
+        <image mediaid="{D41704D5-7261-4CD8-B11E-B9CA89BD1E79}" />
+    - ID: "f4bedbc8-0d12-4b62-bddf-6fce0118ddc7"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{BF6EA320-B7AE-4D6C-A586-62C78C5C5844}" />

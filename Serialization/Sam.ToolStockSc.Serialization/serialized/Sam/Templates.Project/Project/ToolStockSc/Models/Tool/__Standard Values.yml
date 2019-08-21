@@ -1,0 +1,31 @@
+﻿---
+ID: "77d499da-c2e8-401d-846f-e81ba3fc02d8"
+Parent: "51283586-efa7-4bdf-a3ef-53394b5530db"
+Template: "51283586-efa7-4bdf-a3ef-53394b5530db"
+Path: /sitecore/templates/Project/ToolStockSc/Models/Tool/__Standard Values
+DB: master
+SharedFields:
+- ID: "21f74f6e-42d4-42a2-a4b4-4cefbcfbd2bb"
+  Hint: __Facets
+  Type: Treelist
+  Value: 
+- ID: "c9283d9e-7c29-4419-9c28-5a5c8ff53e84"
+  Hint: __Bucketable
+  Type: Checkbox
+  Value: 1
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T074649Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

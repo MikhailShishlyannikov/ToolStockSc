@@ -1,0 +1,53 @@
+﻿---
+ID: "25f71e01-88d4-48a3-9865-1dd1dce7e77a"
+Parent: "bbfdd32f-cb90-4e65-b658-6d09b5fd1207"
+Template: "57266a47-583f-4876-af06-6e116f4fc069"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Header/Logo link
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190722T104225Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c546dd77-634e-484e-8dab-6ec1c3de00b0"
+      Hint: Logo
+      Value: |
+        <image mediaid="{D41704D5-7261-4CD8-B11E-B9CA89BD1E79}" />
+    - ID: "f4bedbc8-0d12-4b62-bddf-6fce0118ddc7"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{656279DD-65AF-4990-B452-0512F43F47BF}" />
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T070918Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c546dd77-634e-484e-8dab-6ec1c3de00b0"
+      Hint: Logo
+      Value: |
+        <image mediaid="{D41704D5-7261-4CD8-B11E-B9CA89BD1E79}" />
+    - ID: "f4bedbc8-0d12-4b62-bddf-6fce0118ddc7"
+      Hint: Link
+      Value: |
+        <link text="" anchor="" linktype="internal" class="" title=""  querystring="" id="{656279DD-65AF-4990-B452-0512F43F47BF}" />

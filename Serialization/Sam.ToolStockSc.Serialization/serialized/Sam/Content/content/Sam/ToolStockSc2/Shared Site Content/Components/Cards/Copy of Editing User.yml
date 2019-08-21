@@ -1,0 +1,43 @@
+﻿---
+ID: "803d6c88-8f66-45bd-936d-f806e3798e5c"
+Parent: "c69f37cd-6195-4ae5-bf7b-e36d8cdcd84b"
+Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Path: /sitecore/content/Sam/ToolStockSc2/Shared Site Content/Components/Cards/Copy of Editing User
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Editing User
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T151749Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Редактирование пользователя
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190726T151841Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

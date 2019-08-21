@@ -1,0 +1,35 @@
+﻿---
+ID: "d72c5d71-cac7-4e3c-ae7a-55ef16e0e14c"
+Parent: "44fe0300-c103-420b-8ab5-46c5fe3b3298"
+Template: "842bfe53-5540-44ff-bdea-cb8f69e98b8a"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Button Style/Blue
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190710T104432Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c42ba6f6-aa6b-44e7-a6b8-d74ba0f9b5e1"
+      Hint: Class
+      Value: "btn-primary"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190711T140548Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c42ba6f6-aa6b-44e7-a6b8-d74ba0f9b5e1"
+      Hint: Class
+      Value: "btn-primary"

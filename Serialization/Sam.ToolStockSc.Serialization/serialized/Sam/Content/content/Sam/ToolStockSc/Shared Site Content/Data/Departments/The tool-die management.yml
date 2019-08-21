@@ -1,0 +1,48 @@
+﻿---
+ID: "9c570738-c65f-416d-b01a-e3289792916b"
+Parent: "2b4d6d09-5059-4082-85a0-db6c09903b43"
+Template: "8067ed30-106f-4d92-895c-098924dc1646"
+Path: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Departments/The tool-die management"
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T120219Z
+    - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
+      Hint: Users
+      Type: Multilist
+      Value: "{80450BE9-0393-4A27-99E0-E533840431DA}"
+    - ID: "9f6be952-bd4c-49f4-b861-942f3429c588"
+      Hint: Stocks
+      Type: Multilist
+      Value: "{2DDDBF05-DBC1-40B2-AF17-B9A750846CF7}"
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: "The tool-die management"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T065852Z
+    - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
+      Hint: Users
+      Type: Multilist
+      Value: "{5686156F-31D7-4DF1-B026-09E52D80B0FA}"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: "Инструментально-штамповое управление"

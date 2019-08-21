@@ -1,0 +1,19 @@
+﻿---
+ID: "ec62747a-4f76-44df-bfb2-072480fa5622"
+Parent: "e9510da2-94bd-4afe-a507-f777129a68de"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Profile/Page Content/Menu/Menu Section
+DB: master
+BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{70302408-84FE-4F57-84B4-19715482FFAA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T123207Z

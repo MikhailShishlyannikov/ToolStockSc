@@ -1,0 +1,26 @@
+﻿---
+ID: "9cbe3700-aa91-467a-adff-a7b7bcd159e6"
+Parent: "7ab262d5-f93d-4e96-a7bb-acdc79f9bb3d"
+Template: "fdd79b9d-4a7f-4412-8b0a-a345b1e7d7d2"
+Path: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Tool Types/T-shape solid end mills"
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T102005Z
+    - ID: "68e76f62-ab0a-42af-a602-a3173e7af999"
+      Hint: Name
+      Value: "T-shape solid end mills"
+    - ID: "79df62ab-ef6b-4f5e-a295-7e341bc7ddcc"
+      Hint: Tools
+      Type: Multilist
+      Value: "{9C6D121B-D4E6-457C-A38B-CC6C3D222DAC}"

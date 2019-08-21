@@ -1,0 +1,27 @@
+﻿---
+ID: "4a53ec92-4222-494c-a90c-51b424e63dda"
+Parent: "e08ea0cc-f4dd-4a34-ad16-eabcccbe93a5"
+Template: "72819cec-e000-4ffb-8d5a-aa8a5f477a69"
+Path: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Options/Nav Link Icons/fa-user"
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190723T132104Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "ab4e094c-f0ce-4c63-9174-5167c25800d0"
+      Hint: IconTag
+      Value: |
+        <i class="fa fa-user"></i>

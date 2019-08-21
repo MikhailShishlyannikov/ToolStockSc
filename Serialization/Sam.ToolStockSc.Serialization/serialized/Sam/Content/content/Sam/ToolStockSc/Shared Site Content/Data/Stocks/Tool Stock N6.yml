@@ -1,0 +1,39 @@
+﻿---
+ID: "3bbaad78-3dc2-4990-bdbb-3d14d8ce725b"
+Parent: "4898302c-e4cc-4655-8fe7-cbe3b778cd0f"
+Template: "5a52586c-6587-44a1-94fb-b2f5d877ec55"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Stocks/Tool Stock N6
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T095424Z
+    - ID: "54048b8b-7a38-4b5c-a9c1-f8cd5ef35809"
+      Hint: Tools
+      Type: Multilist
+      Value: |
+        {4411631A-7EB2-4674-ABF1-FCE09923B40B}
+        {EA48029E-E5AD-4EF0-A2DF-F296C8047859}
+        {8D8EDCB4-121F-40EB-AC81-8E3FB182D72B}
+        {540DFC25-C4FF-4E01-8630-9AF8BB343D43}
+        {6D4DC11F-EADC-46E7-BE63-154639F3D22D}
+        {ECA323D1-9397-4274-8C0D-E23749E60403}
+        {6F942EFD-61B3-4F74-927E-8391F4948548}
+        {5A35542D-CF1E-4834-8DFB-F5AB71087AF5}
+        {07871827-8541-4D99-8E2A-BA94F2BB1DBD}
+        {4935C39A-B397-46EF-8DB5-73D484DB41D3}
+    - ID: "e75348d7-0fce-4c9e-99f9-24ade63db19b"
+      Hint: Name
+      Value: Tool Stock N6
+    - ID: "eb6568a9-cd9c-4e07-aa0e-e543f90794b6"
+      Hint: Department
+      Value: "{59A04412-5812-43FB-A83C-B0FF0D4382B7}"

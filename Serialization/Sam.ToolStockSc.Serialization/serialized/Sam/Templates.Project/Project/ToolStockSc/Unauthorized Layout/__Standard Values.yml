@@ -1,0 +1,14 @@
+﻿---
+ID: "f97a924a-9d97-49c3-9862-872e1438df36"
+Parent: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Template: "df13a3a5-9b2b-4420-bd39-c5e73ad00f4f"
+Path: /sitecore/templates/Project/ToolStockSc/Unauthorized Layout/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190709T070103Z

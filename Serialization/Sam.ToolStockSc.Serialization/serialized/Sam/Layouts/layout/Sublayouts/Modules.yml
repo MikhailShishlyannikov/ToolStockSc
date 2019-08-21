@@ -1,0 +1,18 @@
+﻿---
+ID: "7afe877b-a2cd-4e95-9131-67c071c1c88a"
+Parent: "eb443c0b-f923-409e-85f3-e7893c8c30c2"
+Template: "3baa73e5-6ba9-4462-bf72-c106f8801b11"
+Path: /sitecore/layout/Sublayouts/Modules
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170404T104843Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

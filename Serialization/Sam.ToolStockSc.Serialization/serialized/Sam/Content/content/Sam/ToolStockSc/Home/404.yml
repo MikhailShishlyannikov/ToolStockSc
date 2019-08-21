@@ -1,0 +1,67 @@
+﻿---
+ID: "24cb437b-5dd0-40a8-aa29-1f80f0297519"
+Parent: "4f1336b2-3692-41c2-9c32-398f59d780ed"
+Template: "a80b8295-41da-43a2-884d-a314f7bbe55a"
+Path: /sitecore/content/Sam/ToolStockSc/Home/404
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{54E02E9C-7168-46B5-BC5E-48A29463BDD4}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{37C89FD5-90AC-41A3-8FAA-94721F0783A4}"
+              s:ds="{17C5024C-A9B1-4184-B4C5-677EF38996EC}"
+              s:id="{6926D81B-FBAC-485F-82C7-2E8C3C5B9472}"
+              s:ph="Error content" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T083217Z
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: 404
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{A6429A63-01E4-4330-97CA-4838D07CD865}"
+              s:ds="{17C5024C-A9B1-4184-B4C5-677EF38996EC}"
+              s:id="{6926D81B-FBAC-485F-82C7-2E8C3C5B9472}"
+              s:ph="Error content" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T143215Z
+    - ID: "dc1eca96-8690-439a-9816-739ef6e73594"
+      Hint: Title
+      Value: 404

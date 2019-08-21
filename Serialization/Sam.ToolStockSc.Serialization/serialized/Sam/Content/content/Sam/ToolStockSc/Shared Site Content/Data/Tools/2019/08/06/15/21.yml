@@ -1,0 +1,18 @@
+﻿---
+ID: "431d9279-6e3e-409b-8ba3-2d82d383dea4"
+Parent: "521404d7-278d-4057-af33-8ae3aa537b9a"
+Template: "adb6ca4f-03ef-4f47-b9ac-9ce2ba53ff97"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Tools/2019/08/06/15/21
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190819T083304Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,18 @@
+﻿---
+ID: "a0ec5b8f-ed47-42b0-a4b4-bc052229deec"
+Parent: "a346cf95-9156-4a4d-8a5a-a08e9d402555"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Page Content/Buttons
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: people/32x32/keyboard_key.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T111406Z

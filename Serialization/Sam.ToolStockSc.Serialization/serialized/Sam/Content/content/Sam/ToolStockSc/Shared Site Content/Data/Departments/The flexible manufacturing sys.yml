@@ -1,0 +1,40 @@
+﻿---
+ID: "b7e4d308-c751-4185-a34e-73cb352b4417"
+Parent: "2b4d6d09-5059-4082-85a0-db6c09903b43"
+Template: "8067ed30-106f-4d92-895c-098924dc1646"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Departments/The flexible manufacturing systems workshop
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T120440Z
+    - ID: "280571fe-78c3-488f-8c98-0a270cc734e7"
+      Hint: Users
+      Type: Multilist
+      Value: 
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: The flexible manufacturing systems workshop
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T065832Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b9bb8831-86aa-4713-ad35-4a3f3a99abde"
+      Hint: Name
+      Value: Цех гибкий производственных систем

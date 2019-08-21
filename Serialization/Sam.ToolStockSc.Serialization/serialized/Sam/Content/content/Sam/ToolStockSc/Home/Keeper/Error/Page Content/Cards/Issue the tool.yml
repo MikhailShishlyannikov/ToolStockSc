@@ -1,0 +1,35 @@
+﻿---
+ID: "f1439dd7-e649-4e2e-9f01-1d7c56e48d77"
+Parent: "fbd6afc5-36ea-4f50-8dba-4a8b0a31e47d"
+Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Error/Page Content/Cards/Issue the tool
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Issue the tool
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T114031Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Выдать инструмент
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T114118Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

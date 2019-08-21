@@ -1,0 +1,73 @@
+﻿---
+ID: "aad0ef79-94a9-4505-ad91-21b3c48fa9fb"
+Parent: "f429d110-cf42-4803-b766-480999c5a111"
+Template: "e0d15a08-a5ff-4c8c-ad3a-b52bcc319c84"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Register/Page Content/Register
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1929886d-f439-4cef-ad43-ac49861de48f"
+      Hint: PhoneField
+      Value: Phone
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T134100Z
+    - ID: "3758012a-6b0e-4629-a329-c1584fe70470"
+      Hint: EmailField
+      Value: "E-mail"
+    - ID: "413d58fc-31f7-4b66-98fc-5e8baa9ed3bf"
+      Hint: SurnameField
+      Value: Surname
+    - ID: "74fa28fb-fdf1-41d4-a46e-63387c4ae4e0"
+      Hint: ConfirmPasswordField
+      Value: Confirm Password
+    - ID: "90aa11ee-1a0e-4b60-8cf5-fe0d04076a9a"
+      Hint: NameField
+      Value: Name
+    - ID: "a01bcc06-4ca6-4694-9e2f-004ae7a8b7af"
+      Hint: PasswordField
+      Value: Password
+    - ID: "d414b8b7-1905-4e90-bacf-572192820d1b"
+      Hint: DepartmentField
+      Value: Your department
+    - ID: "d47760ba-d9a8-4f94-8d65-44de892544be"
+      Hint: PatronymicField
+      Value: Patronymic
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1929886d-f439-4cef-ad43-ac49861de48f"
+      Hint: PhoneField
+      Value: Телефон
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190716T134408Z
+    - ID: "3758012a-6b0e-4629-a329-c1584fe70470"
+      Hint: EmailField
+      Value: "E-mail"
+    - ID: "413d58fc-31f7-4b66-98fc-5e8baa9ed3bf"
+      Hint: SurnameField
+      Value: Фамилия
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "74fa28fb-fdf1-41d4-a46e-63387c4ae4e0"
+      Hint: ConfirmPasswordField
+      Value: Подтвердите пароль
+    - ID: "90aa11ee-1a0e-4b60-8cf5-fe0d04076a9a"
+      Hint: NameField
+      Value: Имя
+    - ID: "a01bcc06-4ca6-4694-9e2f-004ae7a8b7af"
+      Hint: PasswordField
+      Value: Пароль
+    - ID: "d414b8b7-1905-4e90-bacf-572192820d1b"
+      Hint: DepartmentField
+      Value: Ваш отдел
+    - ID: "d47760ba-d9a8-4f94-8d65-44de892544be"
+      Hint: PatronymicField
+      Value: Отчество

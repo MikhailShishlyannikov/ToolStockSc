@@ -1,0 +1,18 @@
+﻿---
+ID: "1fd5c950-719a-467d-93d0-204073015aa4"
+Parent: "0d15212a-d802-4f4c-a3ef-3e2e2f82f0ed"
+Template: "0d15212a-d802-4f4c-a3ef-3e2e2f82f0ed"
+Path: /sitecore/templates/Project/ToolStockSc/Forms/Tool Type Creating/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T143814Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

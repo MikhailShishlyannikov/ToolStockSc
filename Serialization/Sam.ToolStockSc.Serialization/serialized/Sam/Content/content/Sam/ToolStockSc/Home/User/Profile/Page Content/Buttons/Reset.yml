@@ -1,0 +1,37 @@
+﻿---
+ID: "342ee7ee-ca94-4375-aede-64686097cd04"
+Parent: "b7367ed8-9b6c-4e3f-a563-dce191e98606"
+Template: "a13952a6-67a0-406e-95ba-0ad6bddbf18d"
+Path: /sitecore/content/Sam/ToolStockSc/Home/User/Profile/Page Content/Buttons/Reset
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190729T085541Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link text="Reset" anchor="" linktype="internal" class="" title=""  querystring="" id="{6C842682-BC30-4635-A58F-182DD545151C}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190729T094448Z
+    - ID: "4a89b3fa-6041-47b3-903e-0c3e5837cd68"
+      Hint: Link
+      Value: |
+        <link text="Сброс" anchor="" linktype="internal" class="" title=""  querystring="" id="{6C842682-BC30-4635-A58F-182DD545151C}" />
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

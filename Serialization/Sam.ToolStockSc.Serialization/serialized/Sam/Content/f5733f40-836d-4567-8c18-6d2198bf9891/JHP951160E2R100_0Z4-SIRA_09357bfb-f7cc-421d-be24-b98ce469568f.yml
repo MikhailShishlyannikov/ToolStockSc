@@ -1,0 +1,33 @@
+﻿---
+ID: "09357bfb-f7cc-421d-be24-b98ce469568f"
+Parent: "f5733f40-836d-4567-8c18-6d2198bf9891"
+Template: "51283586-efa7-4bdf-a3ef-53394b5530db"
+Path: "/sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Tools/2019/08/21/11/43/JHP951160E2R100_0Z4-SIRA"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "19498490-5973-4e87-bed3-dcb442c2beb9"
+      Hint: Manufacturer
+      Value: SECO
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190821T114353Z
+    - ID: "49b5ca13-fedf-4f40-859c-ea57317cc937"
+      Hint: Status
+      Value: "{3540BC6C-05BB-40AD-BDCA-E327CCC9944D}"
+    - ID: "4b8dd49f-0687-4674-94ae-b4dff533db9c"
+      Hint: Name
+      Value: "JHP951160E2R100.0Z4-SIRA"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        extranet\Keeper@gmail.com
+    - ID: "5f1cc717-83b8-45c7-9a48-800470c79934"
+      Hint: Stock
+      Value: "{2DDDBF05-DBC1-40B2-AF17-B9A750846CF7}"
+    - ID: "fc812a40-dda1-4c2e-b617-fbe60d19939c"
+      Hint: Tool Type
+      Value: "{FDCA907F-41EE-4BC5-B666-1B517C2CF8E9}"

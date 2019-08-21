@@ -1,0 +1,23 @@
+﻿---
+ID: "bf2b6a12-ce34-467a-8bd3-8bfbadfce9d0"
+Parent: "5a52586c-6587-44a1-94fb-b2f5d877ec55"
+Template: "5a52586c-6587-44a1-94fb-b2f5d877ec55"
+Path: /sitecore/templates/Project/ToolStockSc/Models/Stock/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T095018Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

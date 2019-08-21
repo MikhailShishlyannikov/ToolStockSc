@@ -1,0 +1,17 @@
+﻿---
+ID: "3540bc6c-05bb-40ad-bdca-e327ccc9944d"
+Parent: "b2265ae9-a406-4724-9d3c-8abd5eea811e"
+Template: "34da2a92-d862-4459-8595-06649c6873ce"
+Path: /sitecore/content/Sam/ToolStockSc/Shared Site Content/Data/Statuses/In Stock
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T075418Z
+    - ID: "30b20d86-7023-4489-a7cc-98511cb52f40"
+      Hint: Name
+      Value: In Stock
