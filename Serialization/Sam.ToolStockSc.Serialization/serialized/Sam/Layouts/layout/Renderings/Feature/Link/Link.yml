@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Feature/Link/Link Data Source
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:./Page Content/Links|query:/sitecore/content/Sam//Shared Site Content/Components/Links"
+  Value: "query:./Page Content/Links|query:./ancestor::*[@@name='Home']/../Shared Site Content/Components/Links"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: Link

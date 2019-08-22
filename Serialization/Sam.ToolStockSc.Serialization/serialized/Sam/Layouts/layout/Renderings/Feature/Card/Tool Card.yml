@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Feature/Card/Tool Card
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:./Page Content/Cards/*[@@templateid='{603BD7B3-467A-4DB5-AEA3-0D3C6E946035}']|query:/sitecore/content/Sam//Shared Site Content/Components/Cards"
+  Value: "query:./Page Content/Cards/*[@@templateid='{603BD7B3-467A-4DB5-AEA3-0D3C6E946035}']|query:./ancestor::*[@@name='Home']/../Shared Site Content/Components/Cards"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: ToolCard

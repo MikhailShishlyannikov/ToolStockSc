@@ -10,7 +10,7 @@ SharedFields:
   Value: /sitecore/templates/Feature/Card/Card
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:./Page Content/Cards|query:/sitecore/content/Sam//Shared Site Content/Components/Cards"
+  Value: "query:./Page Content/Cards/*[@@templateid='{A28FC6A6-DD6C-4880-AE8F-E99EFE9D714C}']|query:./ancestor::*[@@name='Home']/../Shared Site Content/Components/Cards"
 - ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
   Hint: Controller Action
   Value: Card
