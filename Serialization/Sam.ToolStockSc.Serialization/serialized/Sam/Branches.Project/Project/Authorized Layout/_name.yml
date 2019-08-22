@@ -1,0 +1,14 @@
+﻿---
+ID: "06e37640-c0e0-4b2c-8bf6-8f6081b3cc9b"
+Parent: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
+Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Path: /sitecore/templates/Branches/Project/Authorized Layout/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T104138Z

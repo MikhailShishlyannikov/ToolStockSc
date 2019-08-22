@@ -1,0 +1,25 @@
+﻿---
+ID: "f831968b-f677-424e-9fa7-348297192eab"
+Parent: "991909d0-37e6-4c03-ba34-c152e374fb3e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/templates/Branches/Project/Authorized Layout/$name/Page Content/Cards
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/clipboard.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {A28FC6A6-DD6C-4880-AE8F-E99EFE9D714C}
+    {603BD7B3-467A-4DB5-AEA3-0D3C6E946035}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T140102Z

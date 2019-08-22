@@ -1,0 +1,18 @@
+﻿---
+ID: "991909d0-37e6-4c03-ba34-c152e374fb3e"
+Parent: "06e37640-c0e0-4b2c-8bf6-8f6081b3cc9b"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/templates/Branches/Project/Authorized Layout/$name/Page Content
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: applications/32x32/folder2_green.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190730T104636Z
