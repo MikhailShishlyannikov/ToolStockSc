@@ -1,0 +1,39 @@
+﻿---
+ID: "785a046e-6a82-403d-bf05-7749bc497440"
+Parent: "a6d60a70-f7fb-4887-b20c-aabd57266ae2"
+Template: "b01b5c22-7cde-492d-a208-d0151556759c"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Return from repoir/Page Content/Forms/Return the tool from repair
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: ReturnFromRepair
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T134312Z
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Amount
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{913FE4E1-A4AF-4214-BDF4-D03A834E633F}"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: ReturnFromRepair
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T134717Z
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Количество
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{913FE4E1-A4AF-4214-BDF4-D03A834E633F}"

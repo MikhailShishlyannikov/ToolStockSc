@@ -1,0 +1,14 @@
+﻿---
+ID: "a6d60a70-f7fb-4887-b20c-aabd57266ae2"
+Parent: "7ce36442-d45b-4bb4-8e78-b0962ed5673f"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Return from repoir/Page Content/Forms
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190813T131046Z

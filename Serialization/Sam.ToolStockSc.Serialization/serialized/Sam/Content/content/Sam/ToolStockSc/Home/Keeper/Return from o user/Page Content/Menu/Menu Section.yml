@@ -1,0 +1,25 @@
+﻿---
+ID: "93d71307-5da8-4f80-8fa8-046daafbb046"
+Parent: "d9bcbe4a-e4ca-4cf3-ba2f-08419c405333"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Return from o user/Page Content/Menu/Menu Section
+DB: master
+BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {41209C48-8557-45D6-A828-B5E405DCB2D6}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{70302408-84FE-4F57-84B4-19715482FFAA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T115654Z

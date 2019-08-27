@@ -21,6 +21,10 @@ SharedFields:
     </r>
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Log In
   Versions:
   - Version: 1
     Fields:
@@ -66,6 +70,10 @@ Languages:
       Hint: Greeting text
       Value: Log In
 - Language: ru
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Вход
   Versions:
   - Version: 1
     Fields:

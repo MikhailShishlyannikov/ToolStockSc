@@ -23,6 +23,10 @@ SharedFields:
   Value: "{06E37640-C0E0-4B2C-8BF6-8F6081B3CC9B}"
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Issue
   Versions:
   - Version: 1
     Fields:
@@ -142,6 +146,10 @@ Languages:
       Hint: Title
       Value: Issue the tool
 - Language: ru
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Выдать инструмент
   Versions:
   - Version: 1
     Fields:

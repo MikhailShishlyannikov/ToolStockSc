@@ -1,0 +1,13 @@
+﻿---
+ID: "555071e0-5f25-4863-af39-eb325accb57d"
+Parent: "bf6ea320-b7ae-4d6c-a586-62c78c5c5844"
+Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Return from o user
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Value: "20190826T122620:637024191801626274Z"

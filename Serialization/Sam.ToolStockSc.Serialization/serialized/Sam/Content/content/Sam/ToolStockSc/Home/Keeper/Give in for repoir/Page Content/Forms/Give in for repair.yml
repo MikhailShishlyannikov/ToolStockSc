@@ -1,0 +1,43 @@
+﻿---
+ID: "ae2396e1-d650-471f-9884-3aa27932588e"
+Parent: "fa3a068e-fa35-4b0b-be37-cdfb363f4c38"
+Template: "b01b5c22-7cde-492d-a208-d0151556759c"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Give in for repoir/Page Content/Forms/Give in for repair
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: GiveInForRepair
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T111251Z
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Amount
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{C842777F-BF49-4BB1-8CB8-754CA4784402}"
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "239c27de-68a4-4613-abee-9ba43e77de40"
+      Hint: Action
+      Value: GiveInForRepair
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190815T122846Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "b3298275-1197-4222-872e-3ac6bbde267f"
+      Hint: Amount
+      Value: Количество
+    - ID: "dfd00d87-ee2b-458f-9197-065d8d012886"
+      Hint: Button
+      Value: "{C842777F-BF49-4BB1-8CB8-754CA4784402}"

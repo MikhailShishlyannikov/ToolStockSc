@@ -1,0 +1,35 @@
+﻿---
+ID: "c1435934-97b5-406d-87b4-ed1d3bb9f024"
+Parent: "dea9edd5-7df4-49a3-ad02-88ad9a3ea404"
+Template: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Tool Type Creoting/Page Content/Cards/Create a tool type
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Create a tool type
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T140154Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18595ea4-0290-455d-8365-2855f5e92146"
+      Hint: Title
+      Value: Создать тип инструмента
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T140530Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

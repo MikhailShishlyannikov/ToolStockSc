@@ -195,6 +195,7 @@
     <Content Include="Areas\Feature\LanguageSwitcher\Views\web.config" />
     <Content Include="Areas\Feature\LanguageSwitcher\Views\LanguageSwitcher\LanguageSwitcher.cshtml" />
     <Content Include="Areas\Feature\LanguageSwitcher\Views\LanguageSwitcher\LanguageSwitcherForSettingPage.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.LanguageSwitcher.Serialization.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -217,9 +218,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Config\Include\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\Foundation\Sam.Foundation.DependencyInjection\Sam.Foundation.DependencyInjection.csproj">
       <Project>{29A9A38E-C973-4A26-BAEB-062B46901C14}</Project>

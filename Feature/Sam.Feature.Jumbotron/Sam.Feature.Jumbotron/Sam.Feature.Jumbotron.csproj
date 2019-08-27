@@ -181,6 +181,7 @@
   <ItemGroup>
     <Content Include="Areas\Feature\Jumbotron\Views\web.config" />
     <Content Include="Areas\Feature\Jumbotron\Views\Jumbotron\Jumbotron.cshtml" />
+    <Content Include="App_Config\Include\Feature\Feature.Jumbotron.Serialization.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -199,7 +200,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
     <Folder Include="Areas\Feature\Jumbotron\Controllers\" />
     <Folder Include="Areas\Feature\Jumbotron\Models\" />
   </ItemGroup>

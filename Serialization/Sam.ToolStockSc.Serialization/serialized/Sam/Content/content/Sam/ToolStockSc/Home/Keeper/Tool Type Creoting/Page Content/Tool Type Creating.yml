@@ -1,0 +1,31 @@
+﻿---
+ID: "6c3e33e2-90b4-4e12-9bbd-bf9efe1ccabd"
+Parent: "3a1afc29-275b-4bde-8c99-7e9911aac90b"
+Template: "0d15212a-d802-4f4c-a3ef-3e2e2f82f0ed"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Tool Type Creoting/Page Content/Tool Type Creating
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T151347Z
+    - ID: "86b0beba-0253-4e66-8d60-2791a8152970"
+      Hint: Name
+      Value: Name
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190801T152717Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "86b0beba-0253-4e66-8d60-2791a8152970"
+      Hint: Name
+      Value: Имя
