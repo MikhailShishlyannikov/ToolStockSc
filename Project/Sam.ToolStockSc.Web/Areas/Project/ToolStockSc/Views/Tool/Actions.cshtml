@@ -1,7 +1,10 @@
-﻿@using Sitecore.Globalization
+﻿@using Sitecore.Common
+@using Sitecore.Globalization
 @model Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Models.ViewModels.ActionsViewModel
 
-<div class="col-12">
+@using (Html.BeginEditFrame(Model.ScModel.Id.ToID(), "Button", "Toolbar Title"))
+{
+    <div class="col-12">
     @using (Html.BeginForm(Model.ScModel.Action, "Tool", FormMethod.Post, new { @class = "form-horizontal" }))
     {
         @Html.HiddenFor(m => m.MaxAmount)
@@ -26,3 +29,5 @@
         }
     }
 </div>
+}
+

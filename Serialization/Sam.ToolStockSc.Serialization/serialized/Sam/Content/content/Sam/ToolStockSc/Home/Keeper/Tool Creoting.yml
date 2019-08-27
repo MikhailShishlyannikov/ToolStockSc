@@ -4,10 +4,22 @@ Parent: "bf6ea320-b7ae-4d6c-a586-62c78c5c5844"
 Template: "118d5bda-4319-4372-b2eb-637b4fafc410"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Tool Creoting
 DB: master
+BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
 Languages:
 - Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Tool Creating
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
       Value: "20190826T122621:637024191819355943Z"
+- Language: ru
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Создание инструмента
+  Versions:
