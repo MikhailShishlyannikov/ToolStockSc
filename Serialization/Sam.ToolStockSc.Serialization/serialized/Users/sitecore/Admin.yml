@@ -3,7 +3,7 @@ Username: |
   sitecore\Admin
 Email: 
 Comment: Sitecore Administrator
-Created: "2019-08-21T15:23:06.0000000Z"
+Created: "2018-11-01T09:56:50.0000000Z"
 IsApproved: True
 Properties:
 - Key: |
@@ -28,17 +28,17 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Content Editor/Sections/Collapsed
-  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=1&Appearance=1&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=0&Indexing=0&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1&Tasks=1&Tagging=1&Settings=0"
+  Value: "?Security=1&QuickInfo=0&Layout=1&Advanced=1&Appearance=0&Help=1&Publishing=1&Workflow=1&Fields=0&Jumbotron Data=0&Indexing=1&Insert Options=1&Item Buckets=1&Data=0&Lifetime=1&Statistics=1&Validation Rules=1&Search Results=1&General=0&Caching=1&Parameters=1&Tasks=1&Tagging=1&Settings=0"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/HSplitters/IDEXsltBottom
-  Value: 211,349
+  Value: 374,229
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Add.From.Template
-  Value: "{B01B5C22-7CDE-492D-A208-D0151556759C}"
+  Value: "{ACEF0330-37CB-4DD6-92E7-BEAB6B66F33C}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -53,7 +53,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/History/Template
-  Value: "{B01B5C22-7CDE-492D-A208-D0151556759C}"
+  Value: "{ACEF0330-37CB-4DD6-92E7-BEAB6B66F33C}"
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -113,7 +113,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Publish/PublishChildren
-  Value: true
+  Value: false
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -143,7 +143,7 @@ Properties:
   IsCustom: True
 - Key: |
     /sitecore\admin/Rebuild Search Index/Selected
-  Value: sitecore_master_index
+  Value: sitecore_core_index|sitecore_master_index|sitecore_web_index|sc910_web_tools_index|sc910_web_users_index
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: |
@@ -211,7 +211,7 @@ Properties:
   ValueType: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: False
 - Key: Packager/File
-  Value: "Sitecore PowerShell Extensions-5.0.zip"
+  Value: Sitecore Experience Accelerator 1.8.1 rev. 190319 for 9.1.1.zip
   ValueType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
   IsCustom: True
 - Key: Portrait

@@ -4,7 +4,6 @@ Parent: "00d93e50-7cf8-4d9d-86a2-103f53955b35"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Settings/Page Content/Buttons
 DB: master
-BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon

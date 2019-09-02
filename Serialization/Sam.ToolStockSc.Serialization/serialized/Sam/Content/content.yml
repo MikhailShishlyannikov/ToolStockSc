@@ -38,7 +38,7 @@ SharedFields:
 - ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
   Hint: __Security
   Value: |
-    au|sitecore\ServicesAPI|p*|+item:read|^*|
+    au|sitecore\ServicesAPI|p*|+item:read|^*|ar|sitecore\JSS Import Service Users|p*|+item:create|
 - ID: "f2db8ba1-e477-41f5-8ef5-22eefa8d2f6e"
   Hint: __Enabled Views
   Type: Multilist

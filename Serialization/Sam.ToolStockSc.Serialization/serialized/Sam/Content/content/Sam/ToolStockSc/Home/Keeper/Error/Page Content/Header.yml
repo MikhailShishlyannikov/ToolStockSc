@@ -4,7 +4,6 @@ Parent: "3604c20d-c3a4-4d23-8792-bcda2c3eb19b"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Error/Page Content/Header
 DB: master
-BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder

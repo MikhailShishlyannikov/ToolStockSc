@@ -1,0 +1,14 @@
+﻿---
+ID: "510da26b-f6cd-4e76-b514-9dc5ab7df5d8"
+Parent: "a28fc6a6-dd6c-4880-ae8f-e99efe9d714c"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Components/Card/Card/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190725T124519Z

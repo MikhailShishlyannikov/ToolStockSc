@@ -1,0 +1,67 @@
+﻿---
+ID: "d5d8e413-66f5-40e9-a8a2-d517dda20d56"
+Parent: "45777bd9-032a-43b4-b610-1585b5368374"
+Template: "0e94475c-a95e-495b-9e77-100709ceeea4"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Tool Creating/Page Content/Tool Creating
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13c4474e-0620-4cf9-a7da-8072240e0509"
+      Hint: User
+      Value: User
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190805T144919Z
+    - ID: "4f2e5608-bb08-45f1-86f5-dbf25564f30e"
+      Hint: Amount
+      Value: Amount
+    - ID: "62193bcc-a530-40ac-85dd-47c519733692"
+      Hint: Stock
+      Value: Stock
+    - ID: "a4ec15fd-ed30-4866-961e-0d4f6880f23f"
+      Hint: Tool Type
+      Value: Tool type
+    - ID: "aab717e9-717f-41b6-8cdd-068b9f974555"
+      Hint: Name
+      Value: Name
+    - ID: "e16e66bc-5fab-4933-9d57-ab3a74d8a9ff"
+      Hint: Status
+      Value: Status
+    - ID: "ea14280a-6815-4765-811f-6b80880fa490"
+      Hint: Manufacturer
+      Value: Manufacturer
+- Language: ru
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13c4474e-0620-4cf9-a7da-8072240e0509"
+      Hint: User
+      Value: Пользователь
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190806T065438Z
+    - ID: "4f2e5608-bb08-45f1-86f5-dbf25564f30e"
+      Hint: Amount
+      Value: Количество
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "62193bcc-a530-40ac-85dd-47c519733692"
+      Hint: Stock
+      Value: Склад
+    - ID: "a4ec15fd-ed30-4866-961e-0d4f6880f23f"
+      Hint: Tool Type
+      Value: Тип инструмента
+    - ID: "aab717e9-717f-41b6-8cdd-068b9f974555"
+      Hint: Name
+      Value: Название
+    - ID: "e16e66bc-5fab-4933-9d57-ab3a74d8a9ff"
+      Hint: Status
+      Value: Статус
+    - ID: "ea14280a-6815-4765-811f-6b80880fa490"
+      Hint: Manufacturer
+      Value: Производитель

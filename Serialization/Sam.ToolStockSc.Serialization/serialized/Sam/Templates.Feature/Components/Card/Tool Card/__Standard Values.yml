@@ -1,0 +1,18 @@
+﻿---
+ID: "af27f47e-f8bd-45a8-a0f8-509634859f0a"
+Parent: "6c808952-737c-44e0-a7ab-a0794da2532d"
+Template: "6c808952-737c-44e0-a7ab-a0794da2532d"
+Path: /sitecore/templates/Feature/Components/Card/Tool Card/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190807T152007Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -19,7 +19,9 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public FooterViewModel Get(IMvcContext mvcContexts)
         {
-            return _mapper.Map<FooterViewModel>(mvcContexts.GetDataSourceItem<FooterScModel>());
+            var scModel = mvcContexts.GetDataSourceItem<FooterScModel>();
+
+            return _mapper.Map<FooterViewModel>(scModel);
         }
     }
 }

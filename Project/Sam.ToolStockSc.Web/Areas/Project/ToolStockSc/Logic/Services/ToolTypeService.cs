@@ -70,17 +70,17 @@ namespace Sam.ToolStockSc.Web.Areas.Project.ToolStockSc.Logic.Services
 
         public IEnumerable<ToolTypeViewModel> GetAllViewModels()
         {
-            var item = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename);
+            var page = _sitecoreService.GetItem<Item>(SitecoreConstants.PageItems.ToolTypeRename);
 
             var toolTypesSc = SitecoreConstants.ParentItems.ToolTypes.Children.Select(x =>
                 _sitecoreService.GetItem<ToolTypeScModel>(x));
 
             var toolTypes = _mapper.Map<IEnumerable<ToolTypeViewModel>>(toolTypesSc);
 
-            if (item == null) return toolTypes;
+            if (page == null) return toolTypes;
 
             var urlToPage =
-                LinkManager.GetItemUrl(item);
+                LinkManager.GetItemUrl(page);
 
             return toolTypes.ForEach(x => x.UrlForRename = $"{urlToPage}?id={x.Id}");
         }

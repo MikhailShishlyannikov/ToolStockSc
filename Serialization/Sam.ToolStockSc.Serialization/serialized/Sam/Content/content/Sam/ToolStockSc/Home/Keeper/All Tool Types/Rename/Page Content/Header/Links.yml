@@ -1,0 +1,24 @@
+﻿---
+ID: "f95a566a-88b3-48c4-8fd9-3d1d14419b28"
+Parent: "c1c1a53d-d87c-4c89-b9d1-c6c150291336"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/All Tool Types/Rename/Page Content/Header/Links
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: |
+    {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+    {24E7C6F0-333B-4FF3-AFDF-E49D8E898340}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7DD33EE8-49E6-493F-9CC2-8A9B24AD9C34}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T122115Z

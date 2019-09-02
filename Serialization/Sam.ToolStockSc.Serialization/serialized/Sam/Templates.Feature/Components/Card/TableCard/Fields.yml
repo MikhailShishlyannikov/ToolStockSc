@@ -1,0 +1,14 @@
+﻿---
+ID: "f790be63-c203-4ed4-b47e-ed06eab4af30"
+Parent: "603bd7b3-467a-4db5-aea3-0d3c6e946035"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Components/Card/TableCard/Fields
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190802T070623Z

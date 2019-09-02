@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\JSS Import Service Users
+MemberOf:
+  Role: |
+    sitecore\Developer

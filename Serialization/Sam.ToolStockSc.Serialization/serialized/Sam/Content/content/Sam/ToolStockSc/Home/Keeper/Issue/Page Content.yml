@@ -4,7 +4,6 @@ Parent: "ccafd326-4ede-4d57-850b-ffb558fc8577"
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
 Path: /sitecore/content/Sam/ToolStockSc/Home/Keeper/Issue/Page Content
 DB: master
-BranchID: "d687705a-5bbb-44a4-ad96-57ac2bab96d5"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
