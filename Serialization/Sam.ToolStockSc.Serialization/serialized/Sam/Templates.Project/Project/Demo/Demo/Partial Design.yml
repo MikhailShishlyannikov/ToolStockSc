@@ -1,0 +1,27 @@
+﻿---
+ID: "d3f8499c-e24d-4de8-b16d-5c7259963698"
+Parent: "fc01b8dd-b374-4374-a9fe-f72e495a52a8"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/Demo/Demo/Partial Design
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/piece.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {BF680756-B2FA-4CAE-8B69-EE361080616F}
+    {11AB06B6-1F36-42D1-8065-77D7CE0FE085}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{E1E69D93-F2BB-4C8B-81DC-03CF568EE3C9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190903T133036Z
